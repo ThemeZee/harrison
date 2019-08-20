@@ -19,10 +19,10 @@
 	--link-hover-color: #003344;
 	--button-color: #268f97;
 	--button-hover-color: #003344;
-	--header-background-color: #003344;
-	--header-text-color: rgba(255, 255, 255, 0.95);
-	--header-text-hover-color: rgba(255, 255, 255, 0.5);
-	--header-border-color: rgba(255, 255, 255, 0.1);
+	--header-background-color: #ffffff;
+	--header-text-color: rgba(0, 0, 0, 0.95);
+	--header-text-hover-color: rgba(0, 0, 0, 0.5);
+	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #003344;
 	--title-hover-color: #268f97;
 	--footer-background-color: #003344;
@@ -43,7 +43,7 @@
 # - Layout
 --------------------------------------------------------------*/
 .editor-styles-wrapper .wp-block {
-	max-width: calc( 800px + 30px);
+	max-width: calc( 880px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=wide] {
@@ -60,7 +60,7 @@
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1520px + 30px);
+	max-width: calc( 1440px + 30px);
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=full] {
@@ -495,7 +495,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* GT Section Block */
 .gt-background-section .gt-section-content.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc( 800px + 30px);
+	max-width: calc( 880px + 30px);
 }
 
 .gt-background-section .gt-section-content.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {

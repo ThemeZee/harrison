@@ -1,13 +1,13 @@
 // Theme Width.
-$themeWidth: 100%;
+$themeWidth: 1440px;
 
 // Content Width.
-$contentWidth: 800px;
+$contentWidth: 880px;
 $wideBlockWidth: 1040px;
 
 // Fullwidth Template.
 $contentFullwidth: 1280px;
-$wideBlockFullwidth: 1520px;
+$wideBlockFullwidth: 1440px;
 
 // Text Color
 $textColor: #242424;
@@ -25,10 +25,10 @@ $themeColors: (
 	--link-hover-color        : #003344,
 	--button-color            : #268f97,
 	--button-hover-color      : #003344,
-	--header-background-color : #003344,
-	--header-text-color       : rgba(255, 255, 255, 0.95),
-	--header-text-hover-color : rgba(255, 255, 255, 0.5),
-	--header-border-color     : rgba(255, 255, 255, 0.1),
+	--header-background-color : #ffffff,
+	--header-text-color       : rgba(0, 0, 0, 0.95),
+	--header-text-hover-color : rgba(0, 0, 0, 0.5),
+	--header-border-color     : rgba(0, 0, 0, 0.1),
 	--title-color             : #003344,
 	--title-hover-color       : #268f97,
 	--footer-background-color : #003344,

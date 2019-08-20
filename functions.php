@@ -69,7 +69,7 @@ function codename_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'codename_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '353535',
 	) ) );
 
 	// Add Theme Support for Selective Refresh in Customizer.

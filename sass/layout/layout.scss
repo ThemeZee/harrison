@@ -1,24 +1,22 @@
 .site {
 	box-sizing: border-box;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
+	background: #fff;
+	max-width: $themeWidth;
 }
 
 .site-header,
 .site-content,
-.footer-main {
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
+.site-footer {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
-.header-main,
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.site-main {
 	max-width: $contentWidth;
 }
