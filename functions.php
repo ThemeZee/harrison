@@ -89,11 +89,6 @@ function codename_content_width() {
 	// Default content width.
 	$content_width = 800;
 
-	// Fullwidth content width.
-	if ( is_page() && 'fullwidth' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
-		$content_width = 1280;
-	}
-
 	// Set global variable for content width.
 	$GLOBALS['content_width'] = apply_filters( 'codename_content_width', $content_width );
 }
@@ -113,7 +108,7 @@ function codename_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script( 'codename-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'codename-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
 		$codename_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'codename' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'codename' ),
