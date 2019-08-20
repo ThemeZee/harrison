@@ -7,7 +7,6 @@ var rename       = require( 'gulp-rename' );
 var replace      = require( 'gulp-replace' );
 var concat       = require( 'gulp-concat' );
 var uglify       = require( 'gulp-uglify' );
-var rtlcss       = require( 'gulp-rtlcss' );
 var sass         = require( 'gulp-sass' );
 var postcss      = require( 'gulp-postcss' );
 var sorting      = require( 'postcss-sorting' );
@@ -70,21 +69,5 @@ gulp.task( 'sass', function() {
 
 // Sass Watch
 gulp.task('sass:watch', function () {
-	gulp.watch( 'sass/**/*.scss', ['sass', 'editor']);
+	gulp.watch( 'sass/**/*.scss', gulp.series('sass', 'editor'));
 });
-
-// Lint CSS
-gulp.task( 'lintcss', function lintCssTask() {
-  const gulpStylelint = require( 'gulp-stylelint' );
-
-  return gulp
-    .src( 'style.css' )
-    .pipe( gulpStylelint( {
-		reporters: [
-			{formatter: 'string', console: true}
-		]
-	} ) )
-});
-
-// Default Task
-gulp.task( 'default', ['minifyjs', 'cleancss'] );
