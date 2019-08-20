@@ -27,6 +27,22 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "postcss-sorting": "^5.0.1",
-    "postcss-wprtl": "^1.2.1"
+    "postcss-wprtl": "^1.2.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-wordpress": "^14.0.0"
+  },
+  "stylelint": {
+    "extends": [
+		"stylelint-config-wordpress",
+		"stylelint-config-wordpress/scss"
+    ],
+    "rules": {
+	  "indentation": "tab",
+	  "at-rule-empty-line-before": [ "always", {
+		"except": [
+		  "inside-block"
+		]
+	  } ]
+    }
   }
 }
