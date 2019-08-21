@@ -1,5 +1,7 @@
 .site-header {
 	@include background(--header-background-color);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-main {
@@ -7,8 +9,6 @@
 	flex-wrap: wrap;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Site Branding */
@@ -44,9 +44,9 @@
 	@include color(--header-text-color);
 	text-decoration: none;
 	@include font-size(24);
-	@include font-family(--navi-font);
-	@include font-weight(--navi-font-weight);
-	@include text-transform(--navi-text-transform);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
 	line-height: 1.4;
 }
 
