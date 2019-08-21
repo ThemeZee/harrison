@@ -7,33 +7,33 @@
 /*--------------------------------------------------------------
 # - Variables
 --------------------------------------------------------------*/
-@import '_mixins';
-@import '_variables';
-@import '_root';
+@import "_mixins";
+@import "_variables";
+@import "_root";
 
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
-@import 'editor/layout';
+@import "editor/layout";
 
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-@import 'editor/elements';
+@import "editor/elements";
 
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'blocks/core-blocks';
-@import 'blocks/magazine-blocks';
-@import 'editor/editor-blocks';
+@import "blocks/core-blocks";
+@import "blocks/magazine-blocks";
+@import "editor/editor-blocks";
 
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/
-@import 'blocks/colors';
+@import "blocks/colors";
 
 /*--------------------------------------------------------------
 # - Font Sizes
 --------------------------------------------------------------*/
-@import 'blocks/font-sizes';
+@import "blocks/font-sizes";

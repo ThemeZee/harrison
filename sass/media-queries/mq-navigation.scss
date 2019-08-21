@@ -60,20 +60,14 @@
 		border: 1px solid var(--header-border-color);
 	}
 
-	.main-navigation ul ul li:hover > ul,
-	.main-navigation ul ul li.focus > ul {
-		right: 100%;
-		left: auto;
-	}
-
-	.main-navigation ul ul a {
-		width: 16rem;
-	}
-
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
 		right: 0;
 		left: auto;
+	}
+
+	.main-navigation ul ul li a {
+		width: 16rem;
 	}
 
 	.main-navigation ul ul ul {
@@ -82,9 +76,15 @@
 		top: 0;
 	}
 
-	.main-navigation ul ul a,
-	.main-navigation ul ul ul a,
-	.main-navigation ul ul ul ul a {
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		right: 100%;
+		left: auto;
+	}
+
+	.main-navigation ul ul li a,
+	.main-navigation ul ul ul li a,
+	.main-navigation ul ul ul ul li a {
 		padding: 1rem;
 		border: none;
 	}
@@ -101,11 +101,6 @@
 		@include fill(--header-text-color);
 	}
 
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		@include fill(--header-text-hover-color);
-	}
-
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
 	.main-navigation ul ul .page_item_has_children > a > .icon {
 		position: absolute;
@@ -113,8 +108,13 @@
 		right: 1em;
 		top: 50%;
 		margin-top: -0.5rem;
-		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-		-ms-transform: rotate(-90deg); /* IE 9 */
+		-webkit-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
+	}
+
+	.main-navigation ul .menu-item-has-children > a:hover > .icon,
+	.main-navigation ul .page_item_has_children > a:hover > .icon {
+		@include fill(--header-text-hover-color);
 	}
 }

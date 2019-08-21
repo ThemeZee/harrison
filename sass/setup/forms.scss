@@ -36,7 +36,7 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 2px solid rgba(0,0,0,0.1);
+	border: 2px solid rgba(0, 0, 0, 0.1);
 	background: none;
 	color: #777;
 }
@@ -47,17 +47,17 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 2px solid rgba(0,0,0,0.3);
+	border: 2px solid rgba(0, 0, 0, 0.3);
 	color: $textColor;
 	outline: none;
 }
 
 textarea {
+	overflow: auto;
 	width: 100%;
 }
 
 /* Search Form */
-/* Theme Search Widget */
 .search-form {
 	display: flex;
 	margin: 0;

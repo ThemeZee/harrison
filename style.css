@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #003344;
+	--primary-color: #034;
 	--secondary-color: #268f97;
 	--accent-color: #c9493b;
 	--highlight-color: #f9d26e;
@@ -55,20 +55,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--link-hover-color: #222;
 	--button-color: #c9493b;
 	--button-hover-color: #222;
-	--header-background-color: #ffffff;
+	--header-background-color: #fff;
 	--header-text-color: #222;
 	--header-text-hover-color: rgba(0, 0, 0, 0.5);
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #222;
 	--title-hover-color: #c9493b;
-	--footer-background-color: #003344;
+	--footer-background-color: #034;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--text-font: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+	--title-font: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+	--navi-font: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: bold;
 	--navi-font-weight: normal;
 	--title-text-transform: none;
@@ -79,13 +79,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Normalize
 --------------------------------------------------------------*/
 html {
+	box-sizing: border-box;
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-}
-
-body {
-	margin: 0;
 }
 
 article,
@@ -121,15 +118,6 @@ template {
 	display: none;
 }
 
-a {
-	background-color: transparent;
-}
-
-a:active,
-a:hover {
-	outline: 0;
-}
-
 abbr[title] {
 	border-bottom: 1px dotted;
 }
@@ -141,11 +129,6 @@ strong {
 
 dfn {
 	font-style: italic;
-}
-
-h1 {
-	margin: 0.67em 0;
-	font-size: 2em;
 }
 
 mark {
@@ -173,25 +156,12 @@ sub {
 	bottom: -0.25em;
 }
 
-img {
-	border: 0;
-}
-
 svg:not(:root) {
 	overflow: hidden;
 }
 
 figure {
 	margin: 0;
-}
-
-hr {
-	box-sizing: content-box;
-	height: 0;
-}
-
-pre {
-	overflow: auto;
 }
 
 code,
@@ -276,22 +246,8 @@ legend {
 	border: 0;
 }
 
-textarea {
-	overflow: auto;
-}
-
 optgroup {
 	font-weight: bold;
-}
-
-table {
-	border-spacing: 0;
-	border-collapse: collapse;
-}
-
-td,
-th {
-	padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -305,7 +261,7 @@ textarea {
 	color: #242424;
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 }
@@ -318,7 +274,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -412,18 +368,16 @@ big {
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-html {
-	box-sizing: border-box;
-}
 
+/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
 body {
+	margin: 0;
 	background: #353535; /* Fallback for when there is no custom background color defined. */
 }
 
@@ -447,11 +401,12 @@ blockquote cite {
 	font-size: 1rem;
 }
 
-blockquote cite:before {
+blockquote cite::before {
 	content: "\2014\00a0";
 }
 
 hr {
+	box-sizing: content-box;
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
@@ -493,6 +448,7 @@ dd {
 }
 
 img {
+	border: 0;
 	max-width: 100%; /* Adhere to container width. */
 	height: auto; /* Make sure images are scaled correctly. */
 }
@@ -502,6 +458,8 @@ table {
 	width: 100%;
 	border: none;
 	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 th,
@@ -514,6 +472,7 @@ a {
 	color: #c9493b;
 	color: var(--link-color);
 	text-decoration: underline;
+	background-color: transparent;
 }
 
 a:hover,
@@ -594,12 +553,11 @@ textarea:focus {
 }
 
 textarea {
+	overflow: auto;
 	width: 100%;
 }
 
 /* Search Form */
-
-/* Theme Search Widget */
 .search-form {
 	display: flex;
 	margin: 0;
@@ -716,7 +674,7 @@ textarea {
 # - Header
 --------------------------------------------------------------*/
 .site-header {
-	background-color: #ffffff;
+	background-color: #fff;
 	background-color: var(--header-background-color);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid var(--header-border-color);
@@ -764,7 +722,7 @@ textarea {
 	text-decoration: none;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -824,7 +782,7 @@ textarea {
 	list-style: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -885,7 +843,7 @@ textarea {
 .main-navigation ul ul {
 	font-size: 16px;
 	font-size: 1rem;
-	background-color: #ffffff;
+	background-color: #fff;
 	background-color: var(--header-background-color);
 }
 
@@ -918,7 +876,7 @@ textarea {
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -1057,7 +1015,7 @@ textarea {
 	word-wrap: break-word;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -1087,8 +1045,8 @@ textarea {
 
 .entry-content > .alignwide,
 .entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2);
-	margin-right: calc( -100vw / 2 + 100% / 2);
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
 	max-width: 100vw;
 }
 
@@ -1183,7 +1141,7 @@ textarea {
 .search-header .search-title {
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -1232,7 +1190,7 @@ textarea {
 	font-size: 1.0625rem;
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--footer-background-color);
 }
 
@@ -1307,7 +1265,7 @@ textarea {
 	color: var(--footer-link-color);
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -1409,7 +1367,6 @@ object {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
 	text-align: center;
 }
 
@@ -1535,7 +1492,7 @@ object {
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
 
@@ -1547,7 +1504,7 @@ object {
 
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 }
 
@@ -1565,7 +1522,7 @@ object {
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
 
@@ -1576,7 +1533,7 @@ object {
 
 .wp-block-pullquote blockquote cite {
 	color: #242424;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
 }
@@ -1600,7 +1557,7 @@ object {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #003344;
+	color: #034;
 	color: var(--primary-color);
 }
 
@@ -1620,7 +1577,7 @@ object {
 }
 
 .has-white-color {
-	color: #ffffff;
+	color: #fff;
 }
 
 .has-light-gray-color {
@@ -1639,12 +1596,12 @@ object {
 }
 
 .has-black-color {
-	color: #000000;
+	color: #000;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--primary-color);
 }
 
@@ -1664,7 +1621,7 @@ object {
 }
 
 .has-white-background-color {
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .has-light-gray-background-color {
@@ -1683,7 +1640,7 @@ object {
 }
 
 .has-black-background-color {
-	background-color: #000000;
+	background-color: #000;
 }
 
 /* Block Font Sizes */
@@ -1832,7 +1789,6 @@ object {
 }
 
 @media only screen and (min-width: 560px) {
-	/* Footer Widgets */
 	.footer-widgets-columns {
 		display: flex;
 		flex-wrap: wrap;
@@ -1848,7 +1804,6 @@ object {
 		flex-direction: column;
 	}
 
-	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
 	.footer-widget-column:nth-child(3):nth-last-child(1) {
@@ -1886,7 +1841,6 @@ object {
 		margin-bottom: 1.5rem;
 	}
 
-	/* Footer Widgets */
 	.footer-widget-column {
 		padding-left: 1rem;
 		padding-right: 1rem;
@@ -1903,7 +1857,6 @@ object {
 }
 
 @media only screen and (min-width: 800px) {
-	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
 	.footer-widget-column:nth-child(3):nth-last-child(1) {
@@ -1941,7 +1894,6 @@ object {
 		margin-bottom: 1.75rem;
 	}
 
-	/* Footer Widgets */
 	.footer-widget-column {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -1964,7 +1916,6 @@ object {
 }
 
 @media only screen and (min-width: 1040px) {
-	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
 	.footer-widget-column:nth-child(2):nth-last-child(3),
 	.footer-widget-column:nth-child(3):nth-last-child(2),
@@ -2003,7 +1954,6 @@ object {
 		margin-bottom: 2rem;
 	}
 
-	/* Footer Widgets */
 	.footer-widget-column {
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -2084,20 +2034,14 @@ object {
 		border: 1px solid var(--header-border-color);
 	}
 
-	.main-navigation ul ul li:hover > ul,
-	.main-navigation ul ul li.focus > ul {
-		right: 100%;
-		left: auto;
-	}
-
-	.main-navigation ul ul a {
-		width: 16rem;
-	}
-
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
 		right: 0;
 		left: auto;
+	}
+
+	.main-navigation ul ul li a {
+		width: 16rem;
 	}
 
 	.main-navigation ul ul ul {
@@ -2106,9 +2050,15 @@ object {
 		top: 0;
 	}
 
-	.main-navigation ul ul a,
-	.main-navigation ul ul ul a,
-	.main-navigation ul ul ul ul a {
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		right: 100%;
+		left: auto;
+	}
+
+	.main-navigation ul ul li a,
+	.main-navigation ul ul ul li a,
+	.main-navigation ul ul ul ul li a {
 		padding: 1rem;
 		border: none;
 	}
@@ -2126,12 +2076,6 @@ object {
 		fill: var(--header-text-color);
 	}
 
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: rgba(0, 0, 0, 0.5);
-		fill: var(--header-text-hover-color);
-	}
-
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
 	.main-navigation ul ul .page_item_has_children > a > .icon {
 		position: absolute;
@@ -2140,10 +2084,14 @@ object {
 		top: 50%;
 		margin-top: -0.5rem;
 		-webkit-transform: rotate(-90deg);
-		/* Chrome, Safari, Opera */
 		-ms-transform: rotate(-90deg);
-		/* IE 9 */
 		transform: rotate(-90deg);
+	}
+
+	.main-navigation ul .menu-item-has-children > a:hover > .icon,
+	.main-navigation ul .page_item_has_children > a:hover > .icon {
+		fill: rgba(0, 0, 0, 0.5);
+		fill: var(--header-text-hover-color);
 	}
 }
 
@@ -2163,7 +2111,6 @@ object {
 }
 
 @media only screen and (min-width: 480px) {
-	/* Gallery */
 	.gallery-columns-3,
 	.gallery-columns-5,
 	.gallery-columns-6,
@@ -2179,7 +2126,6 @@ object {
 }
 
 @media only screen and (min-width: 720px) {
-	/* Gallery */
 	.gallery-columns-5 {
 		grid-template-columns: repeat(5, 1fr);
 	}
@@ -2194,7 +2140,6 @@ object {
 }
 
 @media only screen and (min-width: 800px) {
-	/* Gallery */
 	.gallery-columns-8 {
 		grid-template-columns: repeat(8, 1fr);
 	}
@@ -2216,8 +2161,8 @@ body.fullwidth-page-layout .site-content .site-main {
 /* Adjust Wide Blocks */
 @media only screen and (min-width: 960px) {
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2);
-		margin-right: calc( -100vw / 2 + 100% / 2);
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
 		max-width: 100vw;
 	}
 }
