@@ -118,6 +118,6 @@ add_action( 'customize_register', 'codename_customize_register_blog_settings' );
 function codename_customize_partial_blog_content() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', esc_attr( codename_get_option( 'blog_content' ) ) );
+		get_template_part( 'template-parts/post/content', esc_attr( codename_get_option( 'blog_content' ) ) );
 	}
 }

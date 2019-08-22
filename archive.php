@@ -13,14 +13,22 @@ get_header();
 if ( have_posts() ) :
 
 	codename_archive_header();
+	?>
 
-	while ( have_posts() ) :
-		the_post();
+	<div id="post-wrapper" class="post-wrapper">
 
-		get_template_part( 'template-parts/post/content' );
+		<?php
+		while ( have_posts() ) :
+			the_post();
 
-	endwhile;
+			get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'blog_content' ) ) );
 
+		endwhile;
+		?>
+
+	</div>
+
+	<?php
 	codename_pagination();
 
 else :

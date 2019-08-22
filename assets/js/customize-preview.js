@@ -44,6 +44,29 @@
 		} );
 	} );
 
+	// Blog Layout.
+	wp.customize( 'codename_theme_options[blog_layout]', function( value ) {
+		value.bind( function( newval ) {
+			if ( 'list' === newval ) {
+				$( 'body' ).addClass( 'blog-list-layout' );
+				$( 'body' ).removeClass( 'blog-grid-layout' );
+			} else if ( 'grid' === newval ) {
+				$( 'body' ).addClass( 'blog-grid-layout' );
+				$( 'body' ).removeClass( 'blog-list-layout' );
+			} else {
+				$( 'body' ).removeClass( 'blog-grid-layout' );
+				$( 'body' ).removeClass( 'blog-list-layout' );
+			}
+		} );
+	} );
+
+	// Read More textfield.
+	wp.customize( 'codename_theme_options[read_more_text]', function( value ) {
+		value.bind( function( to ) {
+			$( 'a.more-link' ).text( to );
+		} );
+	} );
+
 	/* Primary Color Option */
 	wp.customize( 'codename_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
@@ -275,7 +298,7 @@
 			position: 'absolute',
 			width: '1px',
 			height: '1px',
-			overflow: 'hidden'
+			overflow: 'hidden',
 		});
 	}
 
@@ -285,7 +308,7 @@
 			position: 'relative',
 			width: 'auto',
 			height: 'auto',
-			overflow: 'visible'
+			overflow: 'visible',
 		});
 	}
 

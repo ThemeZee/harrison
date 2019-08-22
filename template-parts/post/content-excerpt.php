@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying articles in the loop with full content
+ * The template for displaying articles in the loop with post excerpts
  *
  * @version 1.0
  * @package Codename
@@ -19,9 +19,10 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content entry-excerpt">
 
-		<?php the_content( esc_html( codename_get_option( 'read_more_text' ) ) ); ?>
+		<?php the_excerpt(); ?>
+		<?php codename_more_link(); ?>
 
 	</div><!-- .entry-content -->
 
