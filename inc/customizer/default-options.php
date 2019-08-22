@@ -51,6 +51,10 @@ function codename_default_options() {
 	$default_options = array(
 		'site_title'         => true,
 		'site_description'   => true,
+		'blog_layout'        => 'vertical-list',
+		'blog_content'       => 'excerpt',
+		'excerpt_length'     => 25,
+		'read_more_text'     => esc_html__( 'Continue reading', 'codename' ),
 		'primary_color'      => '#003344',
 		'secondary_color'    => '#268f97',
 		'accent_color'       => '#c9493b',
