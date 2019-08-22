@@ -7,12 +7,24 @@
  */
 
 /* Settings */
-#customize-control-codename_theme_options-site_description {
+#customize-control-codename_theme_options-site_title {
+	margin-bottom: 6px;
+}
+
+#customize-control-codename_theme_options-site_description,
+#customize-control-codename_theme_options-blog_content {
 	margin-bottom: 16px;
 }
 
-#customize-control-codename_theme_options-site_title {
-	margin-bottom: 6px;
+#customize-control-codename_theme_options-blog_layout,
+#customize-control-codename_theme_options-excerpt_length,
+#customize-control-codename_theme_options-excerpt_more_text,
+#customize-control-codename_theme_options-read_more_text {
+	margin-bottom: 24px;
+}
+
+#customize-control-codename_theme_options-blog_content {
+	padding: 0;
 }
 
 /* Custom Font Control */

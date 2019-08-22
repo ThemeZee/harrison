@@ -21,7 +21,7 @@
 
 	<div class="entry-content">
 
-		<?php the_content( esc_html( codename_get_option( 'read_more_text' ) ) ); ?>
+		<?php the_content( esc_html( codename_get_option( 'read_more_link' ) ) ); ?>
 
 	</div><!-- .entry-content -->
 

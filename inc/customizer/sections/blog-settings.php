@@ -37,7 +37,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'codename_section_blog',
 		'settings' => 'codename_theme_options[blog_layout]',
 		'type'     => 'select',
-		'priority' => 30,
+		'priority' => 10,
 		'choices'  => array(
 			'horizontal-list'   => esc_html__( 'Horizontal List', 'codename' ),
 			'vertical-list'     => esc_html__( 'Vertical List', 'codename' ),
@@ -59,7 +59,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'codename_section_blog',
 		'settings' => 'codename_theme_options[blog_content]',
 		'type'     => 'radio',
-		'priority' => 40,
+		'priority' => 20,
 		'choices'  => array(
 			'index'   => esc_html__( 'Full post', 'codename' ),
 			'excerpt' => esc_html__( 'Post excerpt', 'codename' ),
@@ -79,7 +79,23 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'codename_section_blog',
 		'settings' => 'codename_theme_options[excerpt_length]',
 		'type'     => 'text',
-		'priority' => 50,
+		'priority' => 30,
+	) );
+
+	// Add Setting and Control for Excerpt More Text.
+	$wp_customize->add_setting( 'codename_theme_options[excerpt_more_text]', array(
+		'default'           => $default['excerpt_more_text'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'codename_theme_options[excerpt_more_text]', array(
+		'label'    => esc_html__( 'Excerpt More Text', 'codename' ),
+		'section'  => 'codename_section_blog',
+		'settings' => 'codename_theme_options[excerpt_more_text]',
+		'type'     => 'text',
+		'priority' => 40,
 	) );
 
 	// Add Partial for Blog Layout and Excerpt Length.
@@ -89,25 +105,26 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 			'codename_theme_options[blog_layout]',
 			'codename_theme_options[blog_content]',
 			'codename_theme_options[excerpt_length]',
+			'codename_theme_options[excerpt_more_text]',
 		),
 		'render_callback'  => 'codename_customize_partial_blog_content',
 		'fallback_refresh' => false,
 	) );
 
 	// Add Setting and Control for Read More Text.
-	$wp_customize->add_setting( 'codename_theme_options[read_more_text]', array(
-		'default'           => $default['read_more_text'],
+	$wp_customize->add_setting( 'codename_theme_options[read_more_link]', array(
+		'default'           => $default['read_more_link'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
-	$wp_customize->add_control( 'codename_theme_options[read_more_text]', array(
-		'label'    => esc_html__( 'Read More Text', 'codename' ),
+	$wp_customize->add_control( 'codename_theme_options[read_more_link]', array(
+		'label'    => esc_html__( 'Read More Link', 'codename' ),
 		'section'  => 'codename_section_blog',
-		'settings' => 'codename_theme_options[read_more_text]',
+		'settings' => 'codename_theme_options[read_more_link]',
 		'type'     => 'text',
-		'priority' => 60,
+		'priority' => 50,
 	) );
 }
 add_action( 'customize_register', 'codename_customize_register_blog_settings' );

@@ -75,3 +75,45 @@ function codename_hide_elements() {
 	wp_add_inline_style( 'codename-stylesheet', $custom_css );
 }
 add_filter( 'wp_enqueue_scripts', 'codename_hide_elements', 11 );
+
+
+/**
+ * Change excerpt length for default posts
+ *
+ * @param int $length Length of excerpt in number of words.
+ * @return int
+ */
+function codename_excerpt_length( $length ) {
+
+	if ( is_admin() ) {
+		return $length;
+	}
+
+	// Get excerpt length from database.
+	$excerpt_length = codename_get_option( 'excerpt_length' );
+
+	// Return excerpt text.
+	if ( $excerpt_length >= 0 ) :
+		return absint( $excerpt_length );
+	else :
+		return 55; // Number of words.
+	endif;
+}
+add_filter( 'excerpt_length', 'codename_excerpt_length' );
+
+
+/**
+ * Change excerpt more text for posts
+ *
+ * @param String $more_text Excerpt More Text.
+ * @return string
+ */
+function codename_excerpt_more( $more_text ) {
+
+	if ( is_admin() ) {
+		return $more_text;
+	}
+
+	return esc_html( ' ' . codename_get_option( 'excerpt_more_text' ) );
+}
+add_filter( 'excerpt_more', 'codename_excerpt_more' );

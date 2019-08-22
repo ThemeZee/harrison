@@ -23,6 +23,7 @@
 			control.active.validate = isDisplayed;
 		};
 		wp.customize.control( 'codename_theme_options[excerpt_length]', setupControl );
+		wp.customize.control( 'codename_theme_options[excerpt_more_text]', setupControl );
 	} );
 
 	/**

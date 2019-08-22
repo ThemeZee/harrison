@@ -64,8 +64,8 @@
 		} );
 	} );
 
-	// Read More textfield.
-	wp.customize( 'codename_theme_options[read_more_text]', function( value ) {
+	// Read More Link textfield.
+	wp.customize( 'codename_theme_options[read_more_link]', function( value ) {
 		value.bind( function( to ) {
 			$( 'a.more-link' ).text( to );
 		} );

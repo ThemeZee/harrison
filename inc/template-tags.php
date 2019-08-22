@@ -267,7 +267,7 @@ if ( ! function_exists( 'codename_more_link' ) ) :
 	function codename_more_link() {
 
 		// Get Read More Text.
-		$read_more = codename_get_option( 'read_more_text' );
+		$read_more = codename_get_option( 'read_more_link' );
 
 		if ( '' !== $read_more || is_customize_preview() ) :
 			?>
