@@ -62,7 +62,7 @@ function codename_default_options() {
 		'meta_tags'           => true,
 		'post_navigation'     => true,
 		'post_image_archives' => true,
-		'post_image_single'   => true,
+		'post_image_single'   => 'header-image',
 		'primary_color'       => '#003344',
 		'secondary_color'     => '#268f97',
 		'accent_color'        => '#c9493b',

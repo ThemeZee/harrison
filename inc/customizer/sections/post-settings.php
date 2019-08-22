@@ -161,15 +161,21 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'default'           => $default['post_image_single'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'codename_sanitize_checkbox',
+		'sanitize_callback' => 'codename_sanitize_select',
 	) );
 
 	$wp_customize->add_control( 'codename_theme_options[post_image_single]', array(
-		'label'    => esc_html__( 'Display image on single posts', 'codename' ),
+		'label'    => esc_html__( 'Featured Images on Single Posts', 'codename' ),
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[post_image_single]',
-		'type'     => 'checkbox',
+		'type'     => 'select',
 		'priority' => 110,
+		'choices'  => array(
+			'header-image' => esc_html__( 'Display image in the header', 'codename' ),
+			'above-title'  => esc_html__( 'Display image above post title', 'codename' ),
+			'below-title'  => esc_html__( 'Display image below post title', 'codename' ),
+			'hide-image'   => esc_html__( 'Hide featured image', 'codename' ),
+		),
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'codename_theme_options[post_image_single]', array(

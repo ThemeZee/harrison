@@ -34,7 +34,8 @@
 }
 
 #customize-control-codename_theme_options-single_post,
-#customize-control-codename_theme_options-featured_images {
+#customize-control-codename_theme_options-featured_images,
+#customize-control-codename_theme_options-post_image_single {
 	margin-top: 16px;
 }
 
@@ -43,8 +44,7 @@
 #customize-control-codename_theme_options-meta_categories,
 #customize-control-codename_theme_options-meta_tags,
 #customize-control-codename_theme_options-post_navigation,
-#customize-control-codename_theme_options-post_image_archives,
-#customize-control-codename_theme_options-post_image_single {
+#customize-control-codename_theme_options-post_image_archives {
 	margin-bottom: 4px;
 }
 
