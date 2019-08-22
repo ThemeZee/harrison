@@ -15,7 +15,7 @@ function codename_customize_register_block_color_settings( $wp_customize ) {
 	// Add Section for Block Colors.
 	$wp_customize->add_section( 'codename_section_block_colors', array(
 		'title'    => esc_html__( 'Block Colors', 'codename' ),
-		'priority' => 10,
+		'priority' => 70,
 		'panel'    => 'codename_options_panel',
 	) );
 

@@ -15,7 +15,7 @@ function codename_customize_register_theme_color_settings( $wp_customize ) {
 	// Add Section for Theme Colors.
 	$wp_customize->add_section( 'codename_section_theme_colors', array(
 		'title'    => esc_html__( 'Theme Colors', 'codename' ),
-		'priority' => 20,
+		'priority' => 80,
 		'panel'    => 'codename_options_panel',
 	) );
 

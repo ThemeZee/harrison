@@ -17,7 +17,7 @@ function codename_customize_register_typography_settings( $wp_customize ) {
 	// Add Section for Theme Fonts.
 	$wp_customize->add_section( 'codename_section_typography', array(
 		'title'    => esc_html__( 'Typography', 'codename' ),
-		'priority' => 20,
+		'priority' => 90,
 		'panel'    => 'codename_options_panel',
 	) );
 

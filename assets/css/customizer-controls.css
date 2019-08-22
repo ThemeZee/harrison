@@ -27,6 +27,27 @@
 	padding: 0;
 }
 
+#customize-control-codename_theme_options-post_details,
+#customize-control-codename_theme_options-single_post,
+#customize-control-codename_theme_options-featured_images {
+	margin-bottom: 0;
+}
+
+#customize-control-codename_theme_options-single_post,
+#customize-control-codename_theme_options-featured_images {
+	margin-top: 16px;
+}
+
+#customize-control-codename_theme_options-meta_date,
+#customize-control-codename_theme_options-meta_author,
+#customize-control-codename_theme_options-meta_categories,
+#customize-control-codename_theme_options-meta_tags,
+#customize-control-codename_theme_options-post_navigation,
+#customize-control-codename_theme_options-post_image_archives,
+#customize-control-codename_theme_options-post_image_single {
+	margin-bottom: 4px;
+}
+
 /* Custom Font Control */
 .customize-control-codename_custom_font {
 	margin-top: 24px;
