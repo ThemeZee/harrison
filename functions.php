@@ -39,7 +39,7 @@ function codename_setup() {
 	set_post_thumbnail_size( 800, 500, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'codename-header-image', 9999, 640, true );
+	add_image_size( 'codename-header-image', 1440, 450, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
@@ -63,8 +63,8 @@ function codename_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'codename_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 1920,
-		'height'      => 640,
+		'width'       => 1440,
+		'height'      => 450,
 	) ) );
 
 	// Set up the WordPress core custom background feature.

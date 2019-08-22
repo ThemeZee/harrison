@@ -755,7 +755,7 @@ textarea {
 
 /* Custom Header Image */
 .header-image {
-	margin: 0;
+	margin-top: -1px;
 }
 
 .header-image img,
@@ -1707,6 +1707,16 @@ object {
 }
 
 @media only screen and (min-width: 960px) {
+	.site-title {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	.site-description {
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+
 	.entry-title {
 		font-size: 40px;
 		font-size: 2.5rem;
@@ -1731,6 +1741,16 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
+	.site-title {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
+
+	.site-description {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
 	.entry-title {
 		font-size: 48px;
 		font-size: 3rem;

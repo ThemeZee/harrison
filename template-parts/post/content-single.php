@@ -11,8 +11,6 @@
 
 	<header class="post-header entry-header">
 
-		<?php codename_post_image(); ?>
-
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 		<?php codename_entry_meta(); ?>
@@ -21,6 +19,7 @@
 
 	<div class="entry-content">
 
+		<?php //codename_post_image(); ?>
 		<?php the_content(); ?>
 		<?php wp_link_pages(); ?>
 		<?php codename_entry_tags(); ?>

@@ -53,8 +53,8 @@ if ( ! function_exists( 'codename_header_image' ) ) :
 	 */
 	function codename_header_image() {
 
-		// Display featured image as header image on single pages.
-		if ( is_page() && has_post_thumbnail() ) :
+		// Display featured image as header image on single posts and pages.
+		if ( is_singular() && has_post_thumbnail() ) :
 			?>
 
 			<div id="headimg" class="header-image featured-header-image">
