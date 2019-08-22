@@ -14,26 +14,26 @@
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
-@import "editor/layout";
+@import "8-editor/layout";
 
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-@import "editor/elements";
+@import "8-editor/elements";
 
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import "blocks/core-blocks";
-@import "blocks/magazine-blocks";
-@import "editor/editor-blocks";
+@import "5-blocks/core-blocks";
+@import "5-blocks/magazine-blocks";
+@import "8-editor/editor-blocks";
 
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/
-@import "blocks/colors";
+@import "5-blocks/colors";
 
 /*--------------------------------------------------------------
 # - Font Sizes
 --------------------------------------------------------------*/
-@import "blocks/font-sizes";
+@import "5-blocks/font-sizes";

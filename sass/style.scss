@@ -50,84 +50,84 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Normalize
 --------------------------------------------------------------*/
-@import "setup/normalize";
+@import "1-setup/normalize";
 
 /*--------------------------------------------------------------
 # - Typography
 --------------------------------------------------------------*/
-@import "setup/typography";
+@import "1-setup/typography";
 
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-@import "setup/elements";
+@import "1-setup/elements";
 
 /*--------------------------------------------------------------
 # - Forms
 --------------------------------------------------------------*/
-@import "setup/forms";
+@import "1-setup/forms";
 
 /*--------------------------------------------------------------
 # - Accessibility
 --------------------------------------------------------------*/
-@import "setup/accessibility";
+@import "1-setup/accessibility";
 
 /*--------------------------------------------------------------
 # - Alignments
 --------------------------------------------------------------*/
-@import "setup/alignments";
+@import "1-setup/alignments";
 
 /*--------------------------------------------------------------
 # - Site Layout
 --------------------------------------------------------------*/
-@import "layout/site";
+@import "2-layout/site";
 
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
-@import "layout/header";
+@import "2-layout/header";
 
 /*--------------------------------------------------------------
 # - Navigation
 --------------------------------------------------------------*/
-@import "layout/navigation";
+@import "2-layout/navigation";
 
 /*--------------------------------------------------------------
 # - Single Posts and pages
 --------------------------------------------------------------*/
-@import "content/content";
-@import "content/entry-meta";
-@import "content/more-link";
+@import "3-content/content";
+@import "3-content/entry-meta";
+@import "3-content/more-link";
 
 /*--------------------------------------------------------------
 # - Archives and Blog Layouts
 --------------------------------------------------------------*/
-@import "blog/archives";
-@import "blog/blog-layouts";
-@import "blog/pagination";
-
-/*--------------------------------------------------------------
-# - Comments
---------------------------------------------------------------*/
-@import "layout/comments";
-
-/*--------------------------------------------------------------
-# - Media
---------------------------------------------------------------*/
-@import "layout/media";
+@import "4-archives/archives";
+@import "4-archives/blog-layouts";
+@import "4-archives/pagination";
 
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import "blocks/core-blocks";
-@import "blocks/magazine-blocks";
-@import "blocks/colors";
-@import "blocks/font-sizes";
+@import "5-blocks/core-blocks";
+@import "5-blocks/magazine-blocks";
+@import "5-blocks/colors";
+@import "5-blocks/font-sizes";
+
+/*--------------------------------------------------------------
+# - Comments
+--------------------------------------------------------------*/
+@import "6-elements/comments";
+
+/*--------------------------------------------------------------
+# - Media
+--------------------------------------------------------------*/
+@import "6-elements/media";
 
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
-@import "layout/footer";
+@import "2-layout/footer";
 
 /*--------------------------------------------------------------
 # - Media Queries
@@ -136,24 +136,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 ## - Media Queries for Typography
 --------------------------------------------------------------*/
-@import "media-queries/mq-typography";
+@import "7-media-queries/mq-typography";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
-@import "media-queries/mq-layout";
+@import "7-media-queries/mq-layout";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Navigation
 --------------------------------------------------------------*/
-@import "media-queries/mq-navigation";
+@import "7-media-queries/mq-navigation";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Media
 --------------------------------------------------------------*/
-@import "media-queries/mq-media";
+@import "7-media-queries/mq-media";
 
 /*--------------------------------------------------------------
 # - Theme Options
 --------------------------------------------------------------*/
-@import "content/theme-options";
+@import "6-elements/theme-options";
