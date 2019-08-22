@@ -47,15 +47,19 @@
 	// Blog Layout.
 	wp.customize( 'codename_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {
-			if ( 'list' === newval ) {
-				$( 'body' ).addClass( 'blog-list-layout' );
-				$( 'body' ).removeClass( 'blog-grid-layout' );
-			} else if ( 'grid' === newval ) {
-				$( 'body' ).addClass( 'blog-grid-layout' );
-				$( 'body' ).removeClass( 'blog-list-layout' );
-			} else {
-				$( 'body' ).removeClass( 'blog-grid-layout' );
-				$( 'body' ).removeClass( 'blog-list-layout' );
+			$( 'body' ).removeClass( 'blog-layout-horizontal-list' );
+			$( 'body' ).removeClass( 'blog-layout-vertical-list' );
+			$( 'body' ).removeClass( 'blog-layout-two-column-grid' );
+			$( 'body' ).removeClass( 'blog-layout-three-column-grid' );
+
+			if ( 'horizontal-list' === newval ) {
+				$( 'body' ).addClass( 'blog-layout-horizontal-list' );
+			} else if ( 'vertical-list' === newval ) {
+				$( 'body' ).addClass( 'blog-layout-vertical-list' );
+			} else if ( 'two-column-grid' === newval ) {
+				$( 'body' ).addClass( 'blog-layout-two-column-grid' );
+			} else if ( 'three-column-grid' === newval ) {
+				$( 'body' ).addClass( 'blog-layout-three-column-grid' );
 			}
 		} );
 	} );

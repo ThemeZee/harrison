@@ -645,7 +645,7 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# - Layout Structure
+# - Site Layout
 --------------------------------------------------------------*/
 .site {
 	box-sizing: border-box;
@@ -983,7 +983,7 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# - Posts and pages
+# - Single Posts and pages
 --------------------------------------------------------------*/
 .site-content {
 	padding-top: 1.25rem;
@@ -1098,6 +1098,39 @@ textarea {
 	text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# - Archives and Blog Layouts
+--------------------------------------------------------------*/
+
+/* Search & Archive Header */
+.archive-header.entry-header {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.archive-header .archive-title,
+.search-header .search-title {
+	font-size: 16px;
+	font-size: 1rem;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--navi-font);
+	font-weight: normal;
+	font-weight: var(--navi-font-weight);
+	text-transform: none;
+	text-transform: var(--navi-text-transform);
+}
+
+.search-header .search-form {
+	margin-top: 1rem;
+}
+
+/* Horizontal List Layout */
+
+/* Two Column Grid Layout */
+
+/* Three Column Grid Layout */
+
 /* Theme Pagination */
 .pagination {
 	margin: 0 0 1.25rem;
@@ -1130,28 +1163,9 @@ textarea {
 	color: var(--button-hover-color);
 }
 
-/* Search & Archive Header */
-.archive-header.entry-header {
-	padding-bottom: 1em;
-	margin-bottom: 2em;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-.archive-header .archive-title,
-.search-header .search-title {
-	font-size: 16px;
-	font-size: 1rem;
-	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--navi-font);
-	font-weight: normal;
-	font-weight: var(--navi-font-weight);
-	text-transform: none;
-	text-transform: var(--navi-text-transform);
-}
-
-.search-header .search-form {
-	margin-top: 1rem;
-}
+/*--------------------------------------------------------------
+# - Comments
+--------------------------------------------------------------*/
 
 /* Comments */
 .comment-list {
@@ -1178,119 +1192,6 @@ textarea {
 
 .comment-form label {
 	display: block;
-}
-
-/*--------------------------------------------------------------
-# - Footer
---------------------------------------------------------------*/
-.site-footer {
-	padding-top: 1.5rem;
-	padding-bottom: 1px;
-	font-size: 17px;
-	font-size: 1.0625rem;
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-text-color);
-	background-color: #034;
-	background-color: var(--footer-background-color);
-}
-
-.site-footer a:link,
-.site-footer a:visited {
-	color: rgba(255, 255, 255, 0.95);
-	color: var(--footer-link-color);
-}
-
-.site-footer a:hover,
-.site-footer a:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-link-hover-color);
-}
-
-.site-footer input[type="text"],
-.site-footer input[type="email"],
-.site-footer input[type="url"],
-.site-footer input[type="password"],
-.site-footer input[type="search"],
-.site-footer input[type="submit"],
-.site-footer textarea {
-	border: 2px solid rgba(255, 255, 255, 0.1);
-	border: 2px solid var(--footer-border-color);
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-link-hover-color);
-}
-
-.site-footer input[type="text"]:focus,
-.site-footer input[type="email"]:focus,
-.site-footer input[type="url"]:focus,
-.site-footer input[type="password"]:focus,
-.site-footer input[type="search"]:focus,
-.site-footer textarea:focus {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-text-color);
-}
-
-.site-footer button,
-.site-footer input[type="button"],
-.site-footer input[type="reset"],
-.site-footer input[type="submit"] {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-link-hover-color);
-}
-
-.site-footer button:hover,
-.site-footer input[type="button"]:hover,
-.site-footer input[type="reset"]:hover,
-.site-footer input[type="submit"]:hover,
-.site-footer button:focus,
-.site-footer input[type="button"]:focus,
-.site-footer input[type="reset"]:focus,
-.site-footer input[type="submit"]:focus,
-.site-footer button:active,
-.site-footer input[type="button"]:active,
-.site-footer input[type="reset"]:active,
-.site-footer input[type="submit"]:active {
-	color: rgba(255, 255, 255, 0.1);
-	color: var(--footer-border-color);
-}
-
-/* Footer Widgets */
-.footer-widgets .widget {
-	margin-bottom: 1.5rem;
-}
-
-.footer-widgets .widget-title {
-	margin-top: 0;
-	margin-bottom: 1.5rem;
-	color: rgba(255, 255, 255, 0.95);
-	color: var(--footer-link-color);
-	font-size: 20px;
-	font-size: 1.25rem;
-	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--navi-font);
-	font-weight: normal;
-	font-weight: var(--navi-font-weight);
-	text-transform: none;
-	text-transform: var(--navi-text-transform);
-}
-
-.footer-widgets .widget ul li a {
-	text-decoration: none;
-}
-
-/* Footer Copyright */
-.footer-copyright {
-	margin-bottom: 1.25rem;
-	padding-top: 1.25rem;
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
-	border-top: 2px solid var(--footer-border-color);
-}
-
-.footer-copyright .widget {
-	margin: 0;
-}
-
-.footer-copyright .widget-title {
-	margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1662,6 +1563,119 @@ object {
 
 .has-huge-font-size {
 	font-size: 64px;
+}
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+.site-footer {
+	padding-top: 1.5rem;
+	padding-bottom: 1px;
+	font-size: 17px;
+	font-size: 1.0625rem;
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-text-color);
+	background-color: #034;
+	background-color: var(--footer-background-color);
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	color: rgba(255, 255, 255, 0.95);
+	color: var(--footer-link-color);
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="search"],
+.site-footer input[type="submit"],
+.site-footer textarea {
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border: 2px solid var(--footer-border-color);
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"]:focus,
+.site-footer input[type="email"]:focus,
+.site-footer input[type="url"]:focus,
+.site-footer input[type="password"]:focus,
+.site-footer input[type="search"]:focus,
+.site-footer textarea:focus {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-text-color);
+}
+
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="reset"],
+.site-footer input[type="submit"] {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
+}
+
+.site-footer button:hover,
+.site-footer input[type="button"]:hover,
+.site-footer input[type="reset"]:hover,
+.site-footer input[type="submit"]:hover,
+.site-footer button:focus,
+.site-footer input[type="button"]:focus,
+.site-footer input[type="reset"]:focus,
+.site-footer input[type="submit"]:focus,
+.site-footer button:active,
+.site-footer input[type="button"]:active,
+.site-footer input[type="reset"]:active,
+.site-footer input[type="submit"]:active {
+	color: rgba(255, 255, 255, 0.1);
+	color: var(--footer-border-color);
+}
+
+/* Footer Widgets */
+.footer-widgets .widget {
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-title {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	color: rgba(255, 255, 255, 0.95);
+	color: var(--footer-link-color);
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--navi-font);
+	font-weight: normal;
+	font-weight: var(--navi-font-weight);
+	text-transform: none;
+	text-transform: var(--navi-text-transform);
+}
+
+.footer-widgets .widget ul li a {
+	text-decoration: none;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+	margin-bottom: 1.25rem;
+	padding-top: 1.25rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-top: 2px solid var(--footer-border-color);
+}
+
+.footer-copyright .widget {
+	margin: 0;
+}
+
+.footer-copyright .widget-title {
+	margin-top: 0;
 }
 
 /*--------------------------------------------------------------

@@ -78,9 +78,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "setup/alignments";
 
 /*--------------------------------------------------------------
-# - Layout Structure
+# - Site Layout
 --------------------------------------------------------------*/
-@import "layout/layout";
+@import "layout/site";
 
 /*--------------------------------------------------------------
 # - Header
@@ -93,24 +93,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "layout/navigation";
 
 /*--------------------------------------------------------------
-# - Posts and pages
+# - Single Posts and pages
 --------------------------------------------------------------*/
 @import "content/content";
 @import "content/entry-meta";
 @import "content/more-link";
-@import "content/pagination";
-@import "content/archives";
-@import "content/comments";
 
 /*--------------------------------------------------------------
-# - Footer
+# - Archives and Blog Layouts
 --------------------------------------------------------------*/
-@import "layout/footer";
+@import "blog/archives";
+@import "blog/blog-layouts";
+@import "blog/pagination";
+
+/*--------------------------------------------------------------
+# - Comments
+--------------------------------------------------------------*/
+@import "layout/comments";
 
 /*--------------------------------------------------------------
 # - Media
 --------------------------------------------------------------*/
-@import "content/media";
+@import "layout/media";
 
 /*--------------------------------------------------------------
 # - Blocks
@@ -119,6 +123,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/magazine-blocks";
 @import "blocks/colors";
 @import "blocks/font-sizes";
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+@import "layout/footer";
 
 /*--------------------------------------------------------------
 # - Media Queries

@@ -13,6 +13,20 @@
  */
 function codename_body_classes( $classes ) {
 
+	// Get theme options from database.
+	$theme_options = codename_theme_options();
+
+	// Set Blog Layout.
+	if ( 'horizontal-list' === $theme_options['blog_layout'] ) {
+		$classes[] = 'blog-layout-horizontal-list';
+	} elseif ( 'vertical-list' === $theme_options['blog_layout'] ) {
+		$classes[] = 'blog-layout-vertical-list';
+	} elseif ( 'two-column-grid' === $theme_options['blog_layout'] ) {
+		$classes[] = 'blog-layout-two-column-grid';
+	} elseif ( 'three-column-grid' === $theme_options['blog_layout'] ) {
+		$classes[] = 'blog-layout-three-column-grid';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
