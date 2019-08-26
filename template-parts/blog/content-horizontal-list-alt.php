@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying articles in the loop with full content
+ * The template for displaying articles in the loop with the horizontal list alternative blog layout.
  *
  * @version 1.0
  * @package Codename
@@ -21,11 +21,7 @@
 
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
-
-			<?php the_content( esc_html( codename_get_option( 'read_more_link' ) ) ); ?>
-
-		</div><!-- .entry-content -->
+		<?php get_template_part( 'template-parts/entry/entry', esc_html( codename_get_option( 'blog_content' ) ) ); ?>
 
 	</div>
 

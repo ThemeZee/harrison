@@ -21,7 +21,7 @@ if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'blog_content' ) ) );
+			get_template_part( 'template-parts/blog/content', esc_html( codename_get_option( 'blog_layout' ) ) );
 
 		endwhile;
 		?>
