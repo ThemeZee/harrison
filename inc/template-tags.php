@@ -132,7 +132,8 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 	function codename_post_image_archives() {
 
 		// Set image size.
-		$image_size = ( 'horizontal-list' === codename_get_option( 'blog_layout' ) ) ? 'codename-horizontal-list-post' : 'post-thumbnail';
+		$blog_layout = codename_get_option( 'blog_layout' );
+		$image_size  = ( 'horizontal-list' === $blog_layout || 'horizontal-list-alt' === $blog_layout ) ? 'codename-horizontal-list-post' : 'post-thumbnail';
 
 		// Display Post Thumbnail if activated.
 		if ( true === codename_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :

@@ -39,10 +39,11 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'type'     => 'select',
 		'priority' => 10,
 		'choices'  => array(
-			'horizontal-list'   => esc_html__( 'Horizontal List', 'codename' ),
-			'vertical-list'     => esc_html__( 'Vertical List', 'codename' ),
-			'two-column-grid'   => esc_html__( 'Two Column Grid', 'codename' ),
-			'three-column-grid' => esc_html__( 'Three Column Grid', 'codename' ),
+			'horizontal-list'     => esc_html__( 'Horizontal List', 'codename' ),
+			'horizontal-list-alt' => esc_html__( 'Horizontal List (alternate)', 'codename' ),
+			'vertical-list'       => esc_html__( 'Vertical List', 'codename' ),
+			'two-column-grid'     => esc_html__( 'Two Column Grid', 'codename' ),
+			'three-column-grid'   => esc_html__( 'Three Column Grid', 'codename' ),
 		),
 	) );
 
