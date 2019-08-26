@@ -27,6 +27,26 @@ function codename_body_classes( $classes ) {
 		$classes[] = 'blog-layout-three-column-grid';
 	}
 
+	// Hide Date?
+	if ( false === $theme_options['meta_date'] ) {
+		$classes[] = 'date-hidden';
+	}
+
+	// Hide Author?
+	if ( false === $theme_options['meta_author'] ) {
+		$classes[] = 'author-hidden';
+	}
+
+	// Hide Categories?
+	if ( false === $theme_options['meta_categories'] ) {
+		$classes[] = 'categories-hidden';
+	}
+
+	// Hide Tags?
+	if ( false === $theme_options['meta_tags'] ) {
+		$classes[] = 'tags-hidden';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
