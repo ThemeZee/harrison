@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php codename_post_image_archives(); ?>
+	<?php codename_post_image_archives( 'codename-horizontal-list-post' ); ?>
 
 	<div class="entry-wrap">
 

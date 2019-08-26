@@ -129,17 +129,10 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 	/**
 	 * Displays the featured image on archive posts.
 	 */
-	function codename_post_image_archives() {
-		if ( ! has_post_thumbnail() ) {
-			return;
-		}
-
-		// Set image size.
-		$blog_layout = codename_get_option( 'blog_layout' );
-		$image_size  = ( 'horizontal-list' === $blog_layout || 'horizontal-list-alt' === $blog_layout ) ? 'codename-horizontal-list-post' : 'post-thumbnail';
+	function codename_post_image_archives( $image_size = 'post-thumbnail' ) {
 
 		// Display Post Thumbnail if activated.
-		if ( true === codename_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
+		if ( has_post_thumbnail() && true === codename_get_option( 'post_image_archives' ) ) :
 			?>
 
 			<figure class="post-image post-image-archives">
