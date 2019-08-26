@@ -47,7 +47,7 @@ add_action( 'customize_register', 'codename_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function codename_customize_preview_js() {
-	wp_enqueue_script( 'codename-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20190825', true );
+	wp_enqueue_script( 'codename-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20190826', true );
 }
 add_action( 'customize_preview_init', 'codename_customize_preview_js' );
 

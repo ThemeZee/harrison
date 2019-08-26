@@ -47,6 +47,11 @@ function codename_body_classes( $classes ) {
 		$classes[] = 'tags-hidden';
 	}
 
+	// Hide Featured Header image in Customizer for instant live preview.
+	if ( is_single() && is_customize_preview() && has_post_thumbnail() && 'header-image' !== $theme_options['post_image_single'] ) {
+		$classes[] = 'single-post-header-image-hidden';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';

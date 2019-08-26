@@ -179,7 +179,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'codename_theme_options[post_image_single]', array(
-		'selector'         => '.single-post .content-area .site-main',
+		'selector'         => '.single-post .site-main',
 		'render_callback'  => 'codename_customize_partial_single_post',
 		'fallback_refresh' => false,
 	) );

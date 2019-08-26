@@ -54,7 +54,10 @@ if ( ! function_exists( 'codename_header_image' ) ) :
 	function codename_header_image() {
 
 		// Display featured image as header image on single posts and pages.
-		if ( is_singular() && has_post_thumbnail() ) :
+		if ( is_single() && has_post_thumbnail() && 'header-image' === codename_get_option( 'post_image_single' )
+			|| is_page() && has_post_thumbnail()
+			|| is_single() && is_customize_preview() && has_post_thumbnail()
+		) :
 			?>
 
 			<div id="headimg" class="header-image featured-header-image">
@@ -147,34 +150,46 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 endif;
 
 
-if ( ! function_exists( 'codename_post_image' ) ) :
+if ( ! function_exists( 'codename_post_image_above_title' ) ) :
 	/**
-	 * Displays the featured image.
+	 * Displays the featured image on single posts above the post title.
 	 */
-	function codename_post_image() {
-		if ( ! has_post_thumbnail() ) {
+	function codename_post_image_above_title() {
+		if ( ! has_post_thumbnail() || 'above-title' !== codename_get_option( 'post_image_single' ) ) {
 			return;
 		}
 
-		if ( is_singular() ) :
-			?>
+		codename_post_image_single();
+	}
+endif;
 
-			<figure class="post-image post-image-single">
-				<?php the_post_thumbnail(); ?>
-			</figure>
 
-			<?php
-		else :
-			?>
+if ( ! function_exists( 'codename_post_image_below_title' ) ) :
+	/**
+	 * Displays the featured image on single posts below the post title.
+	 */
+	function codename_post_image_below_title() {
+		if ( ! has_post_thumbnail() || 'below-title' !== codename_get_option( 'post_image_single' ) ) {
+			return;
+		}
 
-			<figure class="post-image post-image-archives">
-				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
-					<?php the_post_thumbnail(); ?>
-				</a>
-			</figure>
+		codename_post_image_single();
+	}
+endif;
 
-			<?php
-		endif;
+
+if ( ! function_exists( 'codename_post_image_single' ) ) :
+	/**
+	 * Displays the featured image on single posts.
+	 */
+	function codename_post_image_single() {
+		?>
+
+		<figure class="post-image post-image-single">
+			<?php the_post_thumbnail(); ?>
+		</figure>
+
+		<?php
 	}
 endif;
 

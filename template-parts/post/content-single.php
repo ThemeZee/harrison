@@ -9,6 +9,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php codename_post_image_above_title(); ?>
+
 	<header class="post-header entry-header">
 
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
@@ -16,6 +18,8 @@
 		<?php codename_entry_meta(); ?>
 
 	</header><!-- .entry-header -->
+
+	<?php codename_post_image_below_title(); ?>
 
 	<div class="entry-content">
 
