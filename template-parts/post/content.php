@@ -11,7 +11,7 @@
 
 	<header class="post-header entry-header">
 
-		<?php codename_post_image(); ?>
+		<?php codename_post_image_archives(); ?>
 
 		<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 

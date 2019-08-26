@@ -122,6 +122,31 @@ if ( ! function_exists( 'codename_search_header' ) ) :
 endif;
 
 
+if ( ! function_exists( 'codename_post_image_archives' ) ) :
+	/**
+	 * Displays the featured image on archive posts.
+	 */
+	function codename_post_image_archives() {
+
+		// Set image size.
+		//$image_size = ( 'list' === codename_get_option( 'blog_layout' ) ) ? 'codename-list-post' : 'post-thumbnail';
+
+		// Display Post Thumbnail if activated.
+		if ( true === codename_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
+			?>
+
+			<figure class="post-image post-image-archives">
+				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
+					<?php the_post_thumbnail(); ?>
+				</a>
+			</figure>
+
+			<?php
+		endif;
+	}
+endif;
+
+
 if ( ! function_exists( 'codename_post_image' ) ) :
 	/**
 	 * Displays the featured image.
