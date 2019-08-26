@@ -40,8 +40,9 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'priority' => 10,
 		'choices'  => array(
 			'horizontal-list'     => esc_html__( 'Horizontal List', 'codename' ),
-			'horizontal-list-alt' => esc_html__( 'Horizontal List (alternate)', 'codename' ),
+			'horizontal-list-alt' => esc_html__( 'Horizontal List (alternative)', 'codename' ),
 			'vertical-list'       => esc_html__( 'Vertical List', 'codename' ),
+			'vertical-list-alt'   => esc_html__( 'Vertical List (alternative)', 'codename' ),
 			'two-column-grid'     => esc_html__( 'Two Column Grid', 'codename' ),
 			'three-column-grid'   => esc_html__( 'Three Column Grid', 'codename' ),
 		),
@@ -62,7 +63,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'type'     => 'radio',
 		'priority' => 20,
 		'choices'  => array(
-			'index'   => esc_html__( 'Full post', 'codename' ),
+			'full'    => esc_html__( 'Full post', 'codename' ),
 			'excerpt' => esc_html__( 'Post excerpt', 'codename' ),
 		),
 	) );
@@ -100,7 +101,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 	) );
 
 	// Add Partial for Blog Layout and Excerpt Length.
-	$wp_customize->selective_refresh->add_partial( 'codename_blog_content_partial', array(
+	$wp_customize->selective_refresh->add_partial( 'codename_blog_layout_partial', array(
 		'selector'         => '.site-main .post-wrapper',
 		'settings'         => array(
 			'codename_theme_options[blog_layout]',
@@ -108,7 +109,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 			'codename_theme_options[excerpt_length]',
 			'codename_theme_options[excerpt_more_text]',
 		),
-		'render_callback'  => 'codename_customize_partial_blog_content',
+		'render_callback'  => 'codename_customize_partial_blog_layout',
 		'fallback_refresh' => false,
 	) );
 
@@ -131,11 +132,11 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 add_action( 'customize_register', 'codename_customize_register_blog_settings' );
 
 /**
- * Render the blog content for the selective refresh partial.
+ * Render the blog layout for the selective refresh partial.
  */
-function codename_customize_partial_blog_content() {
+function codename_customize_partial_blog_layout() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/post/content', esc_attr( codename_get_option( 'blog_content' ) ) );
+		get_template_part( 'template-parts/blog/content', esc_attr( codename_get_option( 'blog_layout' ) ) );
 	}
 }

@@ -55,7 +55,7 @@
 
 			if ( 'horizontal-list' === newval || 'horizontal-list-alt' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-horizontal-list' );
-			} else if ( 'vertical-list' === newval ) {
+			} else if ( 'vertical-list' === newval || 'vertical-list-alt' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-vertical-list' );
 			} else if ( 'two-column-grid' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-two-column-grid' );

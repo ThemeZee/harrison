@@ -20,7 +20,7 @@ function codename_body_classes( $classes ) {
 	if ( ( is_archive() || is_author() || is_category() || is_home() || is_tag() ) && 'post' == get_post_type() ) {
 		if ( 'horizontal-list' === $theme_options['blog_layout'] || 'horizontal-list-alt' === $theme_options['blog_layout'] ) {
 			$classes[] = 'blog-layout-horizontal-list';
-		} elseif ( 'vertical-list' === $theme_options['blog_layout'] ) {
+		} elseif ( 'vertical-list' === $theme_options['blog_layout'] || 'vertical-list-alt' === $theme_options['blog_layout'] ) {
 			$classes[] = 'blog-layout-vertical-list';
 		} elseif ( 'two-column-grid' === $theme_options['blog_layout'] ) {
 			$classes[] = 'blog-layout-two-column-grid';
