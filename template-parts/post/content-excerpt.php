@@ -11,19 +11,23 @@
 
 	<?php codename_post_image_archives(); ?>
 
-	<header class="post-header entry-header">
+	<div class="entry-wrap">
 
-		<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<header class="post-header entry-header">
 
-		<?php codename_entry_meta(); ?>
+			<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-	</header><!-- .entry-header -->
+			<?php codename_entry_meta(); ?>
 
-	<div class="entry-content entry-excerpt">
+		</header><!-- .entry-header -->
 
-		<?php the_excerpt(); ?>
-		<?php codename_more_link(); ?>
+		<div class="entry-content entry-excerpt">
 
-	</div><!-- .entry-content -->
+			<?php the_excerpt(); ?>
+			<?php codename_more_link(); ?>
+
+		</div><!-- .entry-content -->
+
+	</div>
 
 </article>

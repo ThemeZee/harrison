@@ -1160,15 +1160,37 @@ body.date-hidden.author-hidden.categories-hidden .type-post .entry-meta {
 	margin-top: 1rem;
 }
 
-/* Horizontal List Layout */
-
 /* Grid Blog Layout */
+.blog-layout-horizontal-list .site-main,
 .blog-layout-two-column-grid .site-main,
 .blog-layout-three-column-grid .site-main {
 	max-width: 1440px;
 }
 
 @media only screen and (min-width: 800px) {
+	.blog-layout-horizontal-list .post-wrapper .type-post {
+		display: flex;
+		flex-wrap: nowrap;
+		margin-right: -2rem;
+		align-items: center;
+	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .post-image {
+		width: 50%;
+		margin-right: 1rem;
+		margin-bottom: 0;
+	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-wrap {
+		width: 50%;
+		margin-left: 1rem;
+	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
 	.blog-layout-two-column-grid .post-wrapper,
 	.blog-layout-three-column-grid .post-wrapper {
 		display: flex;
@@ -1196,6 +1218,7 @@ body.date-hidden.author-hidden.categories-hidden .type-post .entry-meta {
 }
 
 @media only screen and (min-width: 960px) {
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title,
 	.blog-layout-two-column-grid .post-wrapper .type-post .entry-title,
 	.blog-layout-three-column-grid .post-wrapper .type-post .entry-title {
 		font-size: 28px;
@@ -1204,6 +1227,11 @@ body.date-hidden.author-hidden.categories-hidden .type-post .entry-meta {
 }
 
 @media only screen and (min-width: 1120px) {
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+
 	.blog-layout-two-column-grid .post-wrapper,
 	.blog-layout-three-column-grid .post-wrapper {
 		margin-right: -2.5rem;
@@ -1237,6 +1265,7 @@ body.date-hidden.author-hidden.categories-hidden .type-post .entry-meta {
 }
 
 @media only screen and (min-width: 1280px) {
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title,
 	.blog-layout-two-column-grid .post-wrapper .type-post .entry-title {
 		font-size: 36px;
 		font-size: 2.25rem;
@@ -1251,8 +1280,6 @@ body.date-hidden.author-hidden.categories-hidden .type-post .entry-meta {
 		font-size: 1.75rem;
 	}
 }
-
-/* Three Column Grid Layout */
 
 /* Theme Pagination */
 .pagination {

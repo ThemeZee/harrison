@@ -132,7 +132,7 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 	function codename_post_image_archives() {
 
 		// Set image size.
-		//$image_size = ( 'list' === codename_get_option( 'blog_layout' ) ) ? 'codename-list-post' : 'post-thumbnail';
+		$image_size = ( 'horizontal-list' === codename_get_option( 'blog_layout' ) ) ? 'codename-horizontal-list-post' : 'post-thumbnail';
 
 		// Display Post Thumbnail if activated.
 		if ( true === codename_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
@@ -140,7 +140,7 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 
 			<figure class="post-image post-image-archives">
 				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
-					<?php the_post_thumbnail(); ?>
+					<?php the_post_thumbnail( $image_size ); ?>
 				</a>
 			</figure>
 

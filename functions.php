@@ -41,6 +41,9 @@ function codename_setup() {
 	// Add image size for header image on single posts and pages.
 	add_image_size( 'codename-featured-header-image', 1440, 720, true );
 
+	// Add image size for header image on single posts and pages.
+	add_image_size( 'codename-horizontal-list-post', 960, 720, true );
+
 	// Register Navigation Menus.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Main Navigation', 'codename' ),
