@@ -1061,6 +1061,13 @@ textarea {
 	vertical-align: top;
 }
 
+/* Featured Image on single posts */
+.single-post .type-post .post-image-single {
+	margin-left: -100px;
+	margin-right: -100px;
+	max-width: 1080px;
+}
+
 .entry-meta {
 	margin: 0.35rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
@@ -1961,7 +1968,7 @@ object {
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: 1040px;
+		max-width: 1080px;
 	}
 }
 

@@ -36,10 +36,10 @@ function codename_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 800, 500, true );
+	set_post_thumbnail_size( 1080, 540, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'codename-header-image', 1440, 450, true );
+	add_image_size( 'codename-featured-header-image', 1440, 720, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(

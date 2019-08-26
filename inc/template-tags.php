@@ -62,7 +62,7 @@ if ( ! function_exists( 'codename_header_image' ) ) :
 
 			<div id="headimg" class="header-image featured-header-image">
 
-				<?php the_post_thumbnail( 'codename-header-image' ); ?>
+				<?php the_post_thumbnail( 'codename-featured-header-image' ); ?>
 
 			</div>
 
