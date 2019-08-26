@@ -130,6 +130,9 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 	 * Displays the featured image on archive posts.
 	 */
 	function codename_post_image_archives() {
+		if ( ! has_post_thumbnail() ) {
+			return;
+		}
 
 		// Set image size.
 		$blog_layout = codename_get_option( 'blog_layout' );
@@ -151,39 +154,14 @@ if ( ! function_exists( 'codename_post_image_archives' ) ) :
 endif;
 
 
-if ( ! function_exists( 'codename_post_image_above_title' ) ) :
-	/**
-	 * Displays the featured image on single posts above the post title.
-	 */
-	function codename_post_image_above_title() {
-		if ( ! has_post_thumbnail() || 'above-title' !== codename_get_option( 'post_image_single' ) ) {
-			return;
-		}
-
-		codename_post_image_single();
-	}
-endif;
-
-
-if ( ! function_exists( 'codename_post_image_below_title' ) ) :
-	/**
-	 * Displays the featured image on single posts below the post title.
-	 */
-	function codename_post_image_below_title() {
-		if ( ! has_post_thumbnail() || 'below-title' !== codename_get_option( 'post_image_single' ) ) {
-			return;
-		}
-
-		codename_post_image_single();
-	}
-endif;
-
-
 if ( ! function_exists( 'codename_post_image_single' ) ) :
 	/**
 	 * Displays the featured image on single posts.
 	 */
 	function codename_post_image_single() {
+		if ( ! has_post_thumbnail() ) {
+			return;
+		}
 		?>
 
 		<figure class="post-image post-image-single">

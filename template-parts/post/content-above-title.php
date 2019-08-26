@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php codename_post_image_above_title(); ?>
+	<?php codename_post_image_single(); ?>
 
 	<header class="post-header entry-header">
 
@@ -19,15 +19,6 @@
 
 	</header><!-- .entry-header -->
 
-	<?php codename_post_image_below_title(); ?>
-
-	<div class="entry-content">
-
-		<?php //codename_post_image(); ?>
-		<?php the_content(); ?>
-		<?php wp_link_pages(); ?>
-		<?php codename_entry_tags(); ?>
-
-	</div><!-- .entry-content -->
+	<?php get_template_part( 'template-parts/entry/entry', 'single' ); ?>
 
 </article>

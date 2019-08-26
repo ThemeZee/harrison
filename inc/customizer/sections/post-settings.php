@@ -152,7 +152,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 
 	$wp_customize->selective_refresh->add_partial( 'codename_theme_options[post_image_archives]', array(
 		'selector'         => '.site-main .post-wrapper',
-		'render_callback'  => 'codename_customize_partial_blog_content',
+		'render_callback'  => 'codename_customize_partial_blog_layout',
 		'fallback_refresh' => false,
 	) );
 
@@ -193,6 +193,6 @@ add_action( 'customize_register', 'codename_customize_register_post_settings' );
 function codename_customize_partial_single_post() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/post/content', 'single' );
+		get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'post_image_single' ) ) );
 	}
 }
