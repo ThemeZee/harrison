@@ -42,7 +42,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 			'horizontal-list'   => esc_html__( 'Horizontal List', 'codename' ),
 			'vertical-list'     => esc_html__( 'Vertical List', 'codename' ),
 			'two-column-grid'   => esc_html__( 'Two Column Grid', 'codename' ),
-			'three-column-grid' => esc_html__( 'Two Column Grid', 'codename' ),
+			'three-column-grid' => esc_html__( 'Three Column Grid', 'codename' ),
 		),
 	) );
 

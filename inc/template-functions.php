@@ -17,14 +17,16 @@ function codename_body_classes( $classes ) {
 	$theme_options = codename_theme_options();
 
 	// Set Blog Layout.
-	if ( 'horizontal-list' === $theme_options['blog_layout'] ) {
-		$classes[] = 'blog-layout-horizontal-list';
-	} elseif ( 'vertical-list' === $theme_options['blog_layout'] ) {
-		$classes[] = 'blog-layout-vertical-list';
-	} elseif ( 'two-column-grid' === $theme_options['blog_layout'] ) {
-		$classes[] = 'blog-layout-two-column-grid';
-	} elseif ( 'three-column-grid' === $theme_options['blog_layout'] ) {
-		$classes[] = 'blog-layout-three-column-grid';
+	if ( ( is_archive() || is_author() || is_category() || is_home() || is_tag() ) && 'post' == get_post_type() ) {
+		if ( 'horizontal-list' === $theme_options['blog_layout'] ) {
+			$classes[] = 'blog-layout-horizontal-list';
+		} elseif ( 'vertical-list' === $theme_options['blog_layout'] ) {
+			$classes[] = 'blog-layout-vertical-list';
+		} elseif ( 'two-column-grid' === $theme_options['blog_layout'] ) {
+			$classes[] = 'blog-layout-two-column-grid';
+		} elseif ( 'three-column-grid' === $theme_options['blog_layout'] ) {
+			$classes[] = 'blog-layout-three-column-grid';
+		}
 	}
 
 	// Hide Date?
