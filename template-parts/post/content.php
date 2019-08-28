@@ -11,6 +11,8 @@
 
 	<header class="post-header entry-header">
 
+		<?php codename_entry_categories(); ?>
+
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 		<?php codename_entry_meta(); ?>

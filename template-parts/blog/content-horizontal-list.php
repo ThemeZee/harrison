@@ -15,6 +15,8 @@
 
 		<header class="post-header entry-header">
 
+			<?php codename_entry_categories(); ?>
+
 			<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 			<?php codename_entry_meta(); ?>

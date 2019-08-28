@@ -241,13 +241,9 @@ if ( ! function_exists( 'codename_entry_categories' ) ) :
 			return;
 		}
 
-		$posted_in = sprintf(
-			/* translators: %s: post category. */
-			esc_html_x( 'in %s', 'post category', 'codename' ),
-			get_the_category_list( ', ' )
-		);
+		$categories = get_the_category_list( '' );
 
-		return '<span class="posted-in"> ' . $posted_in . '</span>';
+		echo '<div class="entry-categories"> ' . $categories . '</div>';
 	}
 endif;
 

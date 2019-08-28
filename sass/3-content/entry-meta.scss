@@ -42,11 +42,38 @@
 	content: "";
 }
 
+/* Entry Categories */
+.entry-categories {
+	margin-bottom: 0.75rem;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.entry-categories ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: square outside;
+}
+
+.entry-categories ul li {
+	margin: 0 1rem;
+}
+
+.entry-categories a:link,
+.entry-categories a:visited {
+	text-decoration: none;
+}
+
+.entry-categories a:hover,
+.entry-categories a:active {
+	text-decoration: underline;
+}
+
 /* Hide post meta if they are deactivated in settings */
 body.date-hidden .type-post .entry-meta .posted-on,
 body.author-hidden .type-post .entry-meta .posted-by,
 body.comments-hidden .type-post .entry-meta .entry-comments,
-body.categories-hidden .type-post .entry-meta .posted-in,
+body.categories-hidden .type-post .entry-categories,
 body.tags-hidden.single-post .type-post .entry-tags {
 	position: absolute;
 	overflow: hidden;
