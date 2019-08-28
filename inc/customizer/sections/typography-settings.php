@@ -140,7 +140,7 @@ function codename_customize_register_typography_settings( $wp_customize ) {
 	) );
 
 	// Add GT Local Fonts control.
-	if ( ! class_exists( 'ThemeZee_Local_Fonts' ) ) {
+	if ( ! class_exists( 'GermanThemes_Local_Fonts' ) ) {
 		$wp_customize->add_control( new Codename_Customize_Plugin_Control(
 			$wp_customize, 'gt_local_fonts_plugin', array(
 				'label'       => esc_html__( 'More Fonts', 'codename' ),

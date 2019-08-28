@@ -1,11 +1,30 @@
 .entry-meta {
-	margin: 0.35rem 0 0;
+	margin: 1rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
 	@include font-size(14);
 }
 
+.entry-meta a:link,
+.entry-meta a:visited {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+}
+
+.entry-meta a:hover,
+.entry-meta a:active {
+	color: $textColor;
+}
+
 .entry-meta .updated:not(.published) {
 	display: none;
+}
+
+.entry-meta .posted-on::before {
+	display: inline-block;
+	margin: 0 1rem;
+	color: rgba(0, 0, 0, 0.5);
+	content: "\2013";
 }
 
 /* Hide post meta if they are deactivated in settings */
