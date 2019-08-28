@@ -66,6 +66,22 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'priority' => 40,
 	) );
 
+	// Add Setting and Control for showing post comments.
+	$wp_customize->add_setting( 'codename_theme_options[meta_comments]', array(
+		'default'           => $default['meta_comments'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'codename_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'codename_theme_options[meta_comments]', array(
+		'label'    => esc_html__( 'Display comments', 'codename' ),
+		'section'  => 'codename_section_post',
+		'settings' => 'codename_theme_options[meta_comments]',
+		'type'     => 'checkbox',
+		'priority' => 50,
+	) );
+
 	// Add Setting and Control for showing post categories.
 	$wp_customize->add_setting( 'codename_theme_options[meta_categories]', array(
 		'default'           => $default['meta_categories'],
@@ -79,7 +95,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[meta_categories]',
 		'type'     => 'checkbox',
-		'priority' => 50,
+		'priority' => 60,
 	) );
 
 	// Add Single Post Headline.
@@ -88,7 +104,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 			'label'    => esc_html__( 'Single Post', 'codename' ),
 			'section'  => 'codename_section_post',
 			'settings' => array(),
-			'priority' => 60,
+			'priority' => 70,
 		)
 	) );
 
@@ -105,7 +121,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[meta_tags]',
 		'type'     => 'checkbox',
-		'priority' => 70,
+		'priority' => 80,
 	) );
 
 	// Add Setting and Control for showing post navigation.
@@ -121,7 +137,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[post_navigation]',
 		'type'     => 'checkbox',
-		'priority' => 80,
+		'priority' => 90,
 	) );
 
 	// Add Featured Images Headline.
@@ -130,7 +146,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 			'label'    => esc_html__( 'Featured Images', 'codename' ),
 			'section'  => 'codename_section_post',
 			'settings' => array(),
-			'priority' => 90,
+			'priority' => 100,
 		)
 	) );
 
@@ -147,7 +163,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[post_image_archives]',
 		'type'     => 'checkbox',
-		'priority' => 100,
+		'priority' => 110,
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'codename_theme_options[post_image_archives]', array(
@@ -169,7 +185,7 @@ function codename_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'codename_section_post',
 		'settings' => 'codename_theme_options[post_image_single]',
 		'type'     => 'select',
-		'priority' => 110,
+		'priority' => 120,
 		'choices'  => array(
 			'header-image' => esc_html__( 'Display image in the header', 'codename' ),
 			'above-title'  => esc_html__( 'Display image above post title', 'codename' ),

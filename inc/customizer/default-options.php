@@ -58,6 +58,7 @@ function codename_default_options() {
 		'read_more_link'      => esc_html__( 'Continue reading', 'codename' ),
 		'meta_date'           => true,
 		'meta_author'         => true,
+		'meta_comments'       => false,
 		'meta_categories'     => true,
 		'meta_tags'           => true,
 		'post_navigation'     => true,

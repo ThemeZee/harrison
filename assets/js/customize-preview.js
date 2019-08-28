@@ -98,6 +98,17 @@
 		} );
 	} );
 
+	// Post Comments checkbox.
+	wp.customize( 'codename_theme_options[meta_comments]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'comments-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'comments-hidden' );
+			}
+		} );
+	} );
+
 	// Post Category checkbox.
 	wp.customize( 'codename_theme_options[meta_categories]', function( value ) {
 		value.bind( function( newval ) {

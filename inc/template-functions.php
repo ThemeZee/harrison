@@ -43,6 +43,11 @@ function codename_body_classes( $classes ) {
 		$classes[] = 'author-hidden';
 	}
 
+	// Hide Comments?
+	if ( false === $theme_options['meta_comments'] ) {
+		$classes[] = 'comments-hidden';
+	}
+
 	// Hide Categories?
 	if ( false === $theme_options['meta_categories'] ) {
 		$classes[] = 'categories-hidden';
