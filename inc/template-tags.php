@@ -174,6 +174,7 @@ if ( ! function_exists( 'codename_entry_meta' ) ) :
 
 		$postmeta  = codename_entry_author();
 		$postmeta .= codename_entry_date();
+		$postmeta .= codename_entry_comments();
 
 		echo '<div class="entry-meta">' . $postmeta . '</div>';
 	}
@@ -191,12 +192,14 @@ if ( ! function_exists( 'codename_entry_date' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$posted_on = sprintf( $time_string,
+		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
+
+		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		return '<span class="posted-on">' . $posted_on . '</span>';
 	}
@@ -245,6 +248,36 @@ if ( ! function_exists( 'codename_entry_categories' ) ) :
 		);
 
 		return '<span class="posted-in"> ' . $posted_in . '</span>';
+	}
+endif;
+
+
+if ( ! function_exists( 'codename_entry_comments' ) ) :
+	/**
+	 * Displays the post comments
+	 */
+	function codename_entry_comments() {
+
+		// Check if comments are open or we have at least one comment.
+		if ( ! ( comments_open() || get_comments_number() ) ) {
+			return;
+		}
+
+		// Start Output Buffering.
+		ob_start();
+
+		// Display Comments.
+		comments_popup_link(
+			esc_html__( 'No comments', 'codename' ),
+			esc_html__( '1 comment', 'codename' ),
+			esc_html__( '% comments', 'codename' )
+		);
+		$comments = ob_get_contents();
+
+		// End Output Buffering.
+		ob_end_clean();
+
+		return '<span class="entry-comments"> ' . $comments . '</span>';
 	}
 endif;
 

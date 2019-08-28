@@ -1089,8 +1089,7 @@ textarea {
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	font-weight: bold;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 }
 
@@ -1103,11 +1102,27 @@ textarea {
 	display: none;
 }
 
-.entry-meta .posted-on::before {
+.entry-meta .posted-by a:link,
+.entry-meta .posted-by a:visited {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.entry-meta .posted-by a:hover,
+.entry-meta .posted-by a:active {
+	color: #242424;
+}
+
+.entry-meta > span::after {
 	display: inline-block;
 	margin: 0 1rem;
 	color: rgba(0, 0, 0, 0.5);
 	content: "\2013";
+}
+
+.entry-meta > span:last-child::after {
+	margin: 0;
+	content: "";
 }
 
 /* Hide post meta if they are deactivated in settings */
