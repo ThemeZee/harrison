@@ -1134,6 +1134,8 @@ textarea {
 .entry-categories {
 	margin-bottom: 0.75rem;
 	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .entry-categories ul {
@@ -1379,31 +1381,35 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 /* Theme Pagination */
 .pagination {
 	margin: 0 0 1.25rem;
-	padding: 0;
+	padding: 1.25rem 0 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: 14px;
 	font-size: 0.875rem;
+	font-weight: bold;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
-	margin: 0 0.5em 0 0;
+	margin: 0 1em 0 0;
 	padding: 0.4em 1em;
 	text-align: center;
+	color: rgba(0, 0, 0, 0.9);
+	color: var(--title-color);
 	text-decoration: none;
-	color: #fff;
-	color: var(--button-hover-text-color);
-	background-color: #c68000;
-	background-color: var(--button-hover-color);
 }
 
 .pagination .page-numbers.dots {
 	padding: 0 0.5rem;
 }
 
-.pagination .current,
 .pagination a:hover,
 .pagination a:active {
+	color: #e59f00;
+	color: var(--title-hover-color);
+}
+
+.pagination .current {
 	color: #fff;
 	color: var(--button-text-color);
 	background-color: #e59f00;
@@ -1954,6 +1960,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-categories,
 	.more-link,
 	.pagination {
 		font-size: 15px;
@@ -1989,6 +1996,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-categories,
 	.more-link,
 	.pagination {
 		font-size: 16px;
@@ -2023,6 +2031,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-categories,
 	.more-link,
 	.pagination {
 		font-size: 17px;
@@ -2061,6 +2070,10 @@ object {
 	.type-attachment,
 	.pagination {
 		margin-bottom: 1.5rem;
+	}
+
+	.pagination {
+		padding-top: 1.5rem;
 	}
 
 	.entry-header,
@@ -2117,6 +2130,10 @@ object {
 		margin-bottom: 2rem;
 	}
 
+	.pagination {
+		padding-top: 2rem;
+	}
+
 	.entry-header,
 	.post-image {
 		margin-bottom: 1.5rem;
@@ -2168,6 +2185,10 @@ object {
 	.type-attachment,
 	.pagination {
 		margin-bottom: 3rem;
+	}
+
+	.pagination {
+		padding-top: 3rem;
 	}
 
 	.entry-header,
@@ -2228,6 +2249,10 @@ object {
 	.type-attachment,
 	.pagination {
 		margin-bottom: 4rem;
+	}
+
+	.pagination {
+		padding-top: 4rem;
 	}
 
 	.entry-header,
