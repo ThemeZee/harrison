@@ -45,7 +45,6 @@
 /* Entry Categories */
 .entry-categories {
 	margin-bottom: 0.75rem;
-	color: rgba(0, 0, 0, 0.3);
 	@include font-size(14);
 }
 
@@ -53,11 +52,23 @@
 	display: flex;
 	margin: 0;
 	padding: 0;
-	list-style: square outside;
+	list-style: none;
 }
 
 .entry-categories ul li {
-	margin: 0 1rem;
+	margin: 0;
+}
+
+.entry-categories ul li::after {
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0 0.75rem;
+	content: "\2022";
+}
+
+.entry-categories ul li:last-child::after {
+	margin: 0;
+	content: "";
 }
 
 .entry-categories a:link,
