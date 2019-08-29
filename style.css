@@ -1170,6 +1170,51 @@ textarea {
 	text-decoration: underline;
 }
 
+/* Entry Tags */
+.entry-tags {
+	display: flex;
+	margin: 2em 0 0;
+	align-items: center;
+}
+
+.entry-tags-label {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.entry-tags-label::after {
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0 1rem;
+	content: "\2013";
+}
+
+.entry-tags a {
+	margin: 0 2px 2px 0;
+	padding: 0.1em 0.6em;
+	font-size: 14px;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.entry-tags a:link,
+.entry-tags a:visited {
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #e59f00;
+	background-color: var(--button-color);
+	transition: all 0.15s ease;
+}
+
+.entry-tags a:hover,
+.entry-tags a:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background-color: #c68000;
+	background-color: var(--button-hover-color);
+}
+
 /* Hide post meta if they are deactivated in settings */
 body.date-hidden .type-post .entry-meta .posted-on,
 body.author-hidden .type-post .entry-meta .posted-by,

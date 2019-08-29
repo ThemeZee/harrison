@@ -284,11 +284,11 @@ if ( ! function_exists( 'codename_entry_tags' ) ) :
 	 */
 	function codename_entry_tags() {
 		// Get tags.
-		$tag_list = get_the_tag_list( esc_html__( 'Tags: ', 'codename' ), ', ' );
+		$tag_list = get_the_tag_list( sprintf( '<span class="entry-tags-label">%s</span>', esc_html__( 'Tags', 'codename' ) ) );
 
 		// Display tags.
 		if ( $tag_list ) :
-			echo '<p class="entry-tags">' . $tag_list . '</p>';
+			echo '<div class="entry-tags">' . $tag_list . '</div>';
 		endif;
 	}
 endif;
