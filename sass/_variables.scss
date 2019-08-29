@@ -10,7 +10,7 @@ $contentFullwidth: 1280px;
 $wideBlockFullwidth: 1440px;
 
 // Text Color
-$textColor: #242424;
+$textColor: rgba(0, 0, 0, 0.9);
 
 // Theme Colors
 $themeColors: (
@@ -21,19 +21,19 @@ $themeColors: (
 	--light-gray-color        : #e4e4e4,
 	--gray-color              : #848484,
 	--dark-gray-color         : #242424,
-	--link-color              : #c9493b,
-	--link-hover-color        : #222,
-	--button-color            : #c9493b,
+	--link-color              : #e59f00,
+	--link-hover-color        : #c68000,
+	--button-color            : #e59f00,
 	--button-text-color       : #fff,
-	--button-hover-color      : #222,
+	--button-hover-color      : #c68000,
 	--button-hover-text-color : #fff,
 	--header-background-color : #fff,
-	--header-text-color       : #222,
+	--header-text-color       : rgba(0, 0, 0, 0.9),
 	--header-text-hover-color : rgba(0, 0, 0, 0.5),
 	--header-border-color     : rgba(0, 0, 0, 0.1),
-	--title-color             : #222,
-	--title-hover-color       : #c9493b,
-	--footer-background-color : #034,
+	--title-color             : rgba(0, 0, 0, 0.9),
+	--title-hover-color       : #e59f00,
+	--footer-background-color : #202020,
 	--footer-text-color       : rgba(255, 255, 255, 0.5),
 	--footer-link-color       : rgba(255, 255, 255, 0.95),
 	--footer-link-hover-color : rgba(255, 255, 255, 0.5),

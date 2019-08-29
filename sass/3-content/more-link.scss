@@ -11,10 +11,15 @@
 .more-link:visited {
 	@include color(--button-text-color);
 	text-decoration: none;
+	transition: all 0.15s ease;
 }
 
 .more-link:hover,
 .more-link:active {
 	@include color(--button-hover-text-color);
 	@include background(--button-hover-color);
+}
+
+.more-link::after {
+	content: " \00BB";
 }

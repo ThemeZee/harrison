@@ -15,19 +15,19 @@
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
-	--link-color: #c9493b;
-	--link-hover-color: #222;
-	--button-color: #c9493b;
+	--link-color: #e59f00;
+	--link-hover-color: #c68000;
+	--button-color: #e59f00;
 	--button-text-color: #fff;
-	--button-hover-color: #222;
+	--button-hover-color: #c68000;
 	--button-hover-text-color: #fff;
 	--header-background-color: #fff;
-	--header-text-color: #222;
+	--header-text-color: rgba(0, 0, 0, 0.9);
 	--header-text-hover-color: rgba(0, 0, 0, 0.5);
 	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: #222;
-	--title-hover-color: #c9493b;
-	--footer-background-color: #034;
+	--title-color: rgba(0, 0, 0, 0.9);
+	--title-hover-color: #e59f00;
+	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -122,7 +122,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 17px;
 	font-size: 1.0625rem;
 	line-height: 1.75;
-	color: #242424;
+	color: rgba(0, 0, 0, 0.9);
 }
 
 .editor-styles-wrapper p {
@@ -157,7 +157,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .editor-styles-wrapper a {
-	color: #c9493b;
+	color: #e59f00;
 	color: var(--link-color);
 }
 
@@ -239,7 +239,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-top: 0;
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid #242424;
+	border-left: 4px solid rgba(0, 0, 0, 0.9);
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -251,7 +251,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper blockquote cite {
 	display: block;
-	color: #242424;
+	color: rgba(0, 0, 0, 0.9);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -407,7 +407,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .wp-block-pullquote blockquote cite {
-	color: #242424;
+	color: rgba(0, 0, 0, 0.9);
 	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
@@ -463,7 +463,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 /* Quote Block */
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.5em;
-	border-left: 4px solid #242424;
+	border-left: 4px solid rgba(0, 0, 0, 0.9);
 }
 
 .wp-block-quote cite,
@@ -472,7 +472,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .wp-block-pullquote cite,
 .wp-block-pullquote footer,
 .wp-block-pullquote .wp-block-pullquote__citation {
-	color: #242424;
+	color: rgba(0, 0, 0, 0.9);
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
