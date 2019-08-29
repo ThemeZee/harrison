@@ -314,6 +314,24 @@ if ( ! function_exists( 'codename_more_link' ) ) :
 endif;
 
 
+if ( ! function_exists( 'codename_post_navigation' ) ) :
+	/**
+	 * Displays Single Post Navigation
+	 */
+	function codename_post_navigation() {
+
+		if ( true === codename_get_option( 'post_navigation' ) || is_customize_preview() ) {
+
+			the_post_navigation( array(
+				'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'codename' ) . '</span><h3 class="entry-title">%title</h3>',
+				'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'codename' ) . '</span><h3 class="entry-title">%title</h3>',
+			) );
+
+		}
+	}
+endif;
+
+
 if ( ! function_exists( 'codename_pagination' ) ) :
 	/**
 	 * Displays pagination on archive pages

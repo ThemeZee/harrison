@@ -26,6 +26,10 @@
 	.search-header .search-title {
 		@include font-size(18);
 	}
+
+	.post-navigation .nav-links .entry-title {
+		@include font-size(20);
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -50,6 +54,10 @@
 	.more-link,
 	.pagination {
 		@include font-size(16);
+	}
+
+	.post-navigation .nav-links .entry-title {
+		@include font-size(22);
 	}
 
 	.footer-widgets .widget-title {
@@ -84,5 +92,9 @@
 	.archive-header .archive-title,
 	.search-header .search-title {
 		@include font-size(20);
+	}
+
+	.post-navigation .nav-links .entry-title {
+		@include font-size(24);
 	}
 }
