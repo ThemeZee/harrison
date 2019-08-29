@@ -39,7 +39,7 @@ function codename_setup() {
 	set_post_thumbnail_size( 1080, 540, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'codename-featured-header-image', 1440, 720, true );
+	add_image_size( 'codename-featured-header-image', 1440, 600, true );
 
 	// Add image size for header image on single posts and pages.
 	add_image_size( 'codename-horizontal-list-post', 960, 720, true );
