@@ -46,6 +46,7 @@
 .entry-categories {
 	margin-bottom: 0.75rem;
 	color: rgba(0, 0, 0, 0.3);
+	@include font-size(14);
 }
 
 .entry-categories ul {
