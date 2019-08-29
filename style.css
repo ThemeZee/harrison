@@ -1376,19 +1376,19 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	padding: 0;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
 	margin: 0 0.5em 0 0;
-	padding: 0.3em 0.9em;
+	padding: 0.4em 1em;
 	text-align: center;
 	text-decoration: none;
-	color: #c9493b;
-	color: var(--button-color);
-	border: 2px solid currentColor;
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background-color: #222;
+	background-color: var(--button-hover-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1398,8 +1398,10 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	color: #222;
-	color: var(--button-hover-color);
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #c9493b;
+	background-color: var(--button-color);
 }
 
 /*--------------------------------------------------------------
