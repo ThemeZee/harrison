@@ -131,6 +131,17 @@
 		} );
 	} );
 
+	// Post Navigation checkbox.
+	wp.customize( 'codename_theme_options[post_navigation]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'post-navigation-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'post-navigation-hidden' );
+			}
+		} );
+	} );
+
 	// Featured Header Image checkbox.
 	wp.customize( 'codename_theme_options[post_image_single]', function( value ) {
 		value.bind( function( newval ) {
