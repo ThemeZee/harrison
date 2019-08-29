@@ -3,12 +3,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	margin: 0;
-	padding: 0.6em 1.2em;
-	background: none;
-	@include color(--button-color);
-	border: 2px solid currentColor;
+	padding: 0.5em 1em;
+	border: none;
+	@include color(--button-text-color);
+	@include background(--button-color);
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: normal;
 	@include font-size(15);
 }
 
@@ -24,8 +24,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	@include color(--button-hover-color);
-	text-decoration: none;
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
 }
 
 input[type="text"],
@@ -36,9 +36,9 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	background: none;
-	color: #777;
+	color: #666;
 }
 
 input[type="text"]:focus,
@@ -47,7 +47,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 2px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	color: $textColor;
 	outline: none;
 }

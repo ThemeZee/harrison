@@ -54,7 +54,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--link-color: #c9493b;
 	--link-hover-color: #222;
 	--button-color: #c9493b;
+	--button-text-color: #fff;
 	--button-hover-color: #222;
+	--button-hover-text-color: #fff;
 	--header-background-color: #fff;
 	--header-text-color: #222;
 	--header-text-hover-color: rgba(0, 0, 0, 0.5);
@@ -500,13 +502,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	margin: 0;
-	padding: 0.6em 1.2em;
-	background: none;
-	color: #c9493b;
-	color: var(--button-color);
-	border: 2px solid currentColor;
+	padding: 0.5em 1em;
+	border: none;
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #c9493b;
+	background-color: var(--button-color);
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -523,9 +526,10 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	color: #222;
-	color: var(--button-hover-color);
-	text-decoration: none;
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background-color: #222;
+	background-color: var(--button-hover-color);
 }
 
 input[type="text"],
@@ -536,9 +540,9 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	background: none;
-	color: #777;
+	color: #666;
 }
 
 input[type="text"]:focus,
@@ -547,7 +551,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 2px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	color: #242424;
 	outline: none;
 }
