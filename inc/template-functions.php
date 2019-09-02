@@ -17,9 +17,7 @@ function codename_body_classes( $classes ) {
 	$theme_options = codename_theme_options();
 
 	// Set Theme Layout.
-	if ( 'boxed' === $theme_options['theme_layout'] ) {
-		$classes[] = 'boxed-theme-layout';
-	} elseif ( 'wide' === $theme_options['theme_layout'] ) {
+	if ( 'wide' === $theme_options['theme_layout'] ) {
 		$classes[] = 'wide-theme-layout';
 	}
 
