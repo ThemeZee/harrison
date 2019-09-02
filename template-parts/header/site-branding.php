@@ -7,9 +7,8 @@
  */
 ?>
 
-<div id="logo" class="site-branding">
+<div class="site-branding">
 
-	<?php the_custom_logo(); ?>
 	<?php codename_site_title(); ?>
 	<?php codename_site_description(); ?>
 

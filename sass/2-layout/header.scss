@@ -11,6 +11,20 @@
 	padding-bottom: 1rem;
 }
 
+/* Site Logo */
+.site-logo {
+	margin-right: 1.25rem;
+}
+
+.site-logo .custom-logo {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: top;
+}
+
 /* Site Branding */
 .site-branding {
 	display: flex;
@@ -24,18 +38,7 @@
 .site-branding a:link,
 .site-branding a:visited,
 .site-branding a:hover {
-	padding: 0;
-	border: none;
 	text-decoration: none;
-}
-
-.site-branding .custom-logo {
-	margin: 0;
-	padding: 0;
-	max-width: 100%;
-	height: auto;
-	border: none;
-	vertical-align: top;
 }
 
 .site-title {

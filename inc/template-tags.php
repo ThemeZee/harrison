@@ -8,6 +8,24 @@
  * @package Codename
  */
 
+if ( ! function_exists( 'codename_site_logo' ) ) :
+	/**
+	 * Displays the site logo in the header area
+	 */
+	function codename_site_logo() {
+
+		if ( has_custom_logo() ) : ?>
+
+			<div class="site-logo">
+				<?php the_custom_logo(); ?>
+			</div>
+
+			<?php
+		endif;
+	}
+endif;
+
+
 if ( ! function_exists( 'codename_site_title' ) ) :
 	/**
 	 * Displays the site title in the header area

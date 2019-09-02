@@ -31,6 +31,8 @@
 
 			<div class="header-main">
 
+				<?php codename_site_logo(); ?>
+
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
 				<?php get_template_part( 'template-parts/header/site', 'navigation' ); ?>
