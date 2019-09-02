@@ -49,7 +49,6 @@
 }
 
 .entry-categories ul {
-	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -57,18 +56,6 @@
 
 .entry-categories ul li {
 	margin: 0;
-}
-
-.entry-categories ul li::after {
-	display: inline-block;
-	color: rgba(0, 0, 0, 0.5);
-	margin: 0 0.75rem;
-	content: "\2022";
-}
-
-.entry-categories ul li:last-child::after {
-	margin: 0;
-	content: "";
 }
 
 .entry-categories a:link,
@@ -79,6 +66,24 @@
 .entry-categories a:hover,
 .entry-categories a:active {
 	text-decoration: underline;
+}
+
+@media only screen and (min-width: 360px) {
+	.entry-categories ul {
+		display: flex;
+	}
+
+	.entry-categories ul li::after {
+		display: inline-block;
+		color: rgba(0, 0, 0, 0.5);
+		margin: 0 0.75rem;
+		content: "\2022";
+	}
+
+	.entry-categories ul li:last-child::after {
+		margin: 0;
+		content: "";
+	}
 }
 
 /* Entry Tags */
