@@ -990,13 +990,13 @@ textarea {
 # - Single Posts and pages
 --------------------------------------------------------------*/
 .site-content {
-	padding-top: 1.25rem;
+	padding-top: 1.5rem;
 }
 
 .type-post,
 .type-page,
 .type-attachment {
-	margin: 0 0 1.25rem;
+	margin: 0 0 1.5rem;
 	padding: 0;
 }
 
@@ -2191,7 +2191,7 @@ object {
 	}
 
 	.site-content {
-		padding-top: 1.5rem;
+		padding-top: 2rem;
 	}
 
 	.type-post,
@@ -2200,11 +2200,11 @@ object {
 	.post-navigation,
 	.pagination,
 	.comments-area {
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 	}
 
 	.pagination {
-		padding-top: 1.5rem;
+		padding-top: 2rem;
 	}
 
 	.entry-header,
@@ -2269,7 +2269,7 @@ object {
 
 	.site-content,
 	.site-footer {
-		padding-top: 2rem;
+		padding-top: 3rem;
 	}
 
 	.type-post,
@@ -2278,11 +2278,11 @@ object {
 	.post-navigation,
 	.pagination,
 	.comments-area {
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 	}
 
 	.pagination {
-		padding-top: 2rem;
+		padding-top: 3rem;
 	}
 
 	.entry-header,
@@ -2328,7 +2328,7 @@ object {
 
 	.site-content,
 	.site-footer {
-		padding-top: 3rem;
+		padding-top: 4rem;
 	}
 
 	.type-post,
@@ -2337,11 +2337,11 @@ object {
 	.post-navigation,
 	.pagination,
 	.comments-area {
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
 	}
 
 	.pagination {
-		padding-top: 3rem;
+		padding-top: 4rem;
 	}
 
 	.entry-header,
