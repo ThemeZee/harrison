@@ -80,7 +80,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'label'    => esc_html__( 'Excerpt Length', 'codename' ),
 		'section'  => 'codename_section_blog',
 		'settings' => 'codename_theme_options[excerpt_length]',
-		'type'     => 'text',
+		'type'     => 'number',
 		'priority' => 30,
 	) );
 
@@ -142,7 +142,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'label'    => esc_html__( 'Number of Posts', 'codename' ),
 		'section'  => 'codename_section_blog',
 		'settings' => 'posts_per_page',
-		'type'     => 'text',
+		'type'     => 'number',
 		'priority' => 60,
 	) );
 }
