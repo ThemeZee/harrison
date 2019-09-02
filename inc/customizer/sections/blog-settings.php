@@ -108,6 +108,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 			'codename_theme_options[blog_content]',
 			'codename_theme_options[excerpt_length]',
 			'codename_theme_options[excerpt_more_text]',
+			'posts_per_page',
 		),
 		'render_callback'  => 'codename_customize_partial_blog_layout',
 		'fallback_refresh' => false,
@@ -127,6 +128,22 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 		'settings' => 'codename_theme_options[read_more_link]',
 		'type'     => 'text',
 		'priority' => 50,
+	) );
+
+	// Add Setting and Control for Number of posts.
+	$wp_customize->add_setting( 'posts_per_page', array(
+		'default'           => absint( get_option( 'posts_per_page' ) ),
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'absint',
+	) );
+
+	$wp_customize->add_control( 'codename_posts_per_page_setting', array(
+		'label'    => esc_html__( 'Number of Posts', 'codename' ),
+		'section'  => 'codename_section_blog',
+		'settings' => 'posts_per_page',
+		'type'     => 'text',
+		'priority' => 60,
 	) );
 }
 add_action( 'customize_register', 'codename_customize_register_blog_settings' );
