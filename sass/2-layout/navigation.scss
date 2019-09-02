@@ -49,6 +49,7 @@
 .main-navigation ul a:visited {
 	@include color(--header-text-color);
 	text-decoration: none;
+	transition: all 0.15s ease;
 }
 
 .main-navigation ul a:hover,
@@ -98,6 +99,7 @@
 	@include font-weight(--navi-font-weight);
 	@include text-transform(--navi-text-transform);
 	text-align: left;
+	transition: all 0.15s ease;
 }
 
 .menu-toggle .menu-toggle-text {
@@ -123,6 +125,7 @@
 	height: 28px;
 	vertical-align: top;
 	@include fill(--header-text-color);
+	transition: fill 0.15s ease;
 }
 
 .menu-toggle:hover .icon,
@@ -167,6 +170,7 @@
 	height: 20px;
 	vertical-align: top;
 	@include fill(--header-text-color);
+	transition: fill 0.15s ease;
 }
 
 .dropdown-toggle:hover .icon,

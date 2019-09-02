@@ -101,6 +101,7 @@
 		width: 14px;
 		height: 14px;
 		@include fill(--header-text-color);
+		transition: fill 0.15s ease;
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a > .icon,

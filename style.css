@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-hover-text-color: #fff;
 	--header-background-color: #fff;
 	--header-text-color: rgba(0, 0, 0, 0.9);
-	--header-text-hover-color: rgba(0, 0, 0, 0.5);
+	--header-text-hover-color: #e59f00;
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: rgba(0, 0, 0, 0.9);
 	--title-hover-color: #e59f00;
@@ -739,11 +739,12 @@ textarea {
 .site-title a:visited {
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--header-text-color);
+	transition: all 0.15s ease;
 }
 
 .site-title a:hover,
 .site-title a:active {
-	color: rgba(0, 0, 0, 0.5);
+	color: #e59f00;
 	color: var(--header-text-hover-color);
 }
 
@@ -830,12 +831,13 @@ textarea {
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--header-text-color);
 	text-decoration: none;
+	transition: all 0.15s ease;
 }
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	color: rgba(0, 0, 0, 0.5);
+	color: #e59f00;
 	color: var(--header-text-hover-color);
 }
 
@@ -887,6 +889,7 @@ textarea {
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
 	text-align: left;
+	transition: all 0.15s ease;
 }
 
 .menu-toggle .menu-toggle-text {
@@ -902,7 +905,7 @@ textarea {
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: rgba(0, 0, 0, 0.5);
+	color: #e59f00;
 	color: var(--header-text-hover-color);
 	background: none;
 	cursor: pointer;
@@ -915,11 +918,12 @@ textarea {
 	vertical-align: top;
 	fill: rgba(0, 0, 0, 0.9);
 	fill: var(--header-text-color);
+	transition: fill 0.15s ease;
 }
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
-	fill: rgba(0, 0, 0, 0.5);
+	fill: #e59f00;
 	fill: var(--header-text-hover-color);
 }
 
@@ -962,12 +966,13 @@ textarea {
 	vertical-align: top;
 	fill: rgba(0, 0, 0, 0.9);
 	fill: var(--header-text-color);
+	transition: fill 0.15s ease;
 }
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon,
 .dropdown-toggle:focus .icon {
-	fill: rgba(0, 0, 0, 0.5);
+	fill: #e59f00;
 	fill: var(--header-text-hover-color);
 }
 
@@ -2542,6 +2547,7 @@ object {
 		height: 14px;
 		fill: rgba(0, 0, 0, 0.9);
 		fill: var(--header-text-color);
+		transition: fill 0.15s ease;
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
@@ -2558,7 +2564,7 @@ object {
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: rgba(0, 0, 0, 0.5);
+		fill: #e59f00;
 		fill: var(--header-text-hover-color);
 	}
 }
