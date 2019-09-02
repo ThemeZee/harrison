@@ -51,6 +51,7 @@ function codename_default_options() {
 	$default_options = array(
 		'site_title'          => true,
 		'site_description'    => true,
+		'theme_layout'        => 'centered',
 		'blog_layout'         => 'vertical-list',
 		'blog_content'        => 'excerpt',
 		'excerpt_length'      => 25,

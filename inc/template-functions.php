@@ -16,6 +16,13 @@ function codename_body_classes( $classes ) {
 	// Get theme options from database.
 	$theme_options = codename_theme_options();
 
+	// Set Theme Layout.
+	if ( 'boxed' === $theme_options['theme_layout'] ) {
+		$classes[] = 'boxed-theme-layout';
+	} elseif ( 'wide' === $theme_options['theme_layout'] ) {
+		$classes[] = 'wide-theme-layout';
+	}
+
 	// Set Blog Layout.
 	if ( ( is_archive() || is_author() || is_category() || is_home() || is_tag() ) && 'post' == get_post_type() ) {
 		if ( 'horizontal-list' === $theme_options['blog_layout'] || 'horizontal-list-alt' === $theme_options['blog_layout'] ) {

@@ -1367,7 +1367,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .blog-layout-horizontal-list .site-main,
 .blog-layout-two-column-grid .site-main,
 .blog-layout-three-column-grid .site-main {
-	max-width: 1440px;
+	max-width: 1280px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -2626,6 +2626,11 @@ object {
 /*--------------------------------------------------------------
 # - Theme Options
 --------------------------------------------------------------*/
+
+/* Wide Theme layout */
+body.wide-theme-layout .site {
+	max-width: 100%;
+}
 
 /* Featured Header Image on Single Posts */
 .single-post-header-image-hidden .site #headimg {

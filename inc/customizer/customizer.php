@@ -15,6 +15,7 @@ require( get_template_directory() . '/inc/customizer/controls/plugin-control.php
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/layout-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/post-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
@@ -47,7 +48,7 @@ add_action( 'customize_register', 'codename_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function codename_customize_preview_js() {
-	wp_enqueue_script( 'codename-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20190829', true );
+	wp_enqueue_script( 'codename-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20190830', true );
 }
 add_action( 'customize_preview_init', 'codename_customize_preview_js' );
 
@@ -56,7 +57,7 @@ add_action( 'customize_preview_init', 'codename_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function codename_customizer_controls_js() {
-	wp_enqueue_script( 'codename-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20190829', true );
+	wp_enqueue_script( 'codename-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20190830', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'codename_customizer_controls_js' );
 
@@ -65,6 +66,6 @@ add_action( 'customize_controls_enqueue_scripts', 'codename_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function codename_customizer_controls_css() {
-	wp_enqueue_style( 'codename-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20190829' );
+	wp_enqueue_style( 'codename-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20190830' );
 }
 add_action( 'customize_controls_print_styles', 'codename_customizer_controls_css' );

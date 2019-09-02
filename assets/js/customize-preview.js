@@ -44,6 +44,22 @@
 		} );
 	} );
 
+	// Theme Layout.
+	wp.customize( 'codename_theme_options[theme_layout]', function( value ) {
+		value.bind( function( newval ) {
+			if ( 'boxed' === newval ) {
+				$( 'body' ).addClass( 'boxed-theme-layout' );
+				$( 'body' ).removeClass( 'wide-theme-layout' );
+			} else if ( 'wide' === newval ) {
+				$( 'body' ).addClass( 'wide-theme-layout' );
+				$( 'body' ).removeClass( 'boxed-theme-layout' );
+			} else {
+				$( 'body' ).removeClass( 'wide-theme-layout' );
+				$( 'body' ).removeClass( 'boxed-theme-layout' );
+			}
+		} );
+	} );
+
 	// Blog Layout.
 	wp.customize( 'codename_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {
