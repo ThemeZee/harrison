@@ -2635,6 +2635,30 @@ body.wide-theme-layout .site {
 	max-width: 100%;
 }
 
+/* Centered Header layout */
+@media only screen and (min-width: 960px) {
+	body.vertical-header-layout .header-main {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+	}
+
+	body.vertical-header-layout .header-main .site-logo {
+		margin: 0 0 1rem;
+	}
+
+	body.vertical-header-layout .header-main .site-branding {
+		margin: 0 0 1rem;
+		align-items: center;
+	}
+
+	body.vertical-header-layout .header-main .primary-navigation,
+	body.vertical-header-layout .header-main .menu-toggle {
+		margin: 0;
+	}
+}
+
 /* Featured Header Image on Single Posts */
 .single-post-header-image-hidden .site #headimg {
 	display: none;

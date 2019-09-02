@@ -24,7 +24,7 @@ function codename_customize_register_layout_settings( $wp_customize ) {
 	// Get Default Settings.
 	$default = codename_default_options();
 
-	// Add Settings and Controls for blog layout.
+	// Add Settings and Controls for theme layout.
 	$wp_customize->add_setting( 'codename_theme_options[theme_layout]', array(
 		'default'           => $default['theme_layout'],
 		'type'              => 'option',
@@ -41,6 +41,26 @@ function codename_customize_register_layout_settings( $wp_customize ) {
 		'choices'  => array(
 			'centered' => esc_html__( 'Centered Layout', 'codename' ),
 			'wide'     => esc_html__( 'Wide Layout', 'codename' ),
+		),
+	) );
+
+	// Add Settings and Controls for header layout.
+	$wp_customize->add_setting( 'codename_theme_options[header_layout]', array(
+		'default'           => $default['header_layout'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'codename_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'codename_theme_options[header_layout]', array(
+		'label'    => esc_html__( 'Header Layout', 'codename' ),
+		'section'  => 'codename_section_layout',
+		'settings' => 'codename_theme_options[header_layout]',
+		'type'     => 'select',
+		'priority' => 20,
+		'choices'  => array(
+			'horizontal' => esc_html__( 'Horizontal', 'codename' ),
+			'vertical'   => esc_html__( 'Vertical', 'codename' ),
 		),
 	) );
 }

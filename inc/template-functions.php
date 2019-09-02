@@ -21,6 +21,11 @@ function codename_body_classes( $classes ) {
 		$classes[] = 'wide-theme-layout';
 	}
 
+	// Set Header Layout.
+	if ( 'vertical' === $theme_options['header_layout'] ) {
+		$classes[] = 'vertical-header-layout';
+	}
+
 	// Set Blog Layout.
 	if ( ( is_archive() || is_author() || is_category() || is_home() || is_tag() ) && 'post' == get_post_type() ) {
 		if ( 'horizontal-list' === $theme_options['blog_layout'] || 'horizontal-list-alt' === $theme_options['blog_layout'] ) {
