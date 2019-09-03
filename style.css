@@ -824,8 +824,8 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
-	border-top: 2px solid var(--header-border-color);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid var(--header-border-color);
 	text-decoration: none;
 }
 
@@ -2506,8 +2506,6 @@ object {
 		padding: 0.5rem;
 		border: 1px solid rgba(255, 255, 255, 0.1);
 		border: 1px solid var(--header-border-color);
-		border-top: 3px solid rgba(255, 255, 255, 0.95);
-		border-top: 3px solid var(--header-text-color);
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -2665,6 +2663,24 @@ body.wide-theme-layout .site {
 		justify-content: center;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		border-top: 1px solid var(--header-border-color);
+	}
+
+	body.vertical-header-layout .header-main .main-navigation > ul > li {
+		padding: 0;
+	}
+
+	body.vertical-header-layout .header-main .main-navigation > ul > li > a {
+		padding: 1rem;
+		border: none;
+	}
+
+	body.vertical-header-layout .header-main .main-navigation > ul > li.current-menu-item > a {
+		text-decoration: underline;
+	}
+
+	body.vertical-header-layout .header-main .main-navigation ul ul {
+		border-top: 3px solid rgba(255, 255, 255, 0.95);
+		border-top: 3px solid var(--header-text-color);
 	}
 }
 
