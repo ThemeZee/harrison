@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package codename
+ * @package Codename
  */
 
 /*
@@ -42,11 +42,11 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-			wp_list_comments( array(
-				'style'       => 'ol',
-				'type'        => 'comment',
-				'avatar_size' => 0,
-			) );
+				wp_list_comments( array(
+					'style'       => 'ol',
+					'type'        => 'comment',
+					'avatar_size' => 56,
+				) );
 			?>
 		</ol><!-- .comment-list -->
 
