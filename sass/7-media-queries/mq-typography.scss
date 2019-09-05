@@ -27,8 +27,21 @@
 		@include font-size(18);
 	}
 
-	.post-navigation .nav-links .entry-title {
+	.post-navigation .nav-links .entry-title,
+	.comments-title,
+	.comment-reply-title {
 		@include font-size(20);
+	}
+
+	.comment {
+		@include font-size(17);
+	}
+
+	.comment-meta .comment-metadata,
+	.comment .reply,
+	.comment-form .logged-in-as,
+	.comment-reply-title small a {
+		@include font-size(15);
 	}
 }
 
@@ -56,11 +69,9 @@
 		@include font-size(16);
 	}
 
-	.post-navigation .nav-links .entry-title {
-		@include font-size(22);
-	}
-
-	.footer-widgets .widget-title {
+	.post-navigation .nav-links .entry-title,
+	.comments-title,
+	.comment-reply-title {
 		@include font-size(22);
 	}
 }
@@ -94,7 +105,20 @@
 		@include font-size(20);
 	}
 
-	.post-navigation .nav-links .entry-title {
+	.post-navigation .nav-links .entry-title,
+	.comments-title,
+	.comment-reply-title {
 		@include font-size(24);
+	}
+
+	.comment {
+		@include font-size(18);
+	}
+
+	.comment-meta .comment-metadata,
+	.comment .reply,
+	.comment-form .logged-in-as,
+	.comment-reply-title small a {
+		@include font-size(16);
 	}
 }

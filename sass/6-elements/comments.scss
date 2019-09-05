@@ -2,10 +2,8 @@
 .site-main .post-footer {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	padding: 1.5rem 0;
+	padding: 1.5rem;
 	background: rgba(0, 0, 0, 0.05);
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--header-border-color);
 }
 
 .comments-area {
@@ -17,14 +15,13 @@
 /* Comment Header */
 .comments-title,
 .comment-reply-title {
-	margin: 0 0 1em;
-	padding: 1.5rem;
-	@include color(--widget-title-color);
+	margin: 0 0 1.5rem;
+	@include color(--title-color);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
 	@include font-size(18);
-	@include font-family(--widget-title-font);
-	font-weight: normal;
+	@include text-transform(--title-text-transform);
 	line-height: 1.4;
-	background: #fff;
 }
 
 .comment-reply-title {
@@ -39,9 +36,10 @@
 }
 
 .comment {
-	margin: 0 0 1em;
+	margin: 0 0 1.5rem;
 	padding: 1.5rem;
 	background: #fff;
+	@include font-size(16);
 }
 
 .comment .comment-body {
@@ -69,17 +67,16 @@
 .comment-meta .comment-metadata {
 	margin-top: 0.3em;
 	@include font-size(14);
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .comment-meta .comment-metadata a {
 	margin-right: 1em;
-
 }
 
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 }
 
@@ -88,10 +85,15 @@
 	color: $textColor;
 }
 
+.comment-awaiting-moderation {
+	display: block;
+	margin-top: 1.5rem;
+}
+
 /* Comment Content */
 .comment-content {
 	clear: left;
-	padding: 0.2em 0 0;
+	padding: 1.5rem 0 0;
 }
 
 .comment ol.children {
@@ -102,7 +104,7 @@
 .comment ol.children .comment {
 	margin: 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Comment Reply */
@@ -113,7 +115,7 @@
 .comment .comment-respond {
 	margin: 1.5em 0 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Comment Pagination */
@@ -133,7 +135,7 @@
 
 .comment-navigation a:link,
 .comment-navigation a:visited {
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 }
 
@@ -142,25 +144,20 @@
 	color: $textColor;
 }
 
-.comment-navigation .nav-previous a:before {
+.comment-navigation .nav-previous a::before {
 	margin-right: 5px;
 	content: "\2190";
 }
 
-.comment-navigation .nav-next a:after {
+.comment-navigation .nav-next a::after {
 	margin-left: 5px;
 	content: "\2192";
 }
 
 /* Comment Form */
-.comment-respond {
-	margin: 0 0 1em;
-	padding: 1.5rem;
-	background: #fff;
-}
-
 .comment-form {
 	padding: 0;
+	@include font-size(16);
 }
 
 .comment-form .logged-in-as {
@@ -173,8 +170,15 @@
 	font-weight: bold;
 }
 
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+	background: #fff;
+}
+
 .comment-form textarea {
 	margin-top: 0.4em;
+	background: #fff;
 }
 
 .comment-form .form-submit {
