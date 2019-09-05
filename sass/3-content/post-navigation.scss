@@ -1,6 +1,7 @@
 /* Post Navigation */
 .post-navigation {
-	margin: 0 0 1.25rem;
+	margin: 0 auto 1.25rem;
+	max-width: $contentWidth;
 }
 
 .post-navigation .nav-links .nav-previous,

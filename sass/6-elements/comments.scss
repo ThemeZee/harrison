@@ -1,11 +1,17 @@
+/* Post Footer */
+.site-main .post-footer {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+	padding: 1.5rem 0;
+	background: rgba(0, 0, 0, 0.05);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid var(--header-border-color);
+}
+
 .comments-area {
+	margin: 0 auto;
+	max-width: $contentWidth;
 	word-wrap: break-word;
-	margin-left: -100px;
-	margin-right: -100px;
-	max-width: 1080px;
-	background: #ddd;
-	padding-left: 4rem;
-	padding-right: 4rem;
 }
 
 /* Comment Header */

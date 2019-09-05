@@ -6,6 +6,12 @@
 		padding-right: 2rem;
 	}
 
+	.site-main .post-footer {
+		margin-left: -2rem;
+		margin-right: -2rem;
+		padding: 2rem 0;
+	}
+
 	.header-main {
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
@@ -19,8 +25,7 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination,
-	.comments-area {
+	.pagination {
 		margin-bottom: 2rem;
 	}
 
@@ -83,6 +88,12 @@
 		padding-right: 3rem;
 	}
 
+	.site-main .post-footer {
+		margin-left: -3rem;
+		margin-right: -3rem;
+		padding: 3rem 0;
+	}
+
 	.header-main {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -97,8 +108,7 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination,
-	.comments-area {
+	.pagination {
 		margin-bottom: 3rem;
 	}
 
@@ -142,6 +152,12 @@
 		padding-right: 4rem;
 	}
 
+	.site-main .post-footer {
+		margin-left: -4rem;
+		margin-right: -4rem;
+		padding: 4rem 0;
+	}
+
 	.header-main {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
@@ -156,8 +172,7 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination,
-	.comments-area {
+	.pagination {
 		margin-bottom: 4rem;
 	}
 
@@ -208,6 +223,12 @@
 		padding-right: 5rem;
 	}
 
+	.site-main .post-footer {
+		margin-left: -5rem;
+		margin-right: -5rem;
+		padding: 5rem 0;
+	}
+
 	.header-main {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
@@ -222,13 +243,12 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination,
-	.comments-area {
-		margin-bottom: 4rem;
+	.pagination {
+		margin-bottom: 5rem;
 	}
 
 	.pagination {
-		padding-top: 4rem;
+		padding-top: 5rem;
 	}
 
 	.entry-header,
