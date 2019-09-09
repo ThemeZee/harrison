@@ -1789,15 +1789,18 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Post Footer */
 .site-main .post-footer {
+	display: flex;
+	flex-direction: column;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem 0;
 	background: rgba(0, 0, 0, 0.05);
 }
 
 .comments-area {
-	margin: 0 auto;
+	margin: 0 auto 1.5rem;
 	max-width: 880px;
+	width: 100%;
 	word-wrap: break-word;
 }
 
@@ -2415,7 +2418,7 @@ object {
 	.site-main .post-footer {
 		margin-left: -2rem;
 		margin-right: -2rem;
-		padding: 2rem;
+		padding: 2rem 2rem 0;
 	}
 
 	.header-main {
@@ -2431,6 +2434,7 @@ object {
 	.type-page,
 	.type-attachment,
 	.post-navigation,
+	.comments-area,
 	.pagination {
 		margin-bottom: 2rem;
 	}
@@ -2497,7 +2501,7 @@ object {
 	.site-main .post-footer {
 		margin-left: -3rem;
 		margin-right: -3rem;
-		padding: 3rem;
+		padding: 3rem 3rem 0;
 	}
 
 	.header-main {
@@ -2514,6 +2518,7 @@ object {
 	.type-page,
 	.type-attachment,
 	.post-navigation,
+	.comments-area,
 	.pagination {
 		margin-bottom: 3rem;
 	}
@@ -2566,7 +2571,7 @@ object {
 	.site-main .post-footer {
 		margin-left: -4rem;
 		margin-right: -4rem;
-		padding: 4rem;
+		padding: 4rem 4rem 0;
 	}
 
 	.header-main {
@@ -2583,6 +2588,7 @@ object {
 	.type-page,
 	.type-attachment,
 	.post-navigation,
+	.comments-area,
 	.pagination {
 		margin-bottom: 4rem;
 	}
@@ -2642,7 +2648,7 @@ object {
 	.site-main .post-footer {
 		margin-left: -5rem;
 		margin-right: -5rem;
-		padding: 5rem;
+		padding: 5rem 5rem 0;
 	}
 
 	.header-main {
@@ -2659,6 +2665,7 @@ object {
 	.type-page,
 	.type-attachment,
 	.post-navigation,
+	.comments-area,
 	.pagination {
 		margin-bottom: 5rem;
 	}
