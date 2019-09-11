@@ -20,49 +20,52 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div class="comments-wrap single-post-footer">
 
-	<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-		?>
-		<h2 class="comments-title">
-			<?php
-			$comment_count = get_comments_number();
-			if ( '1' === $comment_count ) {
-				esc_html_e( 'One comment', 'codename' );
-			} else {
-				// translators: Comment Count
-				printf( esc_html__( '%s comments', 'codename' ), number_format_i18n( $comment_count ) );
-			}
-			?>
-		</h2><!-- .comments-title -->
-
-		<?php the_comments_navigation(); ?>
-
-		<ol class="comment-list">
-			<?php
-				wp_list_comments( array(
-					'style'       => 'ol',
-					'type'        => 'comment',
-					'avatar_size' => 56,
-				) );
-			?>
-		</ol><!-- .comment-list -->
+	<div id="comments" class="comments-area">
 
 		<?php
-		the_comments_navigation();
-
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) :
+		// You can start editing here -- including this comment!
+		if ( have_comments() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'codename' ); ?></p>
+			<h2 class="comments-title">
+				<?php
+				$comment_count = get_comments_number();
+				if ( '1' === $comment_count ) {
+					esc_html_e( 'One comment', 'codename' );
+				} else {
+					// translators: Comment Count
+					printf( esc_html__( '%s comments', 'codename' ), number_format_i18n( $comment_count ) );
+				}
+				?>
+			</h2><!-- .comments-title -->
+
+			<?php the_comments_navigation(); ?>
+
+			<ol class="comment-list">
+				<?php
+					wp_list_comments( array(
+						'style'       => 'ol',
+						'type'        => 'comment',
+						'avatar_size' => 56,
+					) );
+				?>
+			</ol><!-- .comment-list -->
+
 			<?php
-		endif;
+			the_comments_navigation();
 
-	endif; // Check for have_comments().
+			// If comments are closed and there are comments, let's leave a little note, shall we?
+			if ( ! comments_open() ) :
+				?>
+				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'codename' ); ?></p>
+				<?php
+			endif;
 
-	comment_form();
-	?>
+		endif; // Check for have_comments().
 
-</div><!-- #comments -->
+		comment_form();
+		?>
+
+	</div><!-- #comments -->
+</div>

@@ -1293,9 +1293,15 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 }
 
 /* Post Navigation */
+.post-navigation-wrap {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid var(--header-border-color);
+}
+
 .post-navigation {
 	margin: 0 auto 1.25rem;
-	max-width: 880px;
+	max-width: 1080px;
+	width: 100%;
 }
 
 .post-navigation .nav-links .nav-previous,
@@ -1787,13 +1793,16 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 # - Comments
 --------------------------------------------------------------*/
 
-/* Post Footer */
-.site-main .post-footer {
+/* Single Post Footer */
+.single-post-footer {
 	display: flex;
 	flex-direction: column;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 	padding: 1.5rem 1.5rem 0;
+}
+
+.comments-wrap {
 	background: rgba(0, 0, 0, 0.05);
 }
 
@@ -2415,7 +2424,7 @@ object {
 		padding-right: 2rem;
 	}
 
-	.site-main .post-footer {
+	.single-post-footer {
 		margin-left: -2rem;
 		margin-right: -2rem;
 		padding: 2rem 2rem 0;
@@ -2498,7 +2507,7 @@ object {
 		padding-right: 3rem;
 	}
 
-	.site-main .post-footer {
+	.single-post-footer {
 		margin-left: -3rem;
 		margin-right: -3rem;
 		padding: 3rem 3rem 0;
@@ -2568,7 +2577,7 @@ object {
 		padding-right: 4rem;
 	}
 
-	.site-main .post-footer {
+	.single-post-footer {
 		margin-left: -4rem;
 		margin-right: -4rem;
 		padding: 4rem 4rem 0;
@@ -2645,7 +2654,7 @@ object {
 		padding-right: 5rem;
 	}
 
-	.site-main .post-footer {
+	.single-post-footer {
 		margin-left: -5rem;
 		margin-right: -5rem;
 		padding: 5rem 5rem 0;
