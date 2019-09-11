@@ -131,7 +131,7 @@ body.author-hidden .type-post .entry-meta .posted-by,
 body.comments-hidden .type-post .entry-meta .entry-comments,
 body.categories-hidden .type-post .entry-categories,
 body.tags-hidden.single-post .type-post .entry-tags,
-body.post-navigation-hidden.single-post .post-navigation {
+body.post-navigation-hidden.single-post .post-navigation-wrap {
 	position: absolute;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
