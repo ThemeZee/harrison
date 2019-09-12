@@ -46,5 +46,3 @@
 		<?php codename_header_image(); ?>
 
 		<div id="content" class="site-content">
-
-			<main id="main" class="site-main" role="main">

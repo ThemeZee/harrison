@@ -12,7 +12,6 @@
 
 ?>
 
-		</main><!-- #main -->
 	</div><!-- #content -->
 
 	<?php do_action( 'codename_before_footer' ); ?>

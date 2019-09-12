@@ -12,9 +12,17 @@ get_header();
 
 while ( have_posts() ) :
 	the_post();
+	?>
 
-	get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'post_image_single' ) ) );
+	<main id="main" class="site-main" role="main">
 
+		<?php
+			get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'post_image_single' ) ) );
+		?>
+
+	</main><!-- #main -->
+
+	<?php
 	codename_post_navigation();
 
 	// If comments are open or we have at least one comment, load up the comment template.

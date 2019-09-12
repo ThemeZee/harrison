@@ -7,34 +7,38 @@
  */
 ?>
 
-<section class="no-results not-found type-page">
+<main id="main" class="site-main" role="main">
 
-	<header class="page-header entry-header">
+	<section class="no-results not-found type-page">
 
-		<h1 class="page-title entry-title"><?php esc_html_e( 'Nothing Found', 'codename' ); ?></h1>
+		<header class="page-header entry-header">
 
-	</header><!-- .entry-header -->
+			<h1 class="page-title entry-title"><?php esc_html_e( 'Nothing Found', 'codename' ); ?></h1>
 
-	<div class="entry-content">
+		</header><!-- .entry-header -->
 
-		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) :
+		<div class="entry-content">
 
-			printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'codename' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) );
+			<?php
+			if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
-		elseif ( is_search() ) :
+				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'codename' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) );
 
-			printf( '<p>%s</p>', esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'codename' ) );
-			get_search_form();
+			elseif ( is_search() ) :
 
-		else :
+				printf( '<p>%s</p>', esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'codename' ) );
+				get_search_form();
 
-			printf( '<p>%s</p>', esc_html__( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'codename' ) );
-			get_search_form();
+			else :
 
-		endif;
-		?>
+				printf( '<p>%s</p>', esc_html__( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'codename' ) );
+				get_search_form();
 
-	</div><!-- .entry-content -->
+			endif;
+			?>
 
-</section><!-- .no-results -->
+		</div><!-- .entry-content -->
+
+	</section><!-- .no-results -->
+
+</main><!-- #main -->

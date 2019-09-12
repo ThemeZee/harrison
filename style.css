@@ -668,16 +668,10 @@ textarea {
 	padding-right: 1.5rem;
 }
 
-.site-main,
-.single-post .site-main .type-post {
+.site-main {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 880px;
-}
-
-.single-post .site-main {
-	margin: 0;
-	max-width: 100%;
 }
 
 /*--------------------------------------------------------------

@@ -11,16 +11,24 @@
 get_header();
 
 if ( have_posts() ) :
+	?>
 
-	codename_search_header();
+	<main id="main" class="site-main" role="main">
 
-	while ( have_posts() ) :
-		the_post();
+		<?php
+		codename_search_header();
 
-		get_template_part( 'template-parts/page/content', 'search' );
+		while ( have_posts() ) :
+			the_post();
 
-	endwhile;
+			get_template_part( 'template-parts/page/content', 'search' );
 
+		endwhile;
+		?>
+
+	</main><!-- #main -->
+
+	<?php
 	codename_pagination();
 
 else :

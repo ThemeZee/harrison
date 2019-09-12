@@ -13,7 +13,9 @@ get_header();
 if ( have_posts() ) :
 	?>
 
-	<div id="post-wrapper" class="post-wrapper">
+	<main id="main" class="site-main" role="main">
+
+		<div id="post-wrapper" class="post-wrapper">
 
 		<?php
 		while ( have_posts() ) :
@@ -24,7 +26,9 @@ if ( have_posts() ) :
 		endwhile;
 		?>
 
-	</div>
+		</div>
+
+	</main><!-- #main -->
 
 	<?php
 	codename_pagination();

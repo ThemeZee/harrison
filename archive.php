@@ -11,22 +11,26 @@
 get_header();
 
 if ( have_posts() ) :
-
-	codename_archive_header();
 	?>
 
-	<div id="post-wrapper" class="post-wrapper">
+	<main id="main" class="site-main" role="main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div id="post-wrapper" class="post-wrapper">
 
-			get_template_part( 'template-parts/blog/content', esc_html( codename_get_option( 'blog_layout' ) ) );
+			<?php
+			codename_archive_header();
 
-		endwhile;
-		?>
+			while ( have_posts() ) :
+				the_post();
 
-	</div>
+				get_template_part( 'template-parts/blog/content', esc_html( codename_get_option( 'blog_layout' ) ) );
+
+			endwhile;
+			?>
+
+		</div>
+
+	</main><!-- #main -->
 
 	<?php
 	codename_pagination();
