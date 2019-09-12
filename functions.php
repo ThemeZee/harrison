@@ -139,51 +139,6 @@ add_action( 'wp_enqueue_scripts', 'codename_scripts' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function codename_widgets_init() {
-
-	// Register Footer Column 1 widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 1', 'codename' ),
-		'id'            => 'footer-column-1',
-		'description'   => esc_html_x( 'Appears in the first column in footer.', 'widget area description', 'codename' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	// Register Footer Column 2 widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 2', 'codename' ),
-		'id'            => 'footer-column-2',
-		'description'   => esc_html_x( 'Appears in the second column in footer.', 'widget area description', 'codename' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	// Register Footer Column 3 widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 3', 'codename' ),
-		'id'            => 'footer-column-3',
-		'description'   => esc_html_x( 'Appears in the third column in footer.', 'widget area description', 'codename' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	// Register Footer Column 4 widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 4', 'codename' ),
-		'id'            => 'footer-column-4',
-		'description'   => esc_html_x( 'Appears in the fourth column in footer.', 'widget area description', 'codename' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
 	// Register Footer Copyright widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Copyright', 'codename' ),
