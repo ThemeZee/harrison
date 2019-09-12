@@ -1,16 +1,11 @@
 /* Search & Archive Header */
-.archive-header.entry-header {
-	padding-bottom: 1em;
-	margin-bottom: 2em;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
 .archive-header .archive-title,
 .search-header .search-title {
-	@include font-size(16);
-	@include font-family(--navi-font);
-	@include font-weight(--navi-font-weight);
-	@include text-transform(--navi-text-transform);
+	@include font-size(18);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
+	line-height: 1.4;
 }
 
 .search-header .search-form {

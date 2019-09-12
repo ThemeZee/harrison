@@ -1387,22 +1387,17 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 --------------------------------------------------------------*/
 
 /* Search & Archive Header */
-.archive-header.entry-header {
-	padding-bottom: 1em;
-	margin-bottom: 2em;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
 .archive-header .archive-title,
 .search-header .search-title {
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--navi-font);
-	font-weight: normal;
-	font-weight: var(--navi-font-weight);
+	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--title-text-transform);
+	line-height: 1.4;
 }
 
 .search-header .search-form {
@@ -2328,11 +2323,7 @@ object {
 	}
 
 	.archive-header .archive-title,
-	.search-header .search-title {
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-
+	.search-header .search-title,
 	.post-navigation .nav-links .entry-title,
 	.comments-title,
 	.comment-reply-title {
@@ -2383,6 +2374,8 @@ object {
 		font-size: 1rem;
 	}
 
+	.archive-header .archive-title,
+	.search-header .search-title,
 	.post-navigation .nav-links .entry-title,
 	.comments-title,
 	.comment-reply-title {
@@ -2421,11 +2414,7 @@ object {
 	}
 
 	.archive-header .archive-title,
-	.search-header .search-title {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-
+	.search-header .search-title,
 	.post-navigation .nav-links .entry-title,
 	.comments-title,
 	.comment-reply-title {
