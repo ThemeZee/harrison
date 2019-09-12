@@ -23,7 +23,7 @@
 /* Post Navigation Link Styling */
 .post-navigation .nav-links a:link,
 .post-navigation .nav-links a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
