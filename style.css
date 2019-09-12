@@ -1381,8 +1381,11 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Grid Blog Layout */
 .blog-layout-horizontal-list .site-main,
+.blog-layout-horizontal-list .pagination,
 .blog-layout-two-column-grid .site-main,
-.blog-layout-three-column-grid .site-main {
+.blog-layout-two-column-grid .pagination,
+.blog-layout-three-column-grid .site-main,
+.blog-layout-three-column-grid .pagination {
 	max-width: 1280px;
 }
 

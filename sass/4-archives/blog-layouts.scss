@@ -2,7 +2,8 @@
 .blog-layout-horizontal-list,
 .blog-layout-two-column-grid,
 .blog-layout-three-column-grid {
-	.site-main {
+	.site-main,
+	.pagination {
 		max-width: $contentFullwidth;
 	}
 }
