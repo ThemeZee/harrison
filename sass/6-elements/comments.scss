@@ -35,7 +35,7 @@
 .comment {
 	margin: 0 0 1.5rem;
 	padding: 1.5rem;
-	background: #fff;
+	@include background(--page-background-color);
 	@include font-size(16);
 }
 
@@ -64,7 +64,7 @@
 .comment-meta .comment-metadata {
 	margin-top: 0.3em;
 	@include font-size(14);
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 }
 
 .comment-meta .comment-metadata a {
@@ -73,13 +73,13 @@
 
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
 .comment-meta .comment-metadata a:hover,
 .comment-meta .comment-metadata a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .comment-awaiting-moderation {
@@ -119,7 +119,6 @@
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	background: #fff;
 }
 
 .comment-navigation .nav-previous {
@@ -170,12 +169,12 @@
 .comment-form input[type="text"],
 .comment-form input[type="email"],
 .comment-form input[type="url"] {
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment-form textarea {
 	margin-top: 0.4em;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment-form .form-submit {

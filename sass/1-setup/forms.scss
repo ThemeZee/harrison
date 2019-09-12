@@ -37,8 +37,9 @@ textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--page-border-color);
 	background: none;
-	color: #666;
+	@include color(--medium-text-color);
 }
 
 input[type="text"]:focus,
@@ -47,8 +48,9 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	color: $textColor;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border: 1px solid var(--light-text-color);
+	@include color(--text-color);
 	outline: none;
 }
 

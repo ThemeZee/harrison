@@ -266,6 +266,7 @@ input,
 select,
 textarea {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
@@ -340,8 +341,8 @@ pre {
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--page-border-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -359,7 +360,8 @@ var {
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid var(--light-text-color);
 	cursor: help;
 }
 
@@ -392,7 +394,9 @@ blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
 	border-left: 4px solid rgba(0, 0, 0, 0.9);
+	border-left: 4px solid var(--text-color);
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 18px;
 	font-size: 1.125rem;
 }
@@ -404,6 +408,7 @@ blockquote p {
 blockquote cite {
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -417,7 +422,8 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--page-border-color);
 }
 
 ul,
@@ -472,7 +478,8 @@ table {
 th,
 td {
 	padding: 0.4em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--page-border-color);
 }
 
 a {
@@ -546,8 +553,10 @@ textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--page-border-color);
 	background: none;
-	color: #666;
+	color: rgba(0, 0, 0, 0.7);
+	color: var(--medium-text-color);
 }
 
 input[type="text"]:focus,
@@ -556,8 +565,10 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 1px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border: 1px solid var(--light-text-color);
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	outline: none;
 }
 
@@ -1108,6 +1119,7 @@ textarea {
 .entry-meta {
 	margin: 1rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
 }
@@ -1115,12 +1127,14 @@ textarea {
 .entry-meta a:link,
 .entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .entry-meta .updated:not(.published) {
@@ -1131,17 +1145,20 @@ textarea {
 .entry-meta .posted-by a:visited {
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.7);
+	color: var(--medium-text-color);
 }
 
 .entry-meta .posted-by a:hover,
 .entry-meta .posted-by a:active {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .entry-meta > span::after {
 	display: inline-block;
 	margin: 0 1rem;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	content: "\2013";
 }
 
@@ -1185,6 +1202,7 @@ textarea {
 	.entry-categories ul li::after {
 		display: inline-block;
 		color: rgba(0, 0, 0, 0.5);
+		color: var(--light-text-color);
 		margin: 0 0.75rem;
 		content: "\2022";
 	}
@@ -1204,6 +1222,7 @@ textarea {
 
 .entry-tags-label {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -1211,6 +1230,7 @@ textarea {
 .entry-tags-label::after {
 	display: inline-block;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	margin: 0 1rem;
 	content: "\2013";
 }
@@ -1847,7 +1867,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comment {
 	margin: 0 0 1.5rem;
 	padding: 1.5rem;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -1879,6 +1900,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	font-size: 14px;
 	font-size: 0.875rem;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 }
 
 .comment-meta .comment-metadata a {
@@ -1888,12 +1910,14 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
 .comment-meta .comment-metadata a:hover,
 .comment-meta .comment-metadata a:active {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .comment-awaiting-moderation {
@@ -1934,7 +1958,6 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	background: #fff;
 }
 
 .comment-navigation .nav-previous {
@@ -1987,12 +2010,14 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comment-form input[type="text"],
 .comment-form input[type="email"],
 .comment-form input[type="url"] {
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment-form textarea {
 	margin-top: 0.4em;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment-form .form-submit {

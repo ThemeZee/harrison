@@ -1,18 +1,18 @@
 .entry-meta {
 	margin: 1rem 0 0;
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	@include font-size(14);
 }
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .entry-meta .updated:not(.published) {
@@ -22,18 +22,18 @@
 .entry-meta .posted-by a:link,
 .entry-meta .posted-by a:visited {
 	font-weight: bold;
-	color: rgba(0, 0, 0, 0.7);
+	@include color(--medium-text-color);
 }
 
 .entry-meta .posted-by a:hover,
 .entry-meta .posted-by a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .entry-meta > span::after {
 	display: inline-block;
 	margin: 0 1rem;
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	content: "\2013";
 }
 
@@ -75,7 +75,7 @@
 
 	.entry-categories ul li::after {
 		display: inline-block;
-		color: rgba(0, 0, 0, 0.5);
+		@include color(--light-text-color);
 		margin: 0 0.75rem;
 		content: "\2022";
 	}
@@ -94,13 +94,13 @@
 }
 
 .entry-tags-label {
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	@include font-size(16);
 }
 
 .entry-tags-label::after {
 	display: inline-block;
-	color: rgba(0, 0, 0, 0.5);
+	@include color(--light-text-color);
 	margin: 0 1rem;
 	content: "\2013";
 }

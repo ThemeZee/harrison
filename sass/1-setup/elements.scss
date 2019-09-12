@@ -13,8 +13,9 @@ body {
 blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid $textColor;
-	color: rgba(0, 0, 0, 0.5);
+	border-left: 4px solid rgba(0, 0, 0, 0.9);
+	border-left: 4px solid var(--text-color);
+	@include color(--light-text-color);
 	@include font-size(18);
 }
 
@@ -24,7 +25,7 @@ blockquote p {
 
 blockquote cite {
 	display: block;
-	color: $textColor;
+	@include color(--text-color);
 	@include font-size(16);
 }
 
@@ -37,7 +38,7 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	@include background(--page-border-color);
 }
 
 ul,
@@ -92,7 +93,8 @@ table {
 th,
 td {
 	padding: 0.4em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--page-border-color);
 }
 
 a {
