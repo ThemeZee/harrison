@@ -91,6 +91,19 @@ class Codename_Custom_Colors {
 			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
+		// Set Page Background Color.
+		if ( $theme_options['page_background_color'] !== $default['page_background_color'] ) {
+			$color_variables .= '--page-background-color: ' . $theme_options['page_background_color'] . ';';
+
+			// Check if a dark background color was chosen.
+			if ( self::is_color_dark( $theme_options['page_background_color'] ) ) {
+				$color_variables .= '--text-color: rgba(255, 255, 255, 0.9);';
+				$color_variables .= '--medium-text-color: rgba(255, 255, 255, 0.7);';
+				$color_variables .= '--light-text-color: rgba(255, 255, 255, 0.5);';
+				$color_variables .= '--page-border-color: rgba(255, 255, 255, 0.1);';
+			}
+		}
+
 		// Set Link Color.
 		if ( $theme_options['link_color'] !== $default['link_color'] ) {
 			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';

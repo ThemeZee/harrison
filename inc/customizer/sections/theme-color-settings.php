@@ -22,6 +22,22 @@ function codename_customize_register_theme_color_settings( $wp_customize ) {
 	// Get Default Colors from settings.
 	$default = codename_default_options();
 
+	// Add Page Background Color setting.
+	$wp_customize->add_setting( 'codename_theme_options[page_background_color]', array(
+		'default'           => $default['page_background_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'codename_theme_options[page_background_color]', array(
+			'label'    => esc_html_x( 'Page Background', 'Color Option', 'codename' ),
+			'section'  => 'codename_section_theme_colors',
+			'settings' => 'codename_theme_options[page_background_color]',
+			'priority' => 5,
+		)
+	) );
+
 	// Add Link Color setting.
 	$wp_customize->add_setting( 'codename_theme_options[link_color]', array(
 		'default'           => $default['link_color'],

@@ -224,6 +224,31 @@
 		} );
 	} );
 
+	/* Page Background Color Option */
+	wp.customize( 'codename_theme_options[page_background_color]', function( value ) {
+		value.bind( function( newval ) {
+			var text_color, medium_text_color, light_text_color, border_color;
+
+			if( isColorDark( newval ) ) {
+				text_color        = 'rgba(255, 255, 255, 0.9)';
+				medium_text_color = 'rgba(255, 255, 255, 0.7)';
+				light_text_color  = 'rgba(255, 255, 255, 0.5)';
+				border_color      = 'rgba(255, 255, 255, 0.1)';
+			} else {
+				text_color        = 'rgba(0, 0, 0, 0.9)';
+				medium_text_color = 'rgba(0, 0, 0, 0.7)';
+				light_text_color  = 'rgba(0, 0, 0, 0.5)';
+				border_color      = 'rgba(0, 0, 0, 0.1)';
+			}
+
+			document.documentElement.style.setProperty( '--page-background-color', newval );
+			document.documentElement.style.setProperty( '--text-color', text_color );
+			document.documentElement.style.setProperty( '--medium-text-color', medium_text_color );
+			document.documentElement.style.setProperty( '--light-text-color', light_text_color );
+			document.documentElement.style.setProperty( '--page-border-color', border_color );
+		} );
+	} );
+
 	/* Link Color Option */
 	wp.customize( 'codename_theme_options[link_color]', function( value ) {
 		value.bind( function( newval ) {
