@@ -47,6 +47,7 @@ function codename_theme_info_page() {
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/codename/', 'codename' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=codename&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'codename' ); ?></a>
 				<a href="http://preview.themezee.com/?demo=codename&utm_source=theme-info&utm_campaign=codename" target="_blank"><?php esc_html_e( 'Theme Demo', 'codename' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/codename-documentation/', 'codename' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=codename&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'codename' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/codename/', 'codename' ) ); ?>" target="_blank"><?php esc_html_e( 'Support Forum', 'codename' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/codename/reviews/?filter=5', 'codename' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'codename' ); ?></a>
 			</p>
 		</div>
