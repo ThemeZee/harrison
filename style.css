@@ -51,12 +51,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
+	--text-color: rgba(0, 0, 0, 0.9);
+	--medium-text-color: rgba(0, 0, 0, 0.7);
+	--light-text-color: rgba(0, 0, 0, 0.5);
 	--link-color: #e59f00;
 	--link-hover-color: #c68000;
 	--button-color: #e59f00;
 	--button-text-color: #fff;
 	--button-hover-color: #c68000;
 	--button-hover-text-color: #fff;
+	--page-background-color: #fff;
+	--page-border-color: rgba(0, 0, 0, 0.1);
 	--header-background-color: #fff;
 	--header-text-color: rgba(0, 0, 0, 0.9);
 	--header-text-hover-color: #e59f00;
@@ -657,8 +662,9 @@ textarea {
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
-	background: #fff;
 	max-width: 1440px;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .site-header,
@@ -1295,7 +1301,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 /* Post Navigation */
 .post-navigation-wrap {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--header-border-color);
+	border-top: 1px solid var(--page-border-color);
 }
 
 .post-navigation {
@@ -1520,7 +1526,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 /* Theme Pagination */
 .pagination-wrap {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--header-border-color);
+	border-top: 1px solid var(--page-border-color);
 }
 
 .pagination {

@@ -15,12 +15,17 @@
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
+	--text-color: rgba(0, 0, 0, 0.9);
+	--medium-text-color: rgba(0, 0, 0, 0.7);
+	--light-text-color: rgba(0, 0, 0, 0.5);
 	--link-color: #e59f00;
 	--link-hover-color: #c68000;
 	--button-color: #e59f00;
 	--button-text-color: #fff;
 	--button-hover-color: #c68000;
 	--button-hover-text-color: #fff;
+	--page-background-color: #fff;
+	--page-border-color: rgba(0, 0, 0, 0.1);
 	--header-background-color: #fff;
 	--header-text-color: rgba(0, 0, 0, 0.9);
 	--header-text-hover-color: #e59f00;

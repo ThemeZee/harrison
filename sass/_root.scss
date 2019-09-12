@@ -6,12 +6,17 @@
 	@include variable(--light-gray-color, $themeColors);
 	@include variable(--gray-color, $themeColors);
 	@include variable(--dark-gray-color, $themeColors);
+	@include variable(--text-color, $themeColors);
+	@include variable(--medium-text-color, $themeColors);
+	@include variable(--light-text-color, $themeColors);
 	@include variable(--link-color, $themeColors);
 	@include variable(--link-hover-color, $themeColors);
 	@include variable(--button-color, $themeColors);
 	@include variable(--button-text-color, $themeColors);
 	@include variable(--button-hover-color, $themeColors);
 	@include variable(--button-hover-text-color, $themeColors);
+	@include variable(--page-background-color, $themeColors);
+	@include variable(--page-border-color, $themeColors);
 	@include variable(--header-background-color, $themeColors);
 	@include variable(--header-text-color, $themeColors);
 	@include variable(--header-text-hover-color, $themeColors);

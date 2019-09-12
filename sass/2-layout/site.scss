@@ -4,8 +4,8 @@
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
-	background: #fff;
 	max-width: $themeWidth;
+	@include background(--page-background-color);
 }
 
 .site-header,
