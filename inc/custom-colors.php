@@ -101,6 +101,7 @@ class Codename_Custom_Colors {
 				$color_variables .= '--medium-text-color: rgba(255, 255, 255, 0.7);';
 				$color_variables .= '--light-text-color: rgba(255, 255, 255, 0.5);';
 				$color_variables .= '--page-border-color: rgba(255, 255, 255, 0.1);';
+				$color_variables .= '--page-light-bg-color: rgba(255, 255, 255, 0.05);';
 			}
 		}
 

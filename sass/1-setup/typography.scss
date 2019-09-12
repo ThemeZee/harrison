@@ -69,6 +69,7 @@ pre {
 	max-width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border: 1px solid var(--page-border-color);
+	@include background(--page-light-bg-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
