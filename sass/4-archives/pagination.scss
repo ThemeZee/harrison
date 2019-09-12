@@ -1,10 +1,14 @@
 /* Theme Pagination */
-.pagination {
-	margin: 0 0 1.25rem;
-	padding: 1.25rem 0 0;
+.pagination-wrap {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid var(--header-border-color);
+}
+
+.pagination {
+	margin: 0 auto;
+	max-width: $contentWidth;
+	width: 100%;
 	@include font-size(14);
-	font-weight: bold;
 }
 
 .pagination .page-numbers,

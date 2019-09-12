@@ -674,6 +674,12 @@ textarea {
 	max-width: 880px;
 }
 
+.page-footer {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+	padding: 1.5rem;
+}
+
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
@@ -1509,13 +1515,17 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 }
 
 /* Theme Pagination */
-.pagination {
-	margin: 0 0 1.25rem;
-	padding: 1.25rem 0 0;
+.pagination-wrap {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid var(--header-border-color);
+}
+
+.pagination {
+	margin: 0 auto;
+	max-width: 880px;
+	width: 100%;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
 }
 
 .pagination .page-numbers,
@@ -1786,14 +1796,6 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 /*--------------------------------------------------------------
 # - Comments
 --------------------------------------------------------------*/
-
-/* Single Post Footer */
-.single-post-footer {
-	margin-left: -1.5rem;
-	margin-right: -1.5rem;
-	padding: 1.5rem;
-}
-
 .comments-wrap {
 	background: rgba(0, 0, 0, 0.05);
 }
@@ -2416,12 +2418,6 @@ object {
 		padding-right: 2rem;
 	}
 
-	.single-post-footer {
-		margin-left: -2rem;
-		margin-right: -2rem;
-		padding: 2rem;
-	}
-
 	.header-main {
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
@@ -2431,15 +2427,16 @@ object {
 		padding-top: 2rem;
 	}
 
-	.type-post,
-	.type-page,
-	.type-attachment,
-	.pagination {
-		margin-bottom: 2rem;
+	.page-footer {
+		margin-left: -2rem;
+		margin-right: -2rem;
+		padding: 2rem;
 	}
 
-	.pagination {
-		padding-top: 2rem;
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 2rem;
 	}
 
 	.entry-header,
@@ -2497,12 +2494,6 @@ object {
 		padding-right: 3rem;
 	}
 
-	.single-post-footer {
-		margin-left: -3rem;
-		margin-right: -3rem;
-		padding: 3rem;
-	}
-
 	.header-main {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -2513,15 +2504,16 @@ object {
 		padding-top: 3rem;
 	}
 
-	.type-post,
-	.type-page,
-	.type-attachment,
-	.pagination {
-		margin-bottom: 3rem;
+	.page-footer {
+		margin-left: -3rem;
+		margin-right: -3rem;
+		padding: 3rem;
 	}
 
-	.pagination {
-		padding-top: 3rem;
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 3rem;
 	}
 
 	.entry-header,
@@ -2565,12 +2557,6 @@ object {
 		padding-right: 4rem;
 	}
 
-	.single-post-footer {
-		margin-left: -4rem;
-		margin-right: -4rem;
-		padding: 4rem;
-	}
-
 	.header-main {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
@@ -2581,15 +2567,16 @@ object {
 		padding-top: 4rem;
 	}
 
-	.type-post,
-	.type-page,
-	.type-attachment,
-	.pagination {
-		margin-bottom: 4rem;
+	.page-footer {
+		margin-left: -4rem;
+		margin-right: -4rem;
+		padding: 4rem;
 	}
 
-	.pagination {
-		padding-top: 4rem;
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 4rem;
 	}
 
 	.entry-header,
@@ -2640,12 +2627,6 @@ object {
 		padding-right: 5rem;
 	}
 
-	.single-post-footer {
-		margin-left: -5rem;
-		margin-right: -5rem;
-		padding: 5rem;
-	}
-
 	.header-main {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
@@ -2656,15 +2637,16 @@ object {
 		padding-top: 4rem;
 	}
 
-	.type-post,
-	.type-page,
-	.type-attachment,
-	.pagination {
-		margin-bottom: 5rem;
+	.page-footer {
+		margin-left: -5rem;
+		margin-right: -5rem;
+		padding: 5rem;
 	}
 
-	.pagination {
-		padding-top: 5rem;
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 5rem;
 	}
 
 	.entry-header,

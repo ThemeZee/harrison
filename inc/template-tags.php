@@ -341,7 +341,7 @@ if ( ! function_exists( 'codename_post_navigation' ) ) :
 		if ( true === codename_get_option( 'post_navigation' ) || is_customize_preview() ) :
 			?>
 
-			<div class="post-navigation-wrap single-post-footer">
+			<div class="post-navigation-wrap page-footer">
 
 				<?php
 				the_post_navigation( array(
@@ -363,11 +363,20 @@ if ( ! function_exists( 'codename_pagination' ) ) :
 	 * Displays pagination on archive pages
 	 */
 	function codename_pagination() {
+		?>
 
-		the_posts_pagination( array(
-			'mid_size'  => 2,
-			'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'codename' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'codename' ) . '</span>&raquo;',
-		) );
+		<div class="pagination-wrap page-footer">
+
+			<?php
+			the_posts_pagination( array(
+				'mid_size'  => 2,
+				'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'codename' ) . '</span>',
+				'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'codename' ) . '</span>&raquo;',
+			) );
+			?>
+
+		</div>
+
+		<?php
 	}
 endif;
