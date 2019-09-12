@@ -157,6 +157,9 @@ add_action( 'widgets_init', 'codename_widgets_init' );
  * Include Files
  */
 
+// Include Theme Info page.
+require get_template_directory() . '/inc/theme-info.php';
+
 // Include Customizer Options.
 require get_template_directory() . '/inc/customizer/customizer.php';
 require get_template_directory() . '/inc/customizer/default-options.php';
