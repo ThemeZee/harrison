@@ -29,7 +29,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 			</span>
 
 			<p>
-				<a href="<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=search&type=author&s=themezee' ) ); ?>" class="button button-primary">
+				<a href="<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=search&type=tag&s=themezee' ) ); ?>" class="button button-secondary">
 					<?php esc_html_e( 'Install Plugin', 'codename' ); ?>
 				</a>
 			</p>
