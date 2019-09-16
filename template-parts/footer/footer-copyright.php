@@ -7,17 +7,15 @@
  */
 
 
-// Check if there are footer copyright widgets.
-if ( is_active_sidebar( 'footer-copyright' ) ) :
+// Check if there is footer content available.
+if ( is_active_sidebar( 'footer-copyright' ) || true === codename_get_option( 'credit_link' ) || '' !== codename_get_option( 'footer_text' ) ) :
 	?>
 
-	<div class="footer-copyright-background">
+	<div id="footer-line" class="site-info">
 
-		<div id="footer-copyright" class="footer-copyright footer-main widget-area">
-
-			<?php dynamic_sidebar( 'footer-copyright' ); ?>
-
-		</div><!-- .footer-copyright -->
+		<?php dynamic_sidebar( 'footer-copyright' ); ?>
+		<?php codename_footer_text(); ?>
+		<?php codename_credit_link(); ?>
 
 	</div>
 

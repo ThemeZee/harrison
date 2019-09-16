@@ -18,11 +18,10 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<?php
-			get_template_part( 'template-parts/footer/footer', 'copyright' );
-		?>
+		<?php do_action( 'codename_footer_menu' ); ?>
+		<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
 
-	</footer>
+	</footer><!-- #colophon -->
 
 	<?php do_action( 'codename_after_footer' ); ?>
 

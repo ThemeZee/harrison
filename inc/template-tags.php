@@ -380,3 +380,41 @@ if ( ! function_exists( 'codename_pagination' ) ) :
 		<?php
 	}
 endif;
+
+
+/**
+ * Displays footer text on footer line
+ */
+function codename_footer_text() {
+	if ( '' !== codename_get_option( 'footer_text' ) || is_customize_preview() ) :
+		?>
+
+		<span class="footer-text">
+
+		</span>
+
+		<?php
+	endif;
+}
+
+
+/**
+ * Displays credit link on footer line
+ */
+function codename_credit_link() {
+	if ( true === codename_get_option( 'credit_link' ) || is_customize_preview() ) :
+		?>
+
+		<span class="credit-link">
+			<?php
+			// translators: Theme Name and Link to ThemeZee.
+			printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'codename' ),
+				esc_html__( 'Codename', 'codename' ),
+				'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
+			);
+			?>
+		</span>
+
+		<?php
+	endif;
+}
