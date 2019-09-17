@@ -21,8 +21,8 @@
 .site-footer input[type="search"],
 .site-footer input[type="submit"],
 .site-footer textarea {
-	border: 2px solid rgba(255, 255, 255, 0.1);
-	border: 2px solid var(--footer-border-color);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid var(--footer-border-color);
 	@include color(--footer-link-hover-color);
 }
 
@@ -57,18 +57,11 @@
 	@include color(--footer-border-color);
 }
 
-/* Footer Copyright */
-.footer-copyright {
-	margin-bottom: 1.25rem;
-	padding-top: 1.25rem;
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
-	border-top: 2px solid var(--footer-border-color);
+/* Footer Widgets */
+.site-info .widget {
+	margin-bottom: 1.5rem;
 }
 
-.footer-copyright .widget {
-	margin: 0;
-}
-
-.footer-copyright .widget-title {
+.site-info .widget-title {
 	margin-top: 0;
 }
