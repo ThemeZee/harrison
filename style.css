@@ -681,11 +681,13 @@ textarea {
 	background-color: var(--page-background-color);
 }
 
-.site-header,
-.site-content,
-.site-footer {
+.site-header {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+
+.site-content {
+	padding: 1.5rem 1.5rem 0;
 }
 
 .site-main {
@@ -698,6 +700,10 @@ textarea {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 	padding: 1.5rem;
+}
+
+.site-footer {
+	padding: 1rem 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -1023,10 +1029,6 @@ textarea {
 /*--------------------------------------------------------------
 # - Single Posts and pages
 --------------------------------------------------------------*/
-.site-content {
-	padding-top: 1.5rem;
-}
-
 .type-post,
 .type-page,
 .type-attachment {
@@ -2177,10 +2179,8 @@ object {
 # - Footer
 --------------------------------------------------------------*/
 .site-footer {
-	padding-top: 1.5rem;
-	padding-bottom: 1px;
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 14px;
+	font-size: 0.875rem;
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
 	background-color: #202020;
@@ -2293,7 +2293,8 @@ object {
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		font-size: 15px;
 		font-size: 0.9375rem;
 	}
@@ -2345,7 +2346,8 @@ object {
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		font-size: 16px;
 		font-size: 1rem;
 	}
@@ -2384,7 +2386,8 @@ object {
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		font-size: 17px;
 		font-size: 1.0625rem;
 	}
@@ -2416,9 +2419,7 @@ object {
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
-	.site-header,
-	.site-content,
-	.site-footer {
+	.site-header {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -2429,12 +2430,16 @@ object {
 	}
 
 	.site-content {
-		padding-top: 2rem;
+		padding: 2rem 2rem 0;
 	}
 
 	.page-footer {
 		margin-left: -2rem;
 		margin-right: -2rem;
+		padding: 2rem;
+	}
+
+	.site-footer {
 		padding: 2rem;
 	}
 
@@ -2469,9 +2474,7 @@ object {
 }
 
 @media only screen and (min-width: 640px) {
-	.site-header,
-	.site-content,
-	.site-footer {
+	.site-header {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
@@ -2481,14 +2484,17 @@ object {
 		padding-bottom: 2rem;
 	}
 
-	.site-content,
-	.site-footer {
-		padding-top: 3rem;
+	.site-content {
+		padding: 3rem 3rem 0;
 	}
 
 	.page-footer {
 		margin-left: -3rem;
 		margin-right: -3rem;
+		padding: 3rem;
+	}
+
+	.site-footer {
 		padding: 3rem;
 	}
 
@@ -2515,9 +2521,7 @@ object {
 }
 
 @media only screen and (min-width: 960px) {
-	.site-header,
-	.site-content,
-	.site-footer {
+	.site-header {
 		padding-left: 4rem;
 		padding-right: 4rem;
 	}
@@ -2527,14 +2531,17 @@ object {
 		padding-bottom: 2.5rem;
 	}
 
-	.site-content,
-	.site-footer {
-		padding-top: 4rem;
+	.site-content {
+		padding: 4rem 4rem 0;
 	}
 
 	.page-footer {
 		margin-left: -4rem;
 		margin-right: -4rem;
+		padding: 4rem;
+	}
+
+	.site-footer {
 		padding: 4rem;
 	}
 
@@ -2567,9 +2574,7 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-header,
-	.site-content,
-	.site-footer {
+	.site-header {
 		padding-left: 5rem;
 		padding-right: 5rem;
 	}
@@ -2579,14 +2584,17 @@ object {
 		padding-bottom: 3rem;
 	}
 
-	.site-content,
-	.site-footer {
-		padding-top: 4rem;
+	.site-content {
+		padding: 5rem 5rem 0;
 	}
 
 	.page-footer {
 		margin-left: -5rem;
 		margin-right: -5rem;
+		padding: 5rem;
+	}
+
+	.site-footer {
 		padding: 5rem;
 	}
 

@@ -18,7 +18,8 @@
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		@include font-size(15);
 	}
 
@@ -62,7 +63,8 @@
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		@include font-size(16);
 	}
 
@@ -95,7 +97,8 @@
 	.entry-meta,
 	.entry-categories,
 	.more-link,
-	.pagination {
+	.pagination,
+	.site-footer {
 		@include font-size(17);
 	}
 
