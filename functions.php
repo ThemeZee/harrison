@@ -176,6 +176,9 @@ require get_template_directory() . '/inc/template-tags.php';
 // Include Gutenberg Features.
 require get_template_directory() . '/inc/gutenberg.php';
 
+// Include support functions for Theme Addons.
+require get_template_directory() . '/inc/addons.php';
+
 // Include Customization Features.
 require get_template_directory() . '/inc/custom-colors.php';
 require get_template_directory() . '/inc/custom-fonts.php';
