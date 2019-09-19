@@ -82,13 +82,6 @@ function codename_default_options() {
 		'title_color'           => '#003344',
 		'title_hover_color'     => '#268f97',
 		'footer_color'          => '#003344',
-		'text_font'             => 'SystemFontStack',
-		'title_font'            => 'SystemFontStack',
-		'title_is_bold'         => true,
-		'title_is_uppercase'    => false,
-		'navi_font'             => 'SystemFontStack',
-		'navi_is_bold'          => false,
-		'navi_is_uppercase'     => false,
 	);
 
 	return apply_filters( 'codename_default_options', $default_options );
