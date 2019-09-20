@@ -17,7 +17,7 @@ function codename_customize_register_theme_info_settings( $wp_customize ) {
 	// Add Section for Theme Fonts.
 	$wp_customize->add_section( 'codename_section_theme_info', array(
 		'title'    => esc_html__( 'Theme Info', 'codename' ),
-		'priority' => 120,
+		'priority' => 200,
 		'panel'    => 'codename_options_panel',
 	) );
 

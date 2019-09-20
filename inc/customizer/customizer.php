@@ -19,8 +19,6 @@ require( get_template_directory() . '/inc/customizer/sections/website-settings.p
 require( get_template_directory() . '/inc/customizer/sections/layout-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/post-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/theme-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/theme-info-settings.php' );
 
 /**

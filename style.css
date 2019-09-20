@@ -67,7 +67,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-text-color: rgba(0, 0, 0, 0.9);
 	--header-text-hover-color: #e59f00;
 	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: rgba(0, 0, 0, 0.9);
+	--title-color: #202020;
 	--title-hover-color: #e59f00;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
@@ -1049,7 +1049,7 @@ textarea {
 .entry-title {
 	margin: 0;
 	padding: 0;
-	color: rgba(0, 0, 0, 0.9);
+	color: #202020;
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1066,7 +1066,7 @@ textarea {
 
 .entry-title a:link,
 .entry-title a:visited {
-	color: rgba(0, 0, 0, 0.9);
+	color: #202020;
 	color: var(--title-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
@@ -1360,7 +1360,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .post-navigation .nav-links a:link .entry-title,
 .post-navigation .nav-links a:visited .entry-title {
-	color: rgba(0, 0, 0, 0.9);
+	color: #202020;
 	color: var(--title-color);
 }
 
@@ -1843,7 +1843,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comments-title,
 .comment-reply-title {
 	margin: 0 0 1.5rem;
-	color: rgba(0, 0, 0, 0.9);
+	color: #202020;
 	color: var(--title-color);
 	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);

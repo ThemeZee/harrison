@@ -17,7 +17,7 @@ function codename_customize_register_blog_settings( $wp_customize ) {
 	// Add Sections for Post Settings.
 	$wp_customize->add_section( 'codename_section_blog', array(
 		'title'    => esc_html__( 'Blog Settings', 'codename' ),
-		'priority' => 30,
+		'priority' => 40,
 		'panel'    => 'codename_options_panel',
 	) );
 
