@@ -35,7 +35,8 @@
 
 #customize-control-codename_theme_options-post_details,
 #customize-control-codename_theme_options-single_post,
-#customize-control-codename_theme_options-featured_images {
+#customize-control-codename_theme_options-featured_images,
+#customize-control-codename_theme_options-footer_text {
 	margin-bottom: 0;
 }
 
@@ -53,4 +54,8 @@
 #customize-control-codename_theme_options-post_navigation,
 #customize-control-codename_theme_options-post_image_archives {
 	margin-bottom: 4px;
+}
+
+#customize-control-codename_theme_options-footer_text textarea {
+	height: 4em;
 }
