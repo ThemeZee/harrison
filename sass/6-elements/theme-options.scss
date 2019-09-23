@@ -1,3 +1,9 @@
+/* Hide Elements in Customizer for instant live preview */
+.credit-link-hidden .site-info .credit-link,
+.single-post-header-image-hidden .site #headimg {
+	display: none;
+}
+
 /* Wide Theme layout */
 body.wide-theme-layout .site {
 	max-width: 100%;
@@ -52,9 +58,4 @@ body.wide-theme-layout .site {
 			border-top: 3px solid var(--header-text-color);
 		}
 	}
-}
-
-/* Featured Header Image on Single Posts */
-.single-post-header-image-hidden .site #headimg {
-	display: none;
 }

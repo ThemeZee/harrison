@@ -69,13 +69,18 @@ function codename_body_classes( $classes ) {
 	}
 
 	// Hide Post Navigation in Customizer for instant live preview.
-	if ( is_single() && is_customize_preview() && false === $theme_options['post_navigation'] ) {
+	if ( is_customize_preview() && is_single() && false === $theme_options['post_navigation'] ) {
 		$classes[] = 'post-navigation-hidden';
 	}
 
 	// Hide Featured Header image in Customizer for instant live preview.
-	if ( is_single() && is_customize_preview() && has_post_thumbnail() && 'header-image' !== $theme_options['post_image_single'] ) {
+	if ( is_customize_preview() && is_single() && has_post_thumbnail() && 'header-image' !== $theme_options['post_image_single'] ) {
 		$classes[] = 'single-post-header-image-hidden';
+	}
+
+	// Hide Credit Link in Customizer for instant live preview.
+	if ( is_customize_preview() && false === $theme_options['credit_link'] ) {
+		$classes[] = 'credit-link-hidden';
 	}
 
 	// Adds a class of hfeed to non-singular pages.

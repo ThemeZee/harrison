@@ -175,6 +175,24 @@
 		} );
 	} );
 
+	// Footer textfield.
+	wp.customize( 'codename_theme_options[footer_text]', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-info .footer-text' ).text( to );
+		} );
+	} );
+
+	// Credit Link checkbox.
+	wp.customize( 'codename_theme_options[credit_link]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'credit-link-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'credit-link-hidden' );
+			}
+		} );
+	} );
+
 	function hideElement( element ) {
 		$( element ).css({
 			clip: 'rect(1px, 1px, 1px, 1px)',

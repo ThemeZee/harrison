@@ -390,7 +390,7 @@ function codename_footer_text() {
 		?>
 
 		<span class="footer-text">
-
+			<?php echo do_shortcode( wp_kses_post( codename_get_option( 'footer_text' ) ) ); ?> 
 		</span>
 
 		<?php
