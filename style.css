@@ -806,6 +806,16 @@ textarea {
 	vertical-align: top;
 }
 
+/* Hide site branding if deactivated in settings */
+body.site-title-hidden .site-header .site-title,
+body.site-description-hidden .site-header .site-description {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
 /*--------------------------------------------------------------
 # - Navigation
 --------------------------------------------------------------*/
