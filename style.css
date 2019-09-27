@@ -712,8 +712,9 @@ textarea {
 .site-header {
 	background-color: #fff;
 	background-color: var(--header-background-color);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid var(--header-border-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--header-border-color);
 }
 
 .header-main {
@@ -866,8 +867,9 @@ body.site-description-hidden .site-header .site-description {
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid var(--header-border-color);
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--header-border-color);
 	text-decoration: none;
 }
 
@@ -1335,8 +1337,9 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Post Navigation */
 .post-navigation-wrap {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--page-border-color);
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
 }
 
 .post-navigation {
@@ -1556,8 +1559,9 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Theme Pagination */
 .pagination-wrap {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--page-border-color);
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
 }
 
 .pagination {
@@ -2216,8 +2220,9 @@ object {
 .site-footer input[type="search"],
 .site-footer input[type="submit"],
 .site-footer textarea {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border: 1px solid var(--footer-border-color);
+	border: 1px solid;
+	border-color: rgba(255, 255, 255, 0.1);
+	border-color: var(--footer-border-color);
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-link-hover-color);
 }
@@ -2658,7 +2663,7 @@ object {
 
 	.main-navigation > ul > li.current-menu-item > a {
 		text-decoration: none;
-		border-color: rgba(255, 255, 255, 0.95);
+		border-color: rgba(0, 0, 0, 0.9);
 		border-color: var(--header-text-color);
 	}
 
@@ -2669,8 +2674,9 @@ object {
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem;
-		border: 1px solid rgba(255, 255, 255, 0.1);
-		border: 1px solid var(--header-border-color);
+		border: 1px solid;
+		border-color: rgba(0, 0, 0, 0.1);
+		border-color: var(--header-border-color);
 	}
 
 	.main-navigation ul li:hover > ul,
