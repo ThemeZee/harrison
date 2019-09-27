@@ -12,5 +12,6 @@
 	<?php the_content(); ?>
 	<?php wp_link_pages(); ?>
 	<?php codename_entry_tags(); ?>
+	<?php do_action( 'codename_author_bio' ); ?>
 
 </div><!-- .entry-content -->
