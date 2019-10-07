@@ -2810,6 +2810,28 @@ body.wide-theme-layout .site {
 	max-width: 100%;
 }
 
+/* Centered Theme layout */
+@media only screen and (min-width: 960px) {
+	body.centered-theme-layout {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	body.centered-theme-layout {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	body.centered-theme-layout {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
 /* Centered Header layout */
 @media only screen and (min-width: 960px) {
 	body.vertical-header-layout .site-header {

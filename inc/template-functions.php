@@ -19,6 +19,8 @@ function codename_body_classes( $classes ) {
 	// Set Theme Layout.
 	if ( 'wide' === $theme_options['theme_layout'] ) {
 		$classes[] = 'wide-theme-layout';
+	} elseif ( 'centered' === $theme_options['theme_layout'] ) {
+		$classes[] = 'centered-theme-layout';
 	}
 
 	// Set Header Layout.

@@ -49,7 +49,9 @@
 		value.bind( function( newval ) {
 			if ( 'wide' === newval ) {
 				$( 'body' ).addClass( 'wide-theme-layout' );
+				$( 'body' ).removeClass( 'centered-theme-layout' );
 			} else {
+				$( 'body' ).addClass( 'centered-theme-layout' );
 				$( 'body' ).removeClass( 'wide-theme-layout' );
 			}
 		} );
