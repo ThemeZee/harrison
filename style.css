@@ -1839,6 +1839,38 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 }
 
 /*--------------------------------------------------------------
+# - Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5rem;
+	padding: 0;
+}
+
+.widget .widget-title {
+	margin: 0 0 1rem;
+	padding: 0;
+	color: #202020;
+	color: var(--title-color);
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
+	line-height: 1.4;
+}
+
+.widget ul li > a,
+.widget ol li > a,
+.widget .tagcloud > a {
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
 # - Comments
 --------------------------------------------------------------*/
 .comments-wrap {
@@ -2266,8 +2298,10 @@ object {
 	margin-bottom: 1.5rem;
 }
 
-.site-info .widget-title {
-	margin-top: 0;
+.site-info .widget .widget-title {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-text-color);
+	font-weight: normal;
 }
 
 /* Footer Line */

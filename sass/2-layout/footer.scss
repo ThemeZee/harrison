@@ -60,10 +60,11 @@
 /* Footer Widgets */
 .site-info .widget {
 	margin-bottom: 1.5rem;
-}
 
-.site-info .widget-title {
-	margin-top: 0;
+	.widget-title {
+		@include color(--footer-text-color);
+		font-weight: normal;
+	}
 }
 
 /* Footer Line */
