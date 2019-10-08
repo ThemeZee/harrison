@@ -56,7 +56,7 @@ function codename_customize_register_footer_settings( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'codename_theme_options[credit_link]', array(
-		'label'    => esc_html__( 'Display Credit Link to ThemeZee on footer line', 'codename' ),
+		'label'    => esc_html__( 'Display credit link on footer line', 'codename' ),
 		'section'  => 'codename_section_footer',
 		'settings' => 'codename_theme_options[credit_link]',
 		'type'     => 'checkbox',

@@ -2270,6 +2270,12 @@ object {
 	margin-top: 0;
 }
 
+/* Footer Line */
+.site-info .footer-text,
+.site-info .credit-link {
+	display: block;
+}
+
 /*--------------------------------------------------------------
 # - Media Queries
 --------------------------------------------------------------*/
