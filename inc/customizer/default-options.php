@@ -68,13 +68,6 @@ function codename_default_options() {
 		'post_image_single'   => 'header-image',
 		'footer_text'         => '',
 		'credit_link'         => true,
-		'primary_color'       => '#c9493b',
-		'secondary_color'     => '#e36355',
-		'accent_color'        => '#078896',
-		'highlight_color'     => '#5bb021',
-		'light_gray_color'    => '#e4e4e4',
-		'gray_color'          => '#848484',
-		'dark_gray_color'     => '#242424',
 	);
 
 	return apply_filters( 'codename_default_options', $default_options );

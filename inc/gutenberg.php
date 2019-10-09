@@ -13,33 +13,41 @@
  */
 function codename_gutenberg_support() {
 
-	// Get theme options from database.
-	$theme_options = codename_theme_options();
-
 	// Add theme support for wide and full images.
 	add_theme_support( 'align-wide' );
+
+	// Define block color palette.
+	$color_palette = apply_filters( 'codename_color_palette', array(
+		'primary_color'    => '#c9493b',
+		'secondary_color'  => '#e36355',
+		'accent_color'     => '#078896',
+		'highlight_color'  => '#5bb021',
+		'light_gray_color' => '#e4e4e4',
+		'gray_color'       => '#848484',
+		'dark_gray_color'  => '#242424',
+	) );
 
 	// Add theme support for block color palette.
 	add_theme_support( 'editor-color-palette', apply_filters( 'codename_editor_color_palette_args', array(
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'codename' ),
 			'slug'  => 'primary',
-			'color' => esc_html( $theme_options['primary_color'] ),
+			'color' => esc_html( $color_palette['primary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Secondary', 'block color', 'codename' ),
 			'slug'  => 'secondary',
-			'color' => esc_html( $theme_options['secondary_color'] ),
+			'color' => esc_html( $color_palette['secondary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'codename' ),
 			'slug'  => 'accent',
-			'color' => esc_html( $theme_options['accent_color'] ),
+			'color' => esc_html( $color_palette['accent_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Highlight', 'block color', 'codename' ),
 			'slug'  => 'highlight',
-			'color' => esc_html( $theme_options['highlight_color'] ),
+			'color' => esc_html( $color_palette['highlight_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'White', 'block color', 'codename' ),
@@ -49,17 +57,17 @@ function codename_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Light Gray', 'block color', 'codename' ),
 			'slug'  => 'light-gray',
-			'color' => esc_html( $theme_options['light_gray_color'] ),
+			'color' => esc_html( $color_palette['light_gray_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Gray', 'block color', 'codename' ),
 			'slug'  => 'gray',
-			'color' => esc_html( $theme_options['gray_color'] ),
+			'color' => esc_html( $color_palette['gray_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Dark Gray', 'block color', 'codename' ),
 			'slug'  => 'dark-gray',
-			'color' => esc_html( $theme_options['dark_gray_color'] ),
+			'color' => esc_html( $color_palette['dark_gray_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Black', 'block color', 'codename' ),
