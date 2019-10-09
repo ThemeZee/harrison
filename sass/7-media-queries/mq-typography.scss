@@ -4,7 +4,7 @@
 	}
 
 	.site-description {
-		@include font-size(14);
+		@include font-size(15);
 	}
 
 	.entry-title {
@@ -15,12 +15,16 @@
 		@include font-size(17);
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		@include font-size(15);
+		@include font-size(16);
 	}
 
 	.archive-header .archive-title,
@@ -39,7 +43,7 @@
 	.comment .reply,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a {
-		@include font-size(15);
+		@include font-size(16);
 	}
 }
 
@@ -49,7 +53,7 @@
 	}
 
 	.site-description {
-		@include font-size(15);
+		@include font-size(16);
 	}
 
 	.entry-title {
@@ -60,12 +64,16 @@
 		@include font-size(18);
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		@include font-size(16);
+		@include font-size(17);
 	}
 
 	.archive-header .archive-title,
@@ -83,7 +91,7 @@
 	}
 
 	.site-description {
-		@include font-size(16);
+		@include font-size(17);
 	}
 
 	.entry-title {
@@ -94,12 +102,16 @@
 		@include font-size(19);
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		@include font-size(17);
+		@include font-size(18);
 	}
 
 	.archive-header .archive-title,
@@ -118,6 +130,6 @@
 	.comment .reply,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a {
-		@include font-size(16);
+		@include font-size(17);
 	}
 }

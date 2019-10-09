@@ -790,8 +790,8 @@ textarea {
 	padding: 0;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--header-text-color);
-	font-size: 13px;
-	font-size: 0.8125rem;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 /* Custom Header Image */
@@ -1137,8 +1137,8 @@ body.site-description-hidden .site-header .site-description {
 	margin: 1rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .entry-meta a:link,
@@ -1187,8 +1187,8 @@ body.site-description-hidden .site-header .site-description {
 /* Entry Categories */
 .entry-categories {
 	margin-bottom: 0.75rem;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .entry-categories ul {
@@ -1255,8 +1255,8 @@ body.site-description-hidden .site-header .site-description {
 .entry-tags a {
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	text-decoration: none;
 }
 
@@ -1311,8 +1311,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	color: var(--button-text-color);
 	background-color: #e59f00;
 	background-color: var(--button-color);
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .more-link:link,
@@ -1568,8 +1568,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	margin: 0 auto;
 	max-width: 880px;
 	width: 100%;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .pagination .page-numbers,
@@ -1946,8 +1946,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .comment-meta .comment-metadata {
 	margin-top: 0.3em;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
 }
@@ -1993,8 +1993,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Comment Reply */
 .comment .reply {
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .comment .comment-respond {
@@ -2046,8 +2046,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 }
 
 .comment-form .logged-in-as {
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .comment-form label {
@@ -2082,8 +2082,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .comment-reply-title small a {
 	margin-left: 1em;
 	text-transform: none;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: normal;
 }
 
@@ -2225,8 +2225,8 @@ object {
 # - Footer
 --------------------------------------------------------------*/
 .site-footer {
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
 	background-color: #202020;
@@ -2324,8 +2324,8 @@ object {
 	}
 
 	.site-description {
-		font-size: 14px;
-		font-size: 0.875rem;
+		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 
 	.entry-title {
@@ -2338,13 +2338,17 @@ object {
 		font-size: 1.0625rem;
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.archive-header .archive-title,
@@ -2365,8 +2369,8 @@ object {
 	.comment .reply,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 }
 
@@ -2377,8 +2381,8 @@ object {
 	}
 
 	.site-description {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.entry-title {
@@ -2391,13 +2395,17 @@ object {
 		font-size: 1.125rem;
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.archive-header .archive-title,
@@ -2417,8 +2425,8 @@ object {
 	}
 
 	.site-description {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.entry-title {
@@ -2431,13 +2439,17 @@ object {
 		font-size: 1.1875rem;
 	}
 
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
 	.entry-meta,
 	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
-		font-size: 17px;
-		font-size: 1.0625rem;
+		font-size: 18px;
+		font-size: 1.125rem;
 	}
 
 	.archive-header .archive-title,
@@ -2458,8 +2470,8 @@ object {
 	.comment .reply,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 }
 

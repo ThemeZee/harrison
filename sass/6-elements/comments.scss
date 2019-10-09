@@ -63,7 +63,7 @@
 
 .comment-meta .comment-metadata {
 	margin-top: 0.3em;
-	@include font-size(14);
+	@include font-size(15);
 	@include color(--light-text-color);
 }
 
@@ -106,7 +106,7 @@
 
 /* Comment Reply */
 .comment .reply {
-	@include font-size(14);
+	@include font-size(15);
 }
 
 .comment .comment-respond {
@@ -157,7 +157,7 @@
 }
 
 .comment-form .logged-in-as {
-	@include font-size(14);
+	@include font-size(15);
 }
 
 .comment-form label {
@@ -190,6 +190,6 @@
 .comment-reply-title small a {
 	margin-left: 1em;
 	text-transform: none;
-	@include font-size(14);
+	@include font-size(15);
 	font-weight: normal;
 }

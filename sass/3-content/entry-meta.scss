@@ -1,7 +1,7 @@
 .entry-meta {
 	margin: 1rem 0 0;
 	@include color(--light-text-color);
-	@include font-size(14);
+	@include font-size(15);
 }
 
 .entry-meta a:link,
@@ -45,7 +45,7 @@
 /* Entry Categories */
 .entry-categories {
 	margin-bottom: 0.75rem;
-	@include font-size(14);
+	@include font-size(15);
 }
 
 .entry-categories ul {
@@ -108,7 +108,7 @@
 .entry-tags a {
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
-	@include font-size(14);
+	@include font-size(15);
 	text-decoration: none;
 }
 
