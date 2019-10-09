@@ -1141,6 +1141,10 @@ body.site-description-hidden .site-header .site-description {
 	font-size: 0.9375rem;
 }
 
+.entry-meta > span {
+	display: block;
+}
+
 .entry-meta a:link,
 .entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.5);
@@ -1171,17 +1175,23 @@ body.site-description-hidden .site-header .site-description {
 	color: var(--text-color);
 }
 
-.entry-meta > span::after {
-	display: inline-block;
-	margin: 0 1rem;
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--light-text-color);
-	content: "\2013";
-}
+@media only screen and (min-width: 360px) {
+	.entry-meta > span {
+		display: inline;
+	}
 
-.entry-meta .entry-comments::after {
-	margin: 0;
-	content: "";
+	.entry-meta > span::after {
+		display: inline-block;
+		margin: 0 1rem;
+		color: rgba(0, 0, 0, 0.5);
+		color: var(--light-text-color);
+		content: "\2013";
+	}
+
+	.entry-meta .entry-comments::after {
+		margin: 0;
+		content: "";
+	}
 }
 
 /* Entry Categories */

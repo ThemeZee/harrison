@@ -4,6 +4,10 @@
 	@include font-size(15);
 }
 
+.entry-meta > span {
+	display: block;
+}
+
 .entry-meta a:link,
 .entry-meta a:visited {
 	@include color(--light-text-color);
@@ -30,16 +34,22 @@
 	@include color(--text-color);
 }
 
-.entry-meta > span::after {
-	display: inline-block;
-	margin: 0 1rem;
-	@include color(--light-text-color);
-	content: "\2013";
-}
+@media only screen and (min-width: 360px) {
+	.entry-meta > span {
+		display: inline;
+	}
 
-.entry-meta .entry-comments::after {
-	margin: 0;
-	content: "";
+	.entry-meta > span::after {
+		display: inline-block;
+		margin: 0 1rem;
+		@include color(--light-text-color);
+		content: "\2013";
+	}
+
+	.entry-meta .entry-comments::after {
+		margin: 0;
+		content: "";
+	}
 }
 
 /* Entry Categories */
