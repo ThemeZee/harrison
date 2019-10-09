@@ -44,31 +44,31 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #034;
-	--secondary-color: #268f97;
-	--accent-color: #c9493b;
-	--highlight-color: #f9d26e;
+	--primary-color: #c9493b;
+	--secondary-color: #e36355;
+	--accent-color: #078896;
+	--highlight-color: #5bb021;
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
-	--link-color: #e59f00;
-	--link-hover-color: #c68000;
-	--button-color: #e59f00;
+	--link-color: #c9493b;
+	--link-hover-color: #e36355;
+	--button-color: #c9493b;
 	--button-text-color: #fff;
-	--button-hover-color: #c68000;
+	--button-hover-color: #e36355;
 	--button-hover-text-color: #fff;
 	--page-background-color: #fff;
 	--page-border-color: rgba(0, 0, 0, 0.1);
 	--page-light-bg-color: rgba(0, 0, 0, 0.05);
 	--header-background-color: #fff;
 	--header-text-color: rgba(0, 0, 0, 0.9);
-	--header-text-hover-color: #e59f00;
+	--header-text-hover-color: #e36355;
 	--header-border-color: rgba(0, 0, 0, 0.1);
 	--title-color: #202020;
-	--title-hover-color: #e59f00;
+	--title-hover-color: #e36355;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
@@ -486,7 +486,7 @@ td {
 }
 
 a {
-	color: #e59f00;
+	color: #c9493b;
 	color: var(--link-color);
 	text-decoration: underline;
 	background-color: transparent;
@@ -495,7 +495,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #c68000;
+	color: #e36355;
 	color: var(--link-hover-color);
 	text-decoration: none;
 }
@@ -521,7 +521,7 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e59f00;
+	background-color: #c9493b;
 	background-color: var(--button-color);
 	text-decoration: none;
 	font-weight: normal;
@@ -543,7 +543,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #c68000;
+	background-color: #e36355;
 	background-color: var(--button-hover-color);
 }
 
@@ -780,7 +780,7 @@ textarea {
 
 .site-title a:hover,
 .site-title a:active {
-	color: #e59f00;
+	color: #e36355;
 	color: var(--header-text-hover-color);
 }
 
@@ -884,7 +884,7 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	color: #e59f00;
+	color: #e36355;
 	color: var(--header-text-hover-color);
 }
 
@@ -952,7 +952,7 @@ body.site-description-hidden .site-header .site-description {
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: #e59f00;
+	color: #e36355;
 	color: var(--header-text-hover-color);
 	background: none;
 	cursor: pointer;
@@ -970,7 +970,7 @@ body.site-description-hidden .site-header .site-description {
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
-	fill: #e59f00;
+	fill: #e36355;
 	fill: var(--header-text-hover-color);
 }
 
@@ -1019,7 +1019,7 @@ body.site-description-hidden .site-header .site-description {
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon,
 .dropdown-toggle:focus .icon {
-	fill: #e59f00;
+	fill: #e36355;
 	fill: var(--header-text-hover-color);
 }
 
@@ -1086,7 +1086,7 @@ body.site-description-hidden .site-header .site-description {
 
 .entry-title a:hover,
 .entry-title a:active {
-	color: #e59f00;
+	color: #e36355;
 	color: var(--title-hover-color);
 }
 
@@ -1275,7 +1275,7 @@ body.site-description-hidden .site-header .site-description {
 .entry-tags a:visited {
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e59f00;
+	background-color: #c9493b;
 	background-color: var(--button-color);
 	transition: all 0.15s ease;
 }
@@ -1284,7 +1284,7 @@ body.site-description-hidden .site-header .site-description {
 .entry-tags a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #c68000;
+	background-color: #e36355;
 	background-color: var(--button-hover-color);
 }
 
@@ -1320,7 +1320,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	padding: 0.6em 1.2em;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e59f00;
+	background-color: #c9493b;
 	background-color: var(--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -1338,7 +1338,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #c68000;
+	background-color: #e36355;
 	background-color: var(--button-hover-color);
 }
 
@@ -1390,7 +1390,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .post-navigation .nav-links a:hover .entry-title,
 .post-navigation .nav-links a:active .entry-title {
-	color: #e59f00;
+	color: #e36355;
 	color: var(--title-hover-color);
 }
 
@@ -1595,7 +1595,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	margin: 0 1em 0 0;
 	padding: 0.4em 1em;
 	text-align: center;
-	color: #e59f00;
+	color: #c9493b;
 	color: var(--link-color);
 	text-decoration: none;
 }
@@ -1606,7 +1606,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .pagination a:hover,
 .pagination a:active {
-	color: #c68000;
+	color: #e36355;
 	color: var(--link-hover-color);
 	text-decoration: underline;
 }
@@ -1614,7 +1614,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .pagination .current {
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e59f00;
+	background-color: #c9493b;
 	background-color: var(--button-color);
 }
 
@@ -1748,22 +1748,22 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #034;
+	color: #c9493b;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #268f97;
+	color: #e36355;
 	color: var(--secondary-color);
 }
 
 .has-accent-color {
-	color: #c9493b;
+	color: #078896;
 	color: var(--accent-color);
 }
 
 .has-highlight-color {
-	color: #f9d26e;
+	color: #5bb021;
 	color: var(--highlight-color);
 }
 
@@ -1792,22 +1792,22 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #034;
+	background-color: #c9493b;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #268f97;
+	background-color: #e36355;
 	background-color: var(--secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #c9493b;
+	background-color: #078896;
 	background-color: var(--accent-color);
 }
 
 .has-highlight-background-color {
-	background-color: #f9d26e;
+	background-color: #5bb021;
 	background-color: var(--highlight-color);
 }
 
@@ -2824,7 +2824,7 @@ object {
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: #e59f00;
+		fill: #e36355;
 		fill: var(--header-text-hover-color);
 	}
 }
