@@ -363,21 +363,23 @@ if ( ! function_exists( 'codename_pagination' ) ) :
 	 * Displays pagination on archive pages
 	 */
 	function codename_pagination() {
-		?>
+		$pagination = get_the_posts_pagination( array(
+			'mid_size'  => 2,
+			'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'codename' ) . '</span>',
+			'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'codename' ) . '</span>&raquo;',
+		) );
+
+		if ( $pagination ) :
+			?>
 
 		<div class="pagination-wrap page-footer">
 
-			<?php
-			the_posts_pagination( array(
-				'mid_size'  => 2,
-				'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'codename' ) . '</span>',
-				'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'codename' ) . '</span>&raquo;',
-			) );
-			?>
+			<?php echo $pagination; ?>
 
 		</div>
 
-		<?php
+			<?php
+		endif;
 	}
 endif;
 
