@@ -8,6 +8,11 @@
 	line-height: 1.4;
 }
 
+.archive-header .archive-description,
 .search-header .search-form {
 	margin-top: 1rem;
+}
+
+.archive-header .archive-description {
+	@include font-size(16);
 }

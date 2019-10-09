@@ -35,6 +35,10 @@
 		@include font-size(20);
 	}
 
+	.archive-header .archive-description {
+		@include font-size(17);
+	}
+
 	.comment {
 		@include font-size(17);
 	}
@@ -85,6 +89,10 @@
 	.comment-reply-title {
 		@include font-size(22);
 	}
+
+	.archive-header .archive-description {
+		@include font-size(18);
+	}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -122,6 +130,10 @@
 	.comments-title,
 	.comment-reply-title {
 		@include font-size(24);
+	}
+
+	.archive-header .archive-description {
+		@include font-size(19);
 	}
 
 	.comment {
