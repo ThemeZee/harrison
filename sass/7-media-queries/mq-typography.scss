@@ -39,6 +39,8 @@
 		@include font-size(17);
 	}
 
+	.entry-tags-label,
+	.entry-tags a,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
@@ -126,6 +128,8 @@
 		@include font-size(18);
 	}
 
+	.entry-tags-label,
+	.entry-tags a,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,

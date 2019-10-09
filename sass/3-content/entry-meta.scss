@@ -89,13 +89,14 @@
 /* Entry Tags */
 .entry-tags {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 2em 0 0;
 	align-items: center;
 }
 
 .entry-tags-label {
 	@include color(--light-text-color);
-	@include font-size(16);
+	@include font-size(15);
 }
 
 .entry-tags-label::after {

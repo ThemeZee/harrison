@@ -1233,6 +1233,7 @@ body.site-description-hidden .site-header .site-description {
 /* Entry Tags */
 .entry-tags {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 2em 0 0;
 	align-items: center;
 }
@@ -1240,8 +1241,8 @@ body.site-description-hidden .site-header .site-description {
 .entry-tags-label {
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .entry-tags-label::after {
@@ -2365,6 +2366,8 @@ object {
 		font-size: 1.0625rem;
 	}
 
+	.entry-tags-label,
+	.entry-tags a,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
@@ -2466,6 +2469,8 @@ object {
 		font-size: 1.125rem;
 	}
 
+	.entry-tags-label,
+	.entry-tags a,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
