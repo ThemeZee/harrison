@@ -681,7 +681,8 @@ textarea {
 	background-color: var(--page-background-color);
 }
 
-.site-header {
+.site-header,
+.site-container {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
@@ -2515,7 +2516,8 @@ object {
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
-	.site-header {
+	.site-header,
+	.site-container {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -2570,7 +2572,8 @@ object {
 }
 
 @media only screen and (min-width: 640px) {
-	.site-header {
+	.site-header,
+	.site-container {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
@@ -2612,7 +2615,8 @@ object {
 }
 
 @media only screen and (min-width: 960px) {
-	.site-header {
+	.site-header,
+	.site-container {
 		padding-left: 4rem;
 		padding-right: 4rem;
 	}
@@ -2660,7 +2664,8 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-header {
+	.site-header,
+	.site-container {
 		padding-left: 5rem;
 		padding-right: 5rem;
 	}
