@@ -22,4 +22,6 @@
 
 	</div><!-- .entry-content -->
 
+	<?php do_action( 'codename_after_pages' ); ?>
+
 </article>

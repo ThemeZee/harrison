@@ -15,6 +15,8 @@ if ( have_posts() ) :
 
 	<main id="main" class="site-main" role="main">
 
+		<?php do_action( 'codename_before_blog' ); ?>
+
 		<div id="post-wrapper" class="post-wrapper">
 
 		<?php

@@ -150,7 +150,7 @@ function codename_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 }
-add_action( 'widgets_init', 'codename_widgets_init' );
+add_action( 'widgets_init', 'codename_widgets_init', 30 );
 
 
 /**
