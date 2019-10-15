@@ -9,7 +9,7 @@
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+	<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 		<?php
 		echo codename_get_svg( 'menu' );
 		echo codename_get_svg( 'close' );

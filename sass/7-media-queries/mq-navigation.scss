@@ -1,13 +1,13 @@
 @media only screen and (min-width: 400px) {
-	.menu-toggle .menu-toggle-text {
+	.primary-menu-toggle .menu-toggle-text {
 		display: inline-block;
 		margin-left: 0.5rem;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.menu-toggle,
-	.dropdown-toggle {
+	.primary-menu-toggle,
+	.main-navigation .dropdown-toggle {
 		display: none;
 	}
 
