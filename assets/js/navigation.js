@@ -110,4 +110,7 @@
 	// Init Main Navigation.
 	initNavigation( '.header-main', '.main-navigation' );
 
+	// Init Top Navigation.
+	initNavigation( '.header-bar', '.top-navigation' );
+
 })( jQuery );

@@ -36,7 +36,7 @@ function codename_get_svg( $icon = null ) {
  * @return string $title The menu item's title with dropdown icon.
  */
 function codename_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
-	if ( 'primary' === $args->theme_location ) {
+	if ( 'primary' === $args->theme_location || 'secondary' === $args->theme_location ) {
 		foreach ( $item->classes as $value ) {
 			if ( 'menu-item-has-children' === $value || 'page_item_has_children' === $value ) {
 				$title = $title . codename_get_svg( 'expand' );
