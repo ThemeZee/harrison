@@ -9,7 +9,7 @@
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 		<?php
 		echo codename_get_svg( 'menu' );
 		echo codename_get_svg( 'close' );
@@ -25,6 +25,7 @@
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary',
+					'menu_id'        => 'primary-menu',
 					'container'      => false,
 				)
 			);
