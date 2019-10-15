@@ -7,14 +7,18 @@
 
 (function( $ ) {
 
-	function initNavigation( containerClass, naviClass ) {
+	function initNavigation( containerClass ) {
 		var container  = $( containerClass );
-		var navigation = $( naviClass );
-		var menuToggle = container.find( '.menu-toggle' );
-		var menuList   = navigation.children( 'ul.menu' );
+		var navigation = container.find( 'nav[role=navigation]' );
+
+		// Return early if navigation is missing.
+		if ( ! navigation.length ) {
+			return;
+		}
 
 		// Enable menuToggle.
 		(function() {
+			var menuToggle = container.find( '.menu-toggle' );
 
 			// Return early if menuToggle is missing.
 			if ( ! menuToggle.length ) {
@@ -66,6 +70,8 @@
 
 		// Fix sub-menus for touch devices and better focus for hidden submenu items for accessibility.
 		(function() {
+			var menuList   = navigation.children( 'ul.menu' );
+
 			if ( ! menuList.length || ! menuList.children().length ) {
 				return;
 			}
@@ -108,9 +114,9 @@
 	}
 
 	// Init Main Navigation.
-	initNavigation( '.header-main', '.main-navigation' );
+	initNavigation( '.header-main' );
 
 	// Init Top Navigation.
-	initNavigation( '.header-bar', '.top-navigation' );
+	initNavigation( '.header-bar' );
 
 })( jQuery );
