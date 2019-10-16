@@ -975,12 +975,12 @@ body.site-description-hidden .site-header .site-description {
 	fill: var(--header-text-hover-color);
 }
 
-.toggled-on .primary-menu-toggle .icon-menu,
-.primary-menu-toggle .icon-close {
+.primary-menu-toggle[aria-expanded="true"] .icon-menu,
+.primary-menu-toggle[aria-expanded="false"] .icon-close {
 	display: none;
 }
 
-.toggled-on .primary-menu-toggle .icon-close {
+.primary-menu-toggle[aria-expanded="true"] .icon-close {
 	display: inline-block;
 }
 
