@@ -35,3 +35,5 @@
 	</div><!-- .primary-navigation -->
 
 <?php endif; ?>
+
+<?php do_action( 'codename_after_navigation' ); ?>
