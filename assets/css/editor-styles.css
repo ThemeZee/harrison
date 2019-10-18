@@ -38,9 +38,9 @@
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Rubik", arial, helvetica, sans-serif;
-	--title-font: "Rubik", arial, helvetica, sans-serif;
-	--navi-font: "Rubik", arial, helvetica, sans-serif;
+	--text-font: "Barlow", arial, helvetica, sans-serif;
+	--title-font: "Barlow", arial, helvetica, sans-serif;
+	--navi-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
 	--navi-font-weight: normal;
 	--title-text-transform: none;
@@ -79,7 +79,7 @@
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 36px;
 	font-size: 2.25rem;
-	font-family: "Rubik", arial, helvetica, sans-serif;
+	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -123,7 +123,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Typography */
 .editor-styles-wrapper {
-	font-family: "Rubik", arial, helvetica, sans-serif;
+	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-size: 17px;
 	font-size: 1.0625rem;
@@ -196,7 +196,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	font-family: "Rubik", arial, helvetica, sans-serif;
+	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.4;
 }
@@ -385,7 +385,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
-	font-family: "Rubik", arial, helvetica, sans-serif;
+	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 }
 
@@ -414,7 +414,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
-	font-family: "Rubik", arial, helvetica, sans-serif;
+	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
 }
