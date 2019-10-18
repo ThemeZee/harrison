@@ -52,8 +52,8 @@ $themeColors: (
 );
 
 // Theme Fonts
-$baseFont: -apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",sans-serif;
-$titleFont: -apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",sans-serif;
+$baseFont: "Rubik", arial, helvetica, sans-serif;
+$titleFont: "Rubik", arial, helvetica, sans-serif;
 $themeFonts: (
 	--text-font  : $baseFont,
 	--title-font : $titleFont,
