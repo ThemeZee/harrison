@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Codename\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-08-05 15:02+0200\n"
+"POT-Creation-Date: 2019-10-22 12:54+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -21,30 +21,30 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:17
+#: 404.php:19
 msgid "404: Page not found"
 msgstr ""
 
-#: 404.php:22
+#: 404.php:24
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search or one "
 "of the links below?"
 msgstr ""
 
-#: comments.php:33
+#: comments.php:35
 msgid "One comment"
 msgstr ""
 
-#: comments.php:36
+#: comments.php:38
 #, php-format
 msgid "%s comments"
 msgstr ""
 
-#: comments.php:59
+#: comments.php:61
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:46
+#: functions.php:49
 msgid "Main Navigation"
 msgstr ""
 
@@ -56,52 +56,16 @@ msgstr ""
 msgid "Collapse child menu"
 msgstr ""
 
-#: functions.php:145
-msgid "Footer Column 1"
-msgstr ""
-
-#: functions.php:147
-msgctxt "widget area description"
-msgid "Appears in the first column in footer."
-msgstr ""
-
-#: functions.php:156
-msgid "Footer Column 2"
-msgstr ""
-
-#: functions.php:158
-msgctxt "widget area description"
-msgid "Appears in the second column in footer."
-msgstr ""
-
-#: functions.php:167
-msgid "Footer Column 3"
-msgstr ""
-
-#: functions.php:169
-msgctxt "widget area description"
-msgid "Appears in the third column in footer."
-msgstr ""
-
-#: functions.php:178
-msgid "Footer Column 4"
-msgstr ""
-
-#: functions.php:180
-msgctxt "widget area description"
-msgid "Appears in the fourth column in footer."
-msgstr ""
-
-#: functions.php:189
+#: functions.php:154
 msgid "Footer Copyright"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:156
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
-#: header.php:26
+#: header.php:28
 msgid "Skip to content"
 msgstr ""
 
@@ -112,142 +76,264 @@ msgid ""
 "Please upgrade and try again."
 msgstr ""
 
-#: inc/customizer/controls/font-control.php:51
-msgid "Previous Font"
+#: inc/customizer/controls/links-control.php:25 inc/theme-info.php:46
+msgid "Theme Links"
 msgstr ""
 
-#: inc/customizer/controls/font-control.php:52
-msgid "Next Font"
+#: inc/customizer/controls/links-control.php:28 inc/theme-info.php:47
+msgid "https://themezee.com/themes/codename/"
 msgstr ""
 
-#: inc/customizer/controls/font-control.php:53
-msgctxt "default font button"
-msgid "Default"
+#: inc/customizer/controls/links-control.php:29 inc/theme-info.php:47
+msgid "Theme Page"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:35 inc/theme-info.php:48
+msgid "Theme Demo"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:40 inc/theme-info.php:49
+#: inc/theme-info.php:72
+msgid "https://themezee.com/docs/codename-documentation/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:41 inc/theme-info.php:49
+#: inc/theme-info.php:66
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:46
+msgid ""
+"https://themezee.com/changelogs/?action=themezee-"
+"changelog&type=theme&slug=codename/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:47 inc/theme-info.php:51
+msgid "Theme Changelog"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:52 inc/theme-info.php:52
+#: inc/theme-info.php:156
+msgid "https://wordpress.org/support/theme/codename/reviews/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:53 inc/theme-info.php:52
+#: inc/theme-info.php:156
+msgid "Rate this theme"
 msgstr ""
 
 #: inc/customizer/controls/plugin-control.php:33
 msgid "Install Plugin"
 msgstr ""
 
-#: inc/customizer/customizer.php:34
+#: inc/customizer/controls/upgrade-control.php:25 inc/theme-info.php:112
+msgid "Pro Version Add-on"
+msgstr ""
+
+#: inc/customizer/controls/upgrade-control.php:28 inc/theme-info.php:115
+#, php-format
+msgid ""
+"Purchase the %s Pro Add-on to get additional features and advanced "
+"customization options."
+msgstr ""
+
+#: inc/customizer/controls/upgrade-control.php:32 inc/theme-info.php:118
+msgid "https://themezee.com/addons/codename-pro/"
+msgstr ""
+
+#: inc/customizer/controls/upgrade-control.php:33 inc/theme-info.php:119
+#, php-format
+msgid "Learn more about %s Pro"
+msgstr ""
+
+#: inc/customizer/customizer.php:37 inc/theme-info.php:79
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer/customizer.php:39
+#: inc/customizer/customizer.php:42
 msgid "Background"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:17
-msgid "Block Colors"
+#: inc/customizer/default-options.php:60
+msgid "Continue reading"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:34
-msgctxt "Color Option"
-msgid "Primary"
+#: inc/customizer/sections/blog-settings.php:19
+msgid "Blog Settings"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:50
-msgctxt "Color Option"
-msgid "Secondary"
+#: inc/customizer/sections/blog-settings.php:36
+msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:66
-msgctxt "Color Option"
-msgid "Accent"
+#: inc/customizer/sections/blog-settings.php:42
+msgid "Horizontal List"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:82
-msgctxt "Color Option"
-msgid "Highlight"
+#: inc/customizer/sections/blog-settings.php:43
+msgid "Horizontal List (alternative)"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:98
-msgctxt "Color Option"
-msgid "Light Gray"
+#: inc/customizer/sections/blog-settings.php:44
+msgid "Vertical List"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:114
-msgctxt "Color Option"
-msgid "Gray"
+#: inc/customizer/sections/blog-settings.php:45
+msgid "Vertical List (alternative)"
 msgstr ""
 
-#: inc/customizer/sections/block-color-settings.php:130
-msgctxt "Color Option"
-msgid "Dark Gray"
+#: inc/customizer/sections/blog-settings.php:46
+msgid "Two Column Grid"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:17
-msgid "Theme Colors"
+#: inc/customizer/sections/blog-settings.php:47
+msgid "Three Column Grid"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:34
-msgctxt "Color Option"
-msgid "Links"
+#: inc/customizer/sections/blog-settings.php:60
+msgid "Blog Content"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:50
-msgctxt "Color Option"
-msgid "Link Hover"
+#: inc/customizer/sections/blog-settings.php:66
+msgid "Full post"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:66
-msgctxt "Color Option"
-msgid "Header"
+#: inc/customizer/sections/blog-settings.php:67
+msgid "Post excerpt"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:82
-msgctxt "Color Option"
-msgid "Titles"
+#: inc/customizer/sections/blog-settings.php:80
+msgid "Excerpt Length"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:98
-msgctxt "Color Option"
-msgid "Title Hover"
+#: inc/customizer/sections/blog-settings.php:96
+msgid "Excerpt More Text"
 msgstr ""
 
-#: inc/customizer/sections/theme-color-settings.php:114
-msgctxt "Color Option"
-msgid "Footer Widgets"
+#: inc/customizer/sections/blog-settings.php:126
+msgid "Read More Link"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:19
-msgid "Typography"
+#: inc/customizer/sections/blog-settings.php:142
+msgid "Number of Posts"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:37
-msgid "Body Font"
+#: inc/customizer/sections/footer-settings.php:19
+msgid "Footer Settings"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:54
-msgctxt "Font Setting"
-msgid "Headings"
+#: inc/customizer/sections/footer-settings.php:36
+msgid "Footer Text"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:70
-#: inc/customizer/sections/typography-settings.php:119
-msgctxt "Font Setting"
-msgid "Bold"
+#: inc/customizer/sections/footer-settings.php:59
+msgid "Display credit link on footer line"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:86
-#: inc/customizer/sections/typography-settings.php:135
-msgctxt "Font Setting"
-msgid "Uppercase"
+#: inc/customizer/sections/layout-settings.php:19
+msgid "Layout Settings"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:103
-msgctxt "Font Setting"
-msgid "Navigation"
+#: inc/customizer/sections/layout-settings.php:36
+msgid "Theme Layout"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:146
-msgid "More Fonts"
+#: inc/customizer/sections/layout-settings.php:42
+msgid "Centered Layout"
 msgstr ""
 
-#: inc/customizer/sections/typography-settings.php:147
+#: inc/customizer/sections/layout-settings.php:43
+msgid "Wide Layout"
+msgstr ""
+
+#: inc/customizer/sections/layout-settings.php:56
+msgid "Header Layout"
+msgstr ""
+
+#: inc/customizer/sections/layout-settings.php:62
+msgid "Horizontal"
+msgstr ""
+
+#: inc/customizer/sections/layout-settings.php:63
+msgid "Vertical"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:19
+msgid "Post Settings"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:30
+msgid "Post Details"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:46
+msgid "Display date"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:62
+msgid "Display author"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:78
+msgid "Display comments"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:94
+msgid "Display categories"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:104
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:120
+msgid "Display tags"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:136
+msgid "Display previous/next post navigation"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:146
+msgid "Featured Images"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:162
+msgid "Display images on blog and archives"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:184
+msgid "Featured Images on Single Posts"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:190
+msgid "Display image in the header"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:191
+msgid "Display image above post title"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:192
+msgid "Display image below post title"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:193
+msgid "Hide featured image"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:19 inc/theme-info.php:20
+msgid "Theme Info"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:48
+msgid "Magazine Blocks"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:49
 msgid ""
-"You can install the GT Local Fonts plugin to extend the typography options "
-"with additional local GDPR-compatible fonts."
+"Install our free Magazine Blocks to create a magazine-styled homepage in the "
+"Editor with just a few clicks."
 msgstr ""
 
 #: inc/customizer/sections/website-settings.php:40
@@ -258,144 +344,214 @@ msgstr ""
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/gutenberg.php:25
+#: inc/gutenberg.php:33
 msgctxt "block color"
 msgid "Primary"
 msgstr ""
 
-#: inc/gutenberg.php:30
+#: inc/gutenberg.php:38
 msgctxt "block color"
 msgid "Secondary"
 msgstr ""
 
-#: inc/gutenberg.php:35
+#: inc/gutenberg.php:43
 msgctxt "block color"
 msgid "Accent"
 msgstr ""
 
-#: inc/gutenberg.php:40
+#: inc/gutenberg.php:48
 msgctxt "block color"
 msgid "Highlight"
 msgstr ""
 
-#: inc/gutenberg.php:45
+#: inc/gutenberg.php:53
 msgctxt "block color"
 msgid "White"
 msgstr ""
 
-#: inc/gutenberg.php:50
+#: inc/gutenberg.php:58
 msgctxt "block color"
 msgid "Light Gray"
 msgstr ""
 
-#: inc/gutenberg.php:55
+#: inc/gutenberg.php:63
 msgctxt "block color"
 msgid "Gray"
 msgstr ""
 
-#: inc/gutenberg.php:60
+#: inc/gutenberg.php:68
 msgctxt "block color"
 msgid "Dark Gray"
 msgstr ""
 
-#: inc/gutenberg.php:65
+#: inc/gutenberg.php:73
 msgctxt "block color"
 msgid "Black"
 msgstr ""
 
-#: inc/gutenberg.php:74
+#: inc/gutenberg.php:82
 msgctxt "block font size"
 msgid "Small"
 msgstr ""
 
-#: inc/gutenberg.php:79
+#: inc/gutenberg.php:87
 msgctxt "block font size"
 msgid "Medium"
 msgstr ""
 
-#: inc/gutenberg.php:84
+#: inc/gutenberg.php:92
 msgctxt "block font size"
 msgid "Large"
 msgstr ""
 
-#: inc/gutenberg.php:89
+#: inc/gutenberg.php:97
 msgctxt "block font size"
 msgid "Extra Large"
 msgstr ""
 
-#: inc/gutenberg.php:94
+#: inc/gutenberg.php:102
 msgctxt "block font size"
 msgid "Huge"
 msgstr ""
 
-#: inc/gutenberg.php:118
-msgid "Theme Settings"
-msgstr ""
-
-#: inc/gutenberg.php:119
-msgid "Page Options"
-msgstr ""
-
-#: inc/gutenberg.php:120
-msgid "Page Layout"
-msgstr ""
-
-#: inc/gutenberg.php:121
-msgid "Default"
-msgstr ""
-
-#: inc/gutenberg.php:122
-msgid "Full-width"
-msgstr ""
-
-#: inc/gutenberg.php:123
-msgid "Hide title?"
-msgstr ""
-
-#: inc/gutenberg.php:124
-msgid "Remove bottom margin?"
-msgstr ""
-
-#: inc/template-tags.php:113
+#: inc/template-tags.php:134
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:192
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
-#: inc/template-tags.php:210
+#: inc/template-tags.php:236
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:242
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:238
+#: inc/template-tags.php:285
+msgid "No comments"
+msgstr ""
+
+#: inc/template-tags.php:286
+msgid "1 comment"
+msgstr ""
+
+#: inc/template-tags.php:287
 #, php-format
-msgctxt "post category"
-msgid "in %s"
+msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:253
-msgid "Tags: "
+#: inc/template-tags.php:305
+msgid "Tags"
 msgstr ""
 
-#: inc/template-tags.php:271
+#: inc/template-tags.php:348
+msgctxt "post navigation"
+msgid "Previous Post"
+msgstr ""
+
+#: inc/template-tags.php:349
+msgctxt "post navigation"
+msgid "Next Post"
+msgstr ""
+
+#: inc/template-tags.php:368
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:272
+#: inc/template-tags.php:369
 msgctxt "pagination"
 msgid "Next Posts"
+msgstr ""
+
+#: inc/template-tags.php:413
+#, php-format
+msgid "WordPress Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/template-tags.php:414
+msgid "Codename"
+msgstr ""
+
+#: inc/theme-info.php:19 inc/theme-info.php:40
+#, php-format
+msgid "Welcome to %1$s %2$s"
+msgstr ""
+
+#: inc/theme-info.php:50
+msgid "https://wordpress.org/support/theme/codename/"
+msgstr ""
+
+#: inc/theme-info.php:50
+msgid "Support Forum"
+msgstr ""
+
+#: inc/theme-info.php:51
+msgid ""
+"https://themezee.com/changelogs/?action=themezee-"
+"changelog&type=theme&slug=codename"
+msgstr ""
+
+#: inc/theme-info.php:59
+#, php-format
+msgid "Getting started with %s"
+msgstr ""
+
+#: inc/theme-info.php:69
+msgid ""
+"Need help to set up and configure this theme? We got you covered! Check out "
+"the extensive theme documentation on our website."
+msgstr ""
+
+#: inc/theme-info.php:73
+#, php-format
+msgid "View %s's documentation"
+msgstr ""
+
+#: inc/theme-info.php:82
+#, php-format
+msgid ""
+"%s makes use of the Customizer for all theme settings. Click on \"Customize "
+"Theme\" to open the Customizer now."
+msgstr ""
+
+#: inc/theme-info.php:85
+msgid "Customize Theme"
+msgstr ""
+
+#: inc/theme-info.php:105
+msgid "Get more features"
+msgstr ""
+
+#: inc/theme-info.php:129
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/theme-info.php:132
+msgid ""
+"Extend the functionality of your WordPress website with our free and easy to "
+"use plugins."
+msgstr ""
+
+#: inc/theme-info.php:136
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/theme-info.php:153
+#, php-format
+msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
+msgstr ""
+
+#: inc/theme-info.php:155
+msgid "https://themezee.com/"
+msgstr ""
+
+#: inc/theme-info.php:156
+msgctxt "If you like this theme, rate it"
+msgid "rate it"
 msgstr ""
 
 #: searchform.php:13 searchform.php:17
@@ -421,28 +577,24 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: template-parts/page/content-none.php:14
+#: template-parts/page/content-none.php:16
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/page/content-none.php:23
+#: template-parts/page/content-none.php:25
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/page/content-none.php:27
+#: template-parts/page/content-none.php:29
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: template-parts/page/content-none.php:32
+#: template-parts/page/content-none.php:34
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-
-#: template-parts/post/content.php:24
-msgid "Continue reading"
 msgstr ""
