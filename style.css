@@ -1357,7 +1357,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .post-navigation {
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 1120px;
 	width: 100%;
 }
 
@@ -2765,11 +2765,13 @@ object {
 		padding: 2.5rem;
 		margin-bottom: 2.5rem;
 	}
+}
 
+@media only screen and (min-width: 1120px) {
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: 1080px;
+		max-width: 1120px;
 	}
 }
 
