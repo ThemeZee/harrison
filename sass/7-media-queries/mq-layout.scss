@@ -190,3 +190,11 @@
 		margin-bottom: 3rem;
 	}
 }
+
+@media only screen and (min-width: 1440px) {
+	.entry-content > .alignfull {
+		margin-left: -280px;
+		margin-right: -280px;
+		max-width: $wideBlockFullwidth;
+	}
+}
