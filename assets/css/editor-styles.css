@@ -740,14 +740,14 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	}
 }
 
-/* Styling for ThemeZee Magazine Blocks */
+/* ThemeZee Magazine Blocks - Editor Styles */
 .edit-post-visual-editor .tz-magazine-block .tz-entry-image {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title {
 	margin-top: 0;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.25rem;
 	padding: 0;
 	color: #202020;
 	color: var(--title-color);
@@ -755,7 +755,10 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	font-size: 1.5rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -764,11 +767,13 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: #202020;
 	color: var(--title-color);
 	text-decoration: none;
+	transition: all 0.15s ease;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:active {
-	text-decoration: underline;
+	color: #e36355;
+	color: var(--title-hover-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
@@ -783,44 +788,53 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta {
-	margin: 0.5em 0;
+	margin: 0.5rem 0 0;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
 
-.edit-post-visual-editor .tz-magazine-block .tz-entry-meta .tz-meta-field {
-	margin-right: 1rem;
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta > .tz-meta-field::after {
+	display: inline-block;
+	margin: 0 1rem;
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
+	content: "\2013";
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta > .tz-meta-field:last-child::after {
+	display: none;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.5);
-	border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:active {
 	color: rgba(0, 0, 0, 0.9);
-	text-decoration: none;
+	color: var(--text-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-content {
-	margin-top: 1em;
-	font-size: 17px;
-	font-size: 1.0625rem;
+	margin-top: 1rem;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-content p {
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-more-link {
 	display: inline-block;
 	margin: 0;
-	padding: 0.5em 1em;
+	padding: 0.6em 1.2em;
 	color: #fff;
 	color: var(--button-text-color);
 	background-color: #c9493b;
@@ -834,6 +848,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: #fff;
 	color: var(--button-text-color);
 	text-decoration: none;
+	transition: all 0.15s ease;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:hover,
@@ -842,5 +857,36 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: var(--button-hover-text-color);
 	background-color: #e36355;
 	background-color: var(--button-hover-color);
-	text-decoration: none;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-more-link::after {
+	content: " \00BB";
+}
+
+@media only screen and (min-width: 960px) {
+	.edit-post-visual-editor .tz-magazine-block .tz-entry-title {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+
+	.edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+
+	.edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
+	.edit-post-visual-editor .tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	.edit-post-visual-editor .tz-magazine-block .tz-entry-content {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
+
+	.edit-post-visual-editor .tz-magazine-block .tz-entry-content p {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
 }
