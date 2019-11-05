@@ -164,6 +164,18 @@ add_action( 'widgets_init', 'codename_widgets_init', 30 );
 
 
 /**
+ * Make custom image sizes available in Gutenberg.
+ */
+function codename_add_image_size_names( $sizes ) {
+	return array_merge( $sizes, array(
+		'post-thumbnail'                => esc_html__( 'Codename Single Post', 'codename' ),
+		'codename-horizontal-list-post' => esc_html__( 'Codename List Post', 'codename' ),
+	) );
+}
+add_filter( 'image_size_names_choose', 'codename_add_image_size_names' );
+
+
+/**
  * Include Files
  */
 
