@@ -112,7 +112,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Blocks
 --------------------------------------------------------------*/
 @import "5-blocks/core-blocks";
-@import "5-blocks/magazine-blocks";
 @import "5-blocks/colors";
 @import "5-blocks/font-sizes";
 
@@ -135,6 +134,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Footer
 --------------------------------------------------------------*/
 @import "2-layout/footer";
+
+/*--------------------------------------------------------------
+# - Plugins
+--------------------------------------------------------------*/
+@import "9-plugins/magazine-blocks";
 
 /*--------------------------------------------------------------
 # - Media Queries
