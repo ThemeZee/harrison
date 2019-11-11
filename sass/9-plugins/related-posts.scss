@@ -9,6 +9,10 @@
 	max-width: $contentWidth;
 	width: 100%;
 
+	.related-posts-header {
+		margin-bottom: 1.5rem;
+	}
+
 	.related-posts-list {
 		margin: 0;
 		padding: 0;
@@ -43,29 +47,31 @@
 	}
 
 	.related-posts-grid {
-		margin: 1.5rem 0 0;
-	}
 
-	.related-posts-columns .related-post-column {
-		margin-top: 1.5rem;
-	}
+		.related-posts-columns .related-post-column {
+			margin-top: 1.5rem;
 
-	.related-posts-columns .related-post-column .wp-post-image {
-		margin: 0 0 1rem 0;
-		padding: 0;
-		border: none;
-	}
+			.wp-post-image {
+				margin: 0 0 0.75rem 0;
+			}
 
-	.related-posts-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
+			.entry-header {
+				margin-bottom: 0.5rem;
+			}
 
-	.related-posts-columns .related-post-column .entry-meta {
-		@include font-size(13);
-	}
+			.entry-title {
+				@include font-size(18);
+			}
 
-	.related-posts-columns .related-post-column .entry-meta .meta-date {
-		margin-right: 0.5rem;
+			.entry-meta {
+				margin: 0;
+				@include font-size(15);
+
+				> span:last-child::after {
+					display: none;
+				}
+			}
+		}
 	}
 }
 
@@ -89,23 +95,26 @@
 				}
 			}
 		}
-	}
 
-	.related-posts-two-columns,
-	.related-posts-four-columns {
-		display: grid;
-		grid-gap: 1.5rem;
-		grid-template-columns: repeat(2, 1fr);
-	}
+		.related-posts-grid {
 
-	.related-posts-two-columns .related-post-column,
-	.related-posts-four-columns .related-post-column {
-		margin-top: 0;
-	}
+			.related-posts-two-columns,
+			.related-posts-four-columns {
+				display: grid;
+				grid-gap: 1.5rem;
+				grid-template-columns: repeat(2, 1fr);
 
-	.related-posts-two-columns .related-post-column .entry-title,
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(16);
+				.related-post-column {
+					margin-top: 0;
+				}
+			}
+
+			.related-posts-three-columns {
+				.related-post-column .entry-title {
+					@include font-size(20);
+				}
+			}
+		}
 	}
 }
 
@@ -116,6 +125,26 @@
 
 			li {
 				margin-top: 2rem;
+
+				.entry-title {
+					@include font-size(20);
+				}
+			}
+		}
+
+		.related-posts-grid {
+
+			.related-posts-three-columns {
+				display: grid;
+				grid-gap: 1.5rem;
+				grid-template-columns: repeat(3, 1fr);
+
+				.related-post-column {
+					margin-top: 0;
+				}
+			}
+
+			.related-posts-columns .related-post-column {
 
 				.entry-title {
 					@include font-size(20);
@@ -142,6 +171,30 @@
 				}
 			}
 		}
+
+		.related-posts-grid {
+
+			.related-posts-columns {
+				grid-gap: 2rem;
+
+				.related-post-column {
+
+					.entry-title {
+						@include font-size(22);
+					}
+
+					.entry-meta {
+						@include font-size(16);
+					}
+				}
+			}
+
+			.related-posts-three-columns {
+				.related-post-column .entry-title {
+					@include font-size(20);
+				}
+			}
+		}
 	}
 }
 
@@ -157,78 +210,29 @@
 				}
 			}
 		}
-	}
-}
 
-@media only screen and (min-width: 35em) {
+		.related-posts-grid {
 
-	.related-posts-three-columns {
-		display: grid;
-		grid-gap: 1.5rem;
-		grid-template-columns: repeat(3, 1fr);
-	}
+			.related-posts-columns .related-post-column {
 
-	.related-posts-three-columns .related-post-column {
-		margin-top: 0;
-	}
+				.entry-title {
+					@include font-size(24);
+				}
+			}
 
-	.related-posts-three-columns .related-post-column .entry-title {
-		@include font-size(16);
-	}
+			.related-posts-three-columns {
+				.related-post-column .entry-title {
+					@include font-size(22);
+				}
+			}
 
-	.related-posts-two-columns .related-post-column .entry-title,
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
-}
+			.related-posts-four-columns {
+				grid-template-columns: repeat(4, 1fr);
 
-@media only screen and (min-width: 45em) {
-	.related-posts-two-columns .related-post-column .entry-title,
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(20);
-	}
-
-	.related-posts-three-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
-}
-
-@media only screen and (min-width: 55em) {
-	.related-posts-two-columns .related-post-column .entry-title,
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
-
-	.related-posts-three-columns .related-post-column .entry-title {
-		@include font-size(16);
-	}
-}
-
-@media only screen and (min-width: 65em) {
-	.related-posts-four-columns {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(16);
-	}
-
-	.related-posts-three-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
-
-	.related-posts-two-columns .related-post-column .entry-title {
-		@include font-size(20);
-	}
-}
-
-@media only screen and (min-width: 75em) {
-
-	.related-posts-four-columns .related-post-column .entry-title {
-		@include font-size(18);
-	}
-
-	.related-posts-columns .related-post-column .entry-meta {
-		@include font-size(14);
+				.related-post-column .entry-title {
+					@include font-size(20);
+				}
+			}
+		}
 	}
 }
