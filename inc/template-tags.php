@@ -32,7 +32,8 @@ if ( ! function_exists( 'codename_site_title' ) ) :
 	 */
 	function codename_site_title() {
 
-		if ( is_home() ) : ?>
+		if ( is_home() ) :
+			?>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
@@ -420,3 +421,21 @@ function codename_credit_link() {
 		<?php
 	endif;
 }
+
+
+if ( ! function_exists( 'codename_breadcrumbs' ) ) :
+	/**
+	 * Displays ThemeZee Breadcrumbs plugin
+	 */
+	function codename_breadcrumbs() {
+
+		if ( function_exists( 'themezee_breadcrumbs' ) ) {
+
+			themezee_breadcrumbs( array(
+				'before' => '<div class="breadcrumbs-container">',
+				'after'  => '</div>',
+			) );
+
+		}
+	}
+endif;

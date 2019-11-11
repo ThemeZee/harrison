@@ -1,0 +1,101 @@
+/* ThemeZee Breadcrumbs Plugin */
+.themezee-breadcrumbs {
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $contentWidth;
+	padding: 0;
+	width: 100%;
+	@include font-size(15);
+	word-wrap: break-word;
+
+	.trail-browse,
+	.trail-items,
+	.trail-items li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+
+	.trail-browse {
+		margin-right: 0.5rem;
+		font-weight: normal;
+		@include font-size(15);
+	}
+
+	.trail-items {
+		list-style: none;
+	}
+
+	.trail-items li::after {
+		padding: 0 0.5em;
+		content: "\00bb"; /* Raquo */
+	}
+
+	&.trail-separator-slash .trail-items li::after {
+		content: "\002F";
+	}
+
+	&.trail-separator-dash .trail-items li::after {
+		content: "\2013";
+	}
+
+	&.trail-separator-bull .trail-items li::after {
+		content: "\2022";
+	}
+
+	&.trail-separator-arrow-bracket .trail-items li::after {
+		content: "\003e";
+	}
+
+	&.trail-separator-raquo .trail-items li::after {
+		content: "\00bb";
+	}
+
+	&.trail-separator-single-arrow .trail-items li::after {
+		content: "\2192";
+	}
+
+	&.trail-separator-double-arrow .trail-items li::after {
+		content: "\21D2";
+	}
+
+	.trail-items li:last-of-type::after {
+		display: none;
+	}
+}
+
+.page-template-template-fullwidth,
+.blog-layout-horizontal-list,
+.blog-layout-two-column-grid,
+.blog-layout-three-column-grid {
+	.themezee-breadcrumbs {
+		max-width: $contentFullwidth;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.themezee-breadcrumbs {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.themezee-breadcrumbs {
+		@include font-size(16);
+
+		.trail-browse {
+			@include font-size(16);
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.themezee-breadcrumbs {
+		@include font-size(17);
+
+		.trail-browse {
+			@include font-size(17);
+		}
+	}
+}

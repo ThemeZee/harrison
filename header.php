@@ -48,3 +48,5 @@
 		<?php codename_header_image(); ?>
 
 		<div id="content" class="site-content">
+
+			<?php codename_breadcrumbs(); ?>

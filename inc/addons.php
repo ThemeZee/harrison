@@ -13,23 +13,22 @@ function codename_theme_addons_setup() {
 	// Add theme support for Codename Pro plugin.
 	add_theme_support( 'codename-pro' );
 
-	// Add theme support for ThemeZee Plugins.
+	// Add theme support for ThemeZee Breadcrumbs plugin.
 	add_theme_support( 'themezee-breadcrumbs' );
 
-	// Add theme support for Widget Bundle.
+	// Add theme support for ThemeZee Widget Bundle plugin.
 	add_theme_support( 'themezee-widget-bundle', array(
 		'thumbnail_size' => array( 100, 80 ),
 		'svg_icons'      => true,
 	) );
 
-	// Add theme support for Related Posts.
+	// Add theme support for ThemeZee Related Posts plugin.
 	add_theme_support( 'themezee-related-posts', array(
 		'thumbnail_size' => array( 640, 360 ),
 	) );
 
-	// Add Theme Support for wooCommerce.
+	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );
-
 }
 add_action( 'after_setup_theme', 'codename_theme_addons_setup' );
 

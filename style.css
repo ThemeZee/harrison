@@ -2351,6 +2351,112 @@ object {
 # - Plugins
 --------------------------------------------------------------*/
 
+/* ThemeZee Breadcrumbs Plugin */
+.themezee-breadcrumbs {
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 880px;
+	padding: 0;
+	width: 100%;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	word-wrap: break-word;
+}
+
+.themezee-breadcrumbs .trail-browse,
+.themezee-breadcrumbs .trail-items,
+.themezee-breadcrumbs .trail-items li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.themezee-breadcrumbs .trail-browse {
+	margin-right: 0.5rem;
+	font-weight: normal;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.themezee-breadcrumbs .trail-items {
+	list-style: none;
+}
+
+.themezee-breadcrumbs .trail-items li::after {
+	padding: 0 0.5em;
+	content: "\00bb"; /* Raquo */
+}
+
+.themezee-breadcrumbs.trail-separator-slash .trail-items li::after {
+	content: "\002F";
+}
+
+.themezee-breadcrumbs.trail-separator-dash .trail-items li::after {
+	content: "\2013";
+}
+
+.themezee-breadcrumbs.trail-separator-bull .trail-items li::after {
+	content: "\2022";
+}
+
+.themezee-breadcrumbs.trail-separator-arrow-bracket .trail-items li::after {
+	content: "\003e";
+}
+
+.themezee-breadcrumbs.trail-separator-raquo .trail-items li::after {
+	content: "\00bb";
+}
+
+.themezee-breadcrumbs.trail-separator-single-arrow .trail-items li::after {
+	content: "\2192";
+}
+
+.themezee-breadcrumbs.trail-separator-double-arrow .trail-items li::after {
+	content: "\21D2";
+}
+
+.themezee-breadcrumbs .trail-items li:last-of-type::after {
+	display: none;
+}
+
+.page-template-template-fullwidth .themezee-breadcrumbs,
+.blog-layout-horizontal-list .themezee-breadcrumbs,
+.blog-layout-two-column-grid .themezee-breadcrumbs,
+.blog-layout-three-column-grid .themezee-breadcrumbs {
+	max-width: 1280px;
+}
+
+@media only screen and (min-width: 480px) {
+	.themezee-breadcrumbs {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.themezee-breadcrumbs {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.themezee-breadcrumbs .trail-browse {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.themezee-breadcrumbs {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
+
+	.themezee-breadcrumbs .trail-browse {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
+}
+
 /* ThemeZee Magazine Blocks */
 :root {
 	--tz-column-gap: 1.5rem;
