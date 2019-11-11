@@ -24,7 +24,7 @@ function codename_theme_addons_setup() {
 
 	// Add theme support for ThemeZee Related Posts plugin.
 	add_theme_support( 'themezee-related-posts', array(
-		'thumbnail_size' => array( 640, 360 ),
+		'thumbnail_size' => array( 720, 360 ),
 	) );
 
 	// Add theme support for wooCommerce.
