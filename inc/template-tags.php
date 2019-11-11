@@ -439,3 +439,25 @@ if ( ! function_exists( 'codename_breadcrumbs' ) ) :
 		}
 	}
 endif;
+
+
+if ( ! function_exists( 'codename_related_posts' ) ) :
+	/**
+	 * Displays ThemeZee Related Posts plugin
+	 */
+	function codename_related_posts() {
+
+		if ( function_exists( 'themezee_related_posts' ) ) {
+
+			themezee_related_posts( array(
+				'before'       => '<div class = "related-posts-wrap page-footer">',
+				'after'        => '</div>',
+				'container'    => 'div',
+				'class'        => 'related-posts',
+				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
+				'after_title'  => '</h2></header>',
+			) );
+
+		}
+	}
+endif;

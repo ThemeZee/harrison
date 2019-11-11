@@ -1,0 +1,234 @@
+/* ThemeZee Related Posts Plugin */
+.related-posts-wrap {
+	border-top: 1px solid;
+	@include border-color(--page-border-color);
+}
+
+.themezee-related-posts {
+	margin: 0 auto;
+	max-width: $contentWidth;
+	width: 100%;
+
+	.related-posts-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: block;
+			margin-top: 1.5rem;
+			list-style: none;
+
+			.wp-post-image {
+				margin: 0 0 0.75rem 0;
+			}
+
+			.entry-header {
+				margin-bottom: 0.5rem;
+			}
+
+			.entry-title {
+				@include font-size(18);
+			}
+
+			.entry-meta {
+				margin: 0;
+				@include font-size(15);
+
+				> span:last-child::after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.related-posts-grid {
+		margin: 1.5rem 0 0;
+	}
+
+	.related-posts-columns .related-post-column {
+		margin-top: 1.5rem;
+	}
+
+	.related-posts-columns .related-post-column .wp-post-image {
+		margin: 0 0 1rem 0;
+		padding: 0;
+		border: none;
+	}
+
+	.related-posts-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+
+	.related-posts-columns .related-post-column .entry-meta {
+		@include font-size(13);
+	}
+
+	.related-posts-columns .related-post-column .entry-meta .meta-date {
+		margin-right: 0.5rem;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.themezee-related-posts {
+
+		.related-posts-list {
+
+			li {
+				display: grid;
+				grid-template-columns: 2fr 3fr;
+				grid-template-rows: auto 1fr;
+				grid-column-gap: 1.5rem;
+
+				> a {
+					grid-row: 1 / span 2;
+				}
+
+				.wp-post-image {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.related-posts-two-columns,
+	.related-posts-four-columns {
+		display: grid;
+		grid-gap: 1.5rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.related-posts-two-columns .related-post-column,
+	.related-posts-four-columns .related-post-column {
+		margin-top: 0;
+	}
+
+	.related-posts-two-columns .related-post-column .entry-title,
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(16);
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.themezee-related-posts {
+
+		.related-posts-list {
+
+			li {
+				margin-top: 2rem;
+
+				.entry-title {
+					@include font-size(20);
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.themezee-related-posts {
+
+		.related-posts-list {
+
+			li {
+				grid-template-columns: 2fr 4fr;
+
+				.entry-title {
+					@include font-size(24);
+				}
+
+				.entry-meta {
+					@include font-size(16);
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.themezee-related-posts {
+
+		.related-posts-list {
+
+			li {
+
+				.entry-title {
+					@include font-size(26);
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 35em) {
+
+	.related-posts-three-columns {
+		display: grid;
+		grid-gap: 1.5rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.related-posts-three-columns .related-post-column {
+		margin-top: 0;
+	}
+
+	.related-posts-three-columns .related-post-column .entry-title {
+		@include font-size(16);
+	}
+
+	.related-posts-two-columns .related-post-column .entry-title,
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+}
+
+@media only screen and (min-width: 45em) {
+	.related-posts-two-columns .related-post-column .entry-title,
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(20);
+	}
+
+	.related-posts-three-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+}
+
+@media only screen and (min-width: 55em) {
+	.related-posts-two-columns .related-post-column .entry-title,
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+
+	.related-posts-three-columns .related-post-column .entry-title {
+		@include font-size(16);
+	}
+}
+
+@media only screen and (min-width: 65em) {
+	.related-posts-four-columns {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(16);
+	}
+
+	.related-posts-three-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+
+	.related-posts-two-columns .related-post-column .entry-title {
+		@include font-size(20);
+	}
+}
+
+@media only screen and (min-width: 75em) {
+
+	.related-posts-four-columns .related-post-column .entry-title {
+		@include font-size(18);
+	}
+
+	.related-posts-columns .related-post-column .entry-meta {
+		@include font-size(14);
+	}
+}
