@@ -1539,12 +1539,45 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 		font-size: 28px;
 		font-size: 1.75rem;
 	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-meta,
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-categories,
+	.blog-layout-horizontal-list .post-wrapper .type-post .more-link,
+	.blog-layout-two-column-grid .post-wrapper .type-post .entry-meta,
+	.blog-layout-two-column-grid .post-wrapper .type-post .entry-categories,
+	.blog-layout-two-column-grid .post-wrapper .type-post .more-link,
+	.blog-layout-three-column-grid .post-wrapper .type-post .entry-meta,
+	.blog-layout-three-column-grid .post-wrapper .type-post .entry-categories,
+	.blog-layout-three-column-grid .post-wrapper .type-post .more-link {
+		font-size: 16px;
+		font-size: 1rem;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
+	.blog-layout-horizontal-list .post-wrapper .type-post {
+		margin-right: -2.5rem;
+	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .post-image {
+		margin-right: 1.25rem;
+	}
+
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-wrap {
+		margin-left: 1.25rem;
+	}
+
 	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	.blog-layout-horizontal-list-alt .post-wrapper .type-post:nth-of-type(even) .post-image {
+		margin-left: 1.25rem;
+	}
+
+	.blog-layout-horizontal-list-alt .post-wrapper .type-post:nth-of-type(even) .entry-wrap {
+		margin-right: 1.25rem;
 	}
 
 	.blog-layout-two-column-grid .post-wrapper,
@@ -1586,6 +1619,16 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 		font-size: 2.25rem;
 	}
 
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-meta,
+	.blog-layout-horizontal-list .post-wrapper .type-post .entry-categories,
+	.blog-layout-horizontal-list .post-wrapper .type-post .more-link,
+	.blog-layout-two-column-grid .post-wrapper .type-post .entry-meta,
+	.blog-layout-two-column-grid .post-wrapper .type-post .entry-categories,
+	.blog-layout-two-column-grid .post-wrapper .type-post .more-link {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
+
 	.blog-layout-three-column-grid .post-wrapper .type-post {
 		width: 33.3333333333333%;
 	}
@@ -1593,6 +1636,13 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	.blog-layout-three-column-grid .post-wrapper .type-post .entry-title {
 		font-size: 28px;
 		font-size: 1.75rem;
+	}
+
+	.blog-layout-three-column-grid .post-wrapper .type-post .entry-meta,
+	.blog-layout-three-column-grid .post-wrapper .type-post .entry-categories,
+	.blog-layout-three-column-grid .post-wrapper .type-post .more-link {
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 }
 
