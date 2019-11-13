@@ -18,7 +18,7 @@ function codename_theme_addons_setup() {
 
 	// Add theme support for ThemeZee Widget Bundle plugin.
 	add_theme_support( 'themezee-widget-bundle', array(
-		'thumbnail_size' => array( 100, 80 ),
+		'thumbnail_size' => array( 150, 150 ),
 		'svg_icons'      => true,
 	) );
 
@@ -27,10 +27,29 @@ function codename_theme_addons_setup() {
 		'thumbnail_size' => array( 720, 360 ),
 	) );
 
+	// Add theme support for Infinite Scroll.
+	add_theme_support( 'infinite-scroll', array(
+		'container'      => 'post-wrapper',
+		'footer_widgets' => 'footer',
+		'wrapper'        => false,
+		'render'         => 'codename_infinite_scroll_render',
+	) );
+
 	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'codename_theme_addons_setup' );
+
+
+/**
+ * Custom render function for Infinite Scroll.
+ */
+function codename_infinite_scroll_render() {
+	while ( have_posts() ) {
+		the_post();
+		get_template_part( 'template-parts/blog/content', esc_html( codename_get_option( 'blog_layout' ) ) );
+	}
+}
 
 
 /**
