@@ -5,7 +5,7 @@
  *
  * Description: A custom template for displaying a fullwidth layout with no sidebar.
  *
- * @package Codename
+ * @package Harrison
  */
 
 get_header();

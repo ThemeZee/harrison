@@ -1,12 +1,12 @@
 <?php
 /**
- * Codename functions and definitions
+ * Harrison functions and definitions
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
- * Codename only works in WordPress 5.2 or later.
+ * Harrison only works in WordPress 5.2 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '5.2', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -21,10 +21,10 @@ if ( version_compare( $GLOBALS['wp_version'], '5.2', '<' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function codename_setup() {
+function harrison_setup() {
 
 	// Make theme available for translation.
-	load_theme_textdomain( 'codename', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'harrison', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -39,14 +39,14 @@ function codename_setup() {
 	set_post_thumbnail_size( 1080, 540, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'codename-featured-header-image', 1440, 600, true );
+	add_image_size( 'harrison-featured-header-image', 1440, 600, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'codename-horizontal-list-post', 960, 720, true );
+	add_image_size( 'harrison-horizontal-list-post', 960, 720, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Main Navigation', 'codename' ),
+		'primary' => esc_html__( 'Main Navigation', 'harrison' ),
 	) );
 
 	// Switch default core markup for galleries and captions to output valid HTML5.
@@ -58,7 +58,7 @@ function codename_setup() {
 	) );
 
 	// Set up the WordPress core custom logo feature.
-	add_theme_support( 'custom-logo', apply_filters( 'codename_custom_logo_args', array(
+	add_theme_support( 'custom-logo', apply_filters( 'harrison_custom_logo_args', array(
 		'height'      => 60,
 		'width'       => 300,
 		'flex-height' => true,
@@ -66,21 +66,21 @@ function codename_setup() {
 	) ) );
 
 	// Set up the WordPress core custom header feature.
-	add_theme_support( 'custom-header', apply_filters( 'codename_custom_header_args', array(
+	add_theme_support( 'custom-header', apply_filters( 'harrison_custom_header_args', array(
 		'header-text' => false,
 		'width'       => 1440,
 		'height'      => 450,
 	) ) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'codename_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'harrison_custom_background_args', array(
 		'default-color' => '353535',
 	) ) );
 
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
-add_action( 'after_setup_theme', 'codename_setup' );
+add_action( 'after_setup_theme', 'harrison_setup' );
 
 
 /**
@@ -89,37 +89,37 @@ add_action( 'after_setup_theme', 'codename_setup' );
  *
  * @global int $content_width
  */
-function codename_content_width() {
+function harrison_content_width() {
 
 	// Default content width.
 	$content_width = 800;
 
 	// Set global variable for content width.
-	$GLOBALS['content_width'] = apply_filters( 'codename_content_width', $content_width );
+	$GLOBALS['content_width'] = apply_filters( 'harrison_content_width', $content_width );
 }
-add_action( 'after_setup_theme', 'codename_content_width', 0 );
+add_action( 'after_setup_theme', 'harrison_content_width', 0 );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function codename_scripts() {
+function harrison_scripts() {
 
 	// Get Theme Version.
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	// Register and Enqueue Stylesheet.
-	wp_enqueue_style( 'codename-stylesheet', get_stylesheet_uri(), array(), $theme_version );
+	wp_enqueue_style( 'harrison-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script( 'codename-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
-		$codename_l10n = array(
-			'expand'   => esc_html__( 'Expand child menu', 'codename' ),
-			'collapse' => esc_html__( 'Collapse child menu', 'codename' ),
-			'icon'     => codename_get_svg( 'expand' ),
+		wp_enqueue_script( 'harrison-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+		$harrison_l10n = array(
+			'expand'   => esc_html__( 'Expand child menu', 'harrison' ),
+			'collapse' => esc_html__( 'Collapse child menu', 'harrison' ),
+			'icon'     => harrison_get_svg( 'expand' ),
 		);
-		wp_localize_script( 'codename-navigation', 'codenameScreenReaderText', $codename_l10n );
+		wp_localize_script( 'harrison-navigation', 'harrisonScreenReaderText', $harrison_l10n );
 	}
 
 	// Enqueue svgxuse to support external SVG Sprites in Internet Explorer.
@@ -130,17 +130,17 @@ function codename_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'codename_scripts' );
+add_action( 'wp_enqueue_scripts', 'harrison_scripts' );
 
 
 /**
 * Enqueue theme fonts.
 */
-function codename_theme_fonts() {
-	wp_enqueue_style( 'codename-theme-fonts', get_template_directory_uri() . '/assets/css/theme-fonts.css', array(), '20191018' );
+function harrison_theme_fonts() {
+	wp_enqueue_style( 'harrison-theme-fonts', get_template_directory_uri() . '/assets/css/theme-fonts.css', array(), '20191018' );
 }
-add_action( 'wp_enqueue_scripts', 'codename_theme_fonts', 1 );
-add_action( 'enqueue_block_editor_assets', 'codename_theme_fonts', 1 );
+add_action( 'wp_enqueue_scripts', 'harrison_theme_fonts', 1 );
+add_action( 'enqueue_block_editor_assets', 'harrison_theme_fonts', 1 );
 
 
 /**
@@ -148,31 +148,31 @@ add_action( 'enqueue_block_editor_assets', 'codename_theme_fonts', 1 );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function codename_widgets_init() {
+function harrison_widgets_init() {
 	// Register Footer Copyright widget area.
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Copyright', 'codename' ),
+		'name'          => esc_html__( 'Footer Copyright', 'harrison' ),
 		'id'            => 'footer-copyright',
-		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'codename' ),
+		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'harrison' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class = "widget-title">',
 		'after_title'   => '</h4>',
 	) );
 }
-add_action( 'widgets_init', 'codename_widgets_init', 30 );
+add_action( 'widgets_init', 'harrison_widgets_init', 30 );
 
 
 /**
  * Make custom image sizes available in Gutenberg.
  */
-function codename_add_image_size_names( $sizes ) {
+function harrison_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'                => esc_html__( 'Codename Single Post', 'codename' ),
-		'codename-horizontal-list-post' => esc_html__( 'Codename List Post', 'codename' ),
+		'post-thumbnail'                => esc_html__( 'Harrison Single Post', 'harrison' ),
+		'harrison-horizontal-list-post' => esc_html__( 'Harrison List Post', 'harrison' ),
 	) );
 }
-add_filter( 'image_size_names_choose', 'codename_add_image_size_names' );
+add_filter( 'image_size_names_choose', 'harrison_add_image_size_names' );
 
 
 /**

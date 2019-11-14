@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 get_header();
@@ -17,15 +17,15 @@ while ( have_posts() ) :
 	<main id="main" class="site-main" role="main">
 
 		<?php
-			get_template_part( 'template-parts/post/content', esc_html( codename_get_option( 'post_image_single' ) ) );
+			get_template_part( 'template-parts/post/content', esc_html( harrison_get_option( 'post_image_single' ) ) );
 		?>
 
 	</main><!-- #main -->
 
 	<?php
-	codename_post_navigation();
+	harrison_post_navigation();
 
-	codename_related_posts();
+	harrison_related_posts();
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :

@@ -7,23 +7,23 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 ?>
 
 	</div><!-- #content -->
 
-	<?php do_action( 'codename_before_footer' ); ?>
+	<?php do_action( 'harrison_before_footer' ); ?>
 
 	<footer id="colophon" class="site-footer">
 
-		<?php do_action( 'codename_footer_menu' ); ?>
+		<?php do_action( 'harrison_footer_menu' ); ?>
 		<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
 
 	</footer><!-- #colophon -->
 
-	<?php do_action( 'codename_after_footer' ); ?>
+	<?php do_action( 'harrison_after_footer' ); ?>
 
 </div><!-- #page -->
 

@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 ?><!DOCTYPE html>
@@ -22,18 +22,18 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 
-	<?php do_action( 'codename_before_site' ); ?>
+	<?php do_action( 'harrison_before_site' ); ?>
 
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'codename' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'harrison' ); ?></a>
 
-		<?php do_action( 'codename_before_header' ); ?>
+		<?php do_action( 'harrison_before_header' ); ?>
 
 		<header id="masthead" class="site-header" role="banner">
 
 			<div class="header-main">
 
-				<?php codename_site_logo(); ?>
+				<?php harrison_site_logo(); ?>
 
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
@@ -43,10 +43,10 @@
 
 		</header><!-- #masthead -->
 
-		<?php do_action( 'codename_after_header' ); ?>
+		<?php do_action( 'harrison_after_header' ); ?>
 
-		<?php codename_header_image(); ?>
+		<?php harrison_header_image(); ?>
 
 		<div id="content" class="site-content">
 
-			<?php codename_breadcrumbs(); ?>
+			<?php harrison_breadcrumbs(); ?>

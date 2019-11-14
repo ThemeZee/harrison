@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 get_header();

@@ -2,7 +2,7 @@
 /**
  * Headline Control for the Customizer
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
@@ -13,7 +13,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 	/**
 	 * Displays a bold label text. Used to create headlines for radio buttons and description sections.
 	 */
-	class Codename_Customize_Header_Control extends WP_Customize_Control {
+	class Harrison_Customize_Header_Control extends WP_Customize_Control {
 		/**
 		 * Render Control
 		 */

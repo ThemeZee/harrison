@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
@@ -11,10 +11,10 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function codename_body_classes( $classes ) {
+function harrison_body_classes( $classes ) {
 
 	// Get theme options from database.
-	$theme_options = codename_theme_options();
+	$theme_options = harrison_theme_options();
 
 	// Set Theme Layout.
 	if ( 'wide' === $theme_options['theme_layout'] ) {
@@ -102,7 +102,7 @@ function codename_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'codename_body_classes' );
+add_filter( 'body_class', 'harrison_body_classes' );
 
 
 /**
@@ -111,14 +111,14 @@ add_filter( 'body_class', 'codename_body_classes' );
  * @param int $length Length of excerpt in number of words.
  * @return int
  */
-function codename_excerpt_length( $length ) {
+function harrison_excerpt_length( $length ) {
 
 	if ( is_admin() ) {
 		return $length;
 	}
 
 	// Get excerpt length from database.
-	$excerpt_length = codename_get_option( 'excerpt_length' );
+	$excerpt_length = harrison_get_option( 'excerpt_length' );
 
 	// Return excerpt text.
 	if ( $excerpt_length >= 0 ) :
@@ -127,7 +127,7 @@ function codename_excerpt_length( $length ) {
 		return 55; // Number of words.
 	endif;
 }
-add_filter( 'excerpt_length', 'codename_excerpt_length' );
+add_filter( 'excerpt_length', 'harrison_excerpt_length' );
 
 
 /**
@@ -136,12 +136,12 @@ add_filter( 'excerpt_length', 'codename_excerpt_length' );
  * @param String $more_text Excerpt More Text.
  * @return string
  */
-function codename_excerpt_more( $more_text ) {
+function harrison_excerpt_more( $more_text ) {
 
 	if ( is_admin() ) {
 		return $more_text;
 	}
 
-	return esc_html( ' ' . codename_get_option( 'excerpt_more_text' ) );
+	return esc_html( ' ' . harrison_get_option( 'excerpt_more_text' ) );
 }
-add_filter( 'excerpt_more', 'codename_excerpt_more' );
+add_filter( 'excerpt_more', 'harrison_excerpt_more' );

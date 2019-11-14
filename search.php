@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 get_header();
@@ -16,7 +16,7 @@ if ( have_posts() ) :
 	<main id="main" class="site-main" role="main">
 
 		<?php
-		codename_search_header();
+		harrison_search_header();
 
 		while ( have_posts() ) :
 			the_post();
@@ -29,7 +29,7 @@ if ( have_posts() ) :
 	</main><!-- #main -->
 
 	<?php
-	codename_pagination();
+	harrison_pagination();
 
 else :
 

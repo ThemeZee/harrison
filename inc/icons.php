@@ -2,7 +2,7 @@
 /**
  * SVG icons related functions and filters
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param string $icon SVG icon id.
  * @return string $svg SVG markup.
  */
-function codename_get_svg( $icon = null ) {
+function harrison_get_svg( $icon = null ) {
 	// Return early if no icon was defined.
 	if ( empty( $icon ) ) {
 		return;
@@ -35,15 +35,15 @@ function codename_get_svg( $icon = null ) {
  * @param  int    $depth Depth of menu item. Used for padding.
  * @return string $title The menu item's title with dropdown icon.
  */
-function codename_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
+function harrison_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
 	if ( 'primary' === $args->theme_location || 'secondary' === $args->theme_location ) {
 		foreach ( $item->classes as $value ) {
 			if ( 'menu-item-has-children' === $value || 'page_item_has_children' === $value ) {
-				$title = $title . codename_get_svg( 'expand' );
+				$title = $title . harrison_get_svg( 'expand' );
 			}
 		}
 	}
 
 	return $title;
 }
-add_filter( 'nav_menu_item_title', 'codename_dropdown_icon_to_menu_link', 10, 4 );
+add_filter( 'nav_menu_item_title', 'harrison_dropdown_icon_to_menu_link', 10, 4 );

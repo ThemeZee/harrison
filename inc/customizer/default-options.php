@@ -4,7 +4,7 @@
  *
  * Uses sane defaults in case the user has not configured any theme options yet.
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
@@ -12,10 +12,10 @@
 *
 * @return mixed
 */
-function codename_get_option( $option_name = '' ) {
+function harrison_get_option( $option_name = '' ) {
 
 	// Get all Theme Options from Database.
-	$theme_options = codename_theme_options();
+	$theme_options = harrison_theme_options();
 
 	// Return single option.
 	if ( isset( $theme_options[ $option_name ] ) ) {
@@ -31,13 +31,13 @@ function codename_get_option( $option_name = '' ) {
  *
  * @return array
  */
-function codename_theme_options() {
+function harrison_theme_options() {
 
 	// Merge theme options array from database with default options array.
-	$theme_options = wp_parse_args( get_option( 'codename_theme_options', array() ), codename_default_options() );
+	$theme_options = wp_parse_args( get_option( 'harrison_theme_options', array() ), harrison_default_options() );
 
 	// Return theme options.
-	return apply_filters( 'codename_theme_options', $theme_options );
+	return apply_filters( 'harrison_theme_options', $theme_options );
 }
 
 
@@ -46,7 +46,7 @@ function codename_theme_options() {
  *
  * @return array
  */
-function codename_default_options() {
+function harrison_default_options() {
 
 	$default_options = array(
 		'site_title'          => true,
@@ -57,7 +57,7 @@ function codename_default_options() {
 		'blog_content'        => 'excerpt',
 		'excerpt_length'      => 25,
 		'excerpt_more_text'   => '[...]',
-		'read_more_link'      => esc_html__( 'Continue reading', 'codename' ),
+		'read_more_link'      => esc_html__( 'Continue reading', 'harrison' ),
 		'meta_date'           => true,
 		'meta_author'         => true,
 		'meta_comments'       => false,
@@ -70,5 +70,5 @@ function codename_default_options() {
 		'credit_link'         => true,
 	);
 
-	return apply_filters( 'codename_default_options', $default_options );
+	return apply_filters( 'harrison_default_options', $default_options );
 }

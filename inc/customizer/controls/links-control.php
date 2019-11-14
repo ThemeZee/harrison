@@ -2,7 +2,7 @@
 /**
  * Theme Links Control for the Customizer
  *
- * @package Codename
+ * @package Harrison
  */
 
 /**
@@ -13,7 +13,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 	/**
 	 * Displays the theme links in the Customizer.
 	 */
-	class Codename_Customize_Links_Control extends WP_Customize_Control {
+	class Harrison_Customize_Links_Control extends WP_Customize_Control {
 		/**
 		 * Render Control
 		 */
@@ -22,35 +22,35 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			<div class="theme-links">
 
-				<span class="customize-control-title"><?php esc_html_e( 'Theme Links', 'codename' ); ?></span>
+				<span class="customize-control-title"><?php esc_html_e( 'Theme Links', 'harrison' ); ?></span>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://themezee.com/themes/codename/', 'codename' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=codename&utm_content=theme-page" target="_blank">
-						<?php esc_html_e( 'Theme Page', 'codename' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/themes/harrison/', 'harrison' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=harrison&utm_content=theme-page" target="_blank">
+						<?php esc_html_e( 'Theme Page', 'harrison' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="http://preview.themezee.com/?demo=codename&utm_source=customizer&utm_campaign=codename" target="_blank">
-						<?php esc_html_e( 'Theme Demo', 'codename' ); ?>
+					<a href="http://preview.themezee.com/?demo=harrison&utm_source=customizer&utm_campaign=harrison" target="_blank">
+						<?php esc_html_e( 'Theme Demo', 'harrison' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://themezee.com/docs/codename-documentation/', 'codename' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=codename&utm_content=documentation" target="_blank">
-						<?php esc_html_e( 'Theme Documentation', 'codename' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/docs/harrison-documentation/', 'harrison' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=harrison&utm_content=documentation" target="_blank">
+						<?php esc_html_e( 'Theme Documentation', 'harrison' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=codename/', 'codename' ) ); ?>" target="_blank">
-						<?php esc_html_e( 'Theme Changelog', 'codename' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=harrison/', 'harrison' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Theme Changelog', 'harrison' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/codename/reviews/', 'codename' ) ); ?>" target="_blank">
-						<?php esc_html_e( 'Rate this theme', 'codename' ); ?>
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/harrison/reviews/', 'harrison' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Rate this theme', 'harrison' ); ?>
 					</a>
 				</p>
 

@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Codename
+ * @package Harrison
  */
 
 /*
@@ -32,10 +32,10 @@ if ( post_password_required() ) {
 				<?php
 				$comment_count = get_comments_number();
 				if ( '1' === $comment_count ) {
-					esc_html_e( 'One comment', 'codename' );
+					esc_html_e( 'One comment', 'harrison' );
 				} else {
 					// translators: Comment Count
-					printf( esc_html__( '%s comments', 'codename' ), number_format_i18n( $comment_count ) );
+					printf( esc_html__( '%s comments', 'harrison' ), number_format_i18n( $comment_count ) );
 				}
 				?>
 			</h2><!-- .comments-title -->
@@ -58,7 +58,7 @@ if ( post_password_required() ) {
 			// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() ) :
 				?>
-				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'codename' ); ?></p>
+				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'harrison' ); ?></p>
 				<?php
 			endif;
 

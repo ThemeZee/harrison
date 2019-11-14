@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 get_header();
@@ -15,7 +15,7 @@ if ( have_posts() ) :
 
 	<main id="main" class="site-main" role="main">
 
-		<?php codename_archive_header(); ?>
+		<?php harrison_archive_header(); ?>
 
 		<div id="post-wrapper" class="post-wrapper">
 
@@ -23,7 +23,7 @@ if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/blog/content', esc_html( codename_get_option( 'blog_layout' ) ) );
+			get_template_part( 'template-parts/blog/content', esc_html( harrison_get_option( 'blog_layout' ) ) );
 
 		endwhile;
 		?>
@@ -33,7 +33,7 @@ if ( have_posts() ) :
 	</main><!-- #main -->
 
 	<?php
-	codename_pagination();
+	harrison_pagination();
 
 else :
 

@@ -3,7 +3,7 @@
  * The template used for displaying page content in page.php
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 ?>
 
@@ -22,6 +22,6 @@
 
 	</div><!-- .entry-content -->
 
-	<?php do_action( 'codename_after_pages' ); ?>
+	<?php do_action( 'harrison_after_pages' ); ?>
 
 </article>

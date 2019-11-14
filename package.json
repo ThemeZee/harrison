@@ -1,22 +1,22 @@
 {
-  "name": "codename",
+  "name": "harrison",
   "version": "1.0.0",
-  "description": "Codename WordPress Theme",
+  "description": "Harrison WordPress Theme",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "git archive HEAD -9 --prefix codename/ --format=zip > ../../codename.zip"
+    "export": "git archive HEAD -9 --prefix harrison/ --format=zip > ../../harrison.zip"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThemeZee/codename.git"
+    "url": "git+https://github.com/ThemeZee/harrison.git"
   },
   "author": "ThemeZee",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ThemeZee/codename/issues"
+    "url": "https://github.com/ThemeZee/harrison/issues"
   },
-  "homepage": "https://github.com/ThemeZee/codename#readme",
+  "homepage": "https://github.com/ThemeZee/harrison#readme",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "gulp": "^4.0.2",

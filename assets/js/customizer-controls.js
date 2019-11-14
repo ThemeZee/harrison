@@ -3,13 +3,13 @@
  *
  * Adds Javascript for Customizer Controls.
  *
- * @package Codename
+ * @package Harrison
  */
 
 ( function( wp, $ ) {
 
 	// Based on https://make.xwp.co/2016/07/24/dependently-contextual-customizer-controls/
-	wp.customize( 'codename_theme_options[blog_content]', function( setting ) {
+	wp.customize( 'harrison_theme_options[blog_content]', function( setting ) {
 		var setupControl = function( control ) {
 			var setActiveState, isDisplayed;
 			isDisplayed = function() {
@@ -22,15 +22,15 @@
 			setting.bind( setActiveState );
 			control.active.validate = isDisplayed;
 		};
-		wp.customize.control( 'codename_theme_options[excerpt_length]', setupControl );
-		wp.customize.control( 'codename_theme_options[excerpt_more_text]', setupControl );
+		wp.customize.control( 'harrison_theme_options[excerpt_length]', setupControl );
+		wp.customize.control( 'harrison_theme_options[excerpt_more_text]', setupControl );
 	} );
 
 	/**
 	 * The Customizer looks for wp.customizer.controlConstructor[type] functions
 	 * where type == the type member of a WP_Customize_Control
 	 */
-	wp.customize.controlConstructor.codename_custom_font = wp.customize.Control.extend({
+	wp.customize.controlConstructor.harrison_custom_font = wp.customize.Control.extend({
 		/**
 		 * This method is called when the control is ready to run.
 		 */

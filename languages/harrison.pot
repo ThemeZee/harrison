@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Codename\n"
+"Project-Id-Version: Harrison\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-10-22 12:54+0200\n"
+"POT-Creation-Date: 2019-11-14 18:09+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -65,6 +65,14 @@ msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
+#: functions.php:171
+msgid "Harrison Single Post"
+msgstr ""
+
+#: functions.php:172
+msgid "Harrison List Post"
+msgstr ""
+
 #: header.php:28
 msgid "Skip to content"
 msgstr ""
@@ -81,7 +89,7 @@ msgid "Theme Links"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:28 inc/theme-info.php:47
-msgid "https://themezee.com/themes/codename/"
+msgid "https://themezee.com/themes/harrison/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:29 inc/theme-info.php:47
@@ -93,32 +101,32 @@ msgid "Theme Demo"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:40 inc/theme-info.php:49
-#: inc/theme-info.php:72
-msgid "https://themezee.com/docs/codename-documentation/"
+#: inc/theme-info.php:71
+msgid "https://themezee.com/docs/harrison-documentation/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:41 inc/theme-info.php:49
-#: inc/theme-info.php:66
+#: inc/theme-info.php:65
 msgid "Theme Documentation"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:46
 msgid ""
 "https://themezee.com/changelogs/?action=themezee-"
-"changelog&type=theme&slug=codename/"
+"changelog&type=theme&slug=harrison/"
 msgstr ""
 
-#: inc/customizer/controls/links-control.php:47 inc/theme-info.php:51
+#: inc/customizer/controls/links-control.php:47 inc/theme-info.php:50
 msgid "Theme Changelog"
 msgstr ""
 
-#: inc/customizer/controls/links-control.php:52 inc/theme-info.php:52
-#: inc/theme-info.php:156
-msgid "https://wordpress.org/support/theme/codename/reviews/"
+#: inc/customizer/controls/links-control.php:52 inc/theme-info.php:51
+#: inc/theme-info.php:155
+msgid "https://wordpress.org/support/theme/harrison/reviews/"
 msgstr ""
 
-#: inc/customizer/controls/links-control.php:53 inc/theme-info.php:52
-#: inc/theme-info.php:156
+#: inc/customizer/controls/links-control.php:53 inc/theme-info.php:51
+#: inc/theme-info.php:155
 msgid "Rate this theme"
 msgstr ""
 
@@ -126,27 +134,27 @@ msgstr ""
 msgid "Install Plugin"
 msgstr ""
 
-#: inc/customizer/controls/upgrade-control.php:25 inc/theme-info.php:112
+#: inc/customizer/controls/upgrade-control.php:25 inc/theme-info.php:111
 msgid "Pro Version Add-on"
 msgstr ""
 
-#: inc/customizer/controls/upgrade-control.php:28 inc/theme-info.php:115
+#: inc/customizer/controls/upgrade-control.php:28 inc/theme-info.php:114
 #, php-format
 msgid ""
 "Purchase the %s Pro Add-on to get additional features and advanced "
 "customization options."
 msgstr ""
 
-#: inc/customizer/controls/upgrade-control.php:32 inc/theme-info.php:118
-msgid "https://themezee.com/addons/codename-pro/"
+#: inc/customizer/controls/upgrade-control.php:32 inc/theme-info.php:117
+msgid "https://themezee.com/addons/harrison-pro/"
 msgstr ""
 
-#: inc/customizer/controls/upgrade-control.php:33 inc/theme-info.php:119
+#: inc/customizer/controls/upgrade-control.php:33 inc/theme-info.php:118
 #, php-format
 msgid "Learn more about %s Pro"
 msgstr ""
 
-#: inc/customizer/customizer.php:37 inc/theme-info.php:79
+#: inc/customizer/customizer.php:37 inc/theme-info.php:78
 msgid "Theme Options"
 msgstr ""
 
@@ -414,66 +422,66 @@ msgctxt "block font size"
 msgid "Huge"
 msgstr ""
 
-#: inc/template-tags.php:134
+#: inc/template-tags.php:135
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:236
+#: inc/template-tags.php:237
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/template-tags.php:242
+#: inc/template-tags.php:243
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:285
+#: inc/template-tags.php:286
 msgid "No comments"
 msgstr ""
 
-#: inc/template-tags.php:286
+#: inc/template-tags.php:287
 msgid "1 comment"
 msgstr ""
 
-#: inc/template-tags.php:287
+#: inc/template-tags.php:288
 #, php-format
 msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:305
+#: inc/template-tags.php:306
 msgid "Tags"
-msgstr ""
-
-#: inc/template-tags.php:348
-msgctxt "post navigation"
-msgid "Previous Post"
 msgstr ""
 
 #: inc/template-tags.php:349
 msgctxt "post navigation"
-msgid "Next Post"
+msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:368
-msgctxt "pagination"
-msgid "Previous Posts"
+#: inc/template-tags.php:350
+msgctxt "post navigation"
+msgid "Next Post"
 msgstr ""
 
 #: inc/template-tags.php:369
 msgctxt "pagination"
+msgid "Previous Posts"
+msgstr ""
+
+#: inc/template-tags.php:370
+msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
 
-#: inc/template-tags.php:413
+#: inc/template-tags.php:414
 #, php-format
 msgid "WordPress Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/template-tags.php:414
-msgid "Codename"
+#: inc/template-tags.php:415
+msgid "Harrison"
 msgstr ""
 
 #: inc/theme-info.php:19 inc/theme-info.php:40
@@ -482,74 +490,66 @@ msgid "Welcome to %1$s %2$s"
 msgstr ""
 
 #: inc/theme-info.php:50
-msgid "https://wordpress.org/support/theme/codename/"
-msgstr ""
-
-#: inc/theme-info.php:50
-msgid "Support Forum"
-msgstr ""
-
-#: inc/theme-info.php:51
 msgid ""
 "https://themezee.com/changelogs/?action=themezee-"
-"changelog&type=theme&slug=codename"
+"changelog&type=theme&slug=harrison"
 msgstr ""
 
-#: inc/theme-info.php:59
+#: inc/theme-info.php:58
 #, php-format
 msgid "Getting started with %s"
 msgstr ""
 
-#: inc/theme-info.php:69
+#: inc/theme-info.php:68
 msgid ""
 "Need help to set up and configure this theme? We got you covered! Check out "
 "the extensive theme documentation on our website."
 msgstr ""
 
-#: inc/theme-info.php:73
+#: inc/theme-info.php:72
 #, php-format
 msgid "View %s's documentation"
 msgstr ""
 
-#: inc/theme-info.php:82
+#: inc/theme-info.php:81
 #, php-format
 msgid ""
 "%s makes use of the Customizer for all theme settings. Click on \"Customize "
 "Theme\" to open the Customizer now."
 msgstr ""
 
-#: inc/theme-info.php:85
+#: inc/theme-info.php:84
 msgid "Customize Theme"
 msgstr ""
 
-#: inc/theme-info.php:105
+#: inc/theme-info.php:104
 msgid "Get more features"
 msgstr ""
 
-#: inc/theme-info.php:129
+#: inc/theme-info.php:128
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/theme-info.php:132
+#: inc/theme-info.php:131
 msgid ""
 "Extend the functionality of your WordPress website with our free and easy to "
 "use plugins."
 msgstr ""
 
-#: inc/theme-info.php:136
+#: inc/theme-info.php:135
 msgid "Install Plugins"
 msgstr ""
 
-#: inc/theme-info.php:153
+#: inc/theme-info.php:152
 #, php-format
 msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
 msgstr ""
 
-#: inc/theme-info.php:155
+#: inc/theme-info.php:154
 msgid "https://themezee.com/"
 msgstr ""
 
-#: inc/theme-info.php:156
+#: inc/theme-info.php:155
 msgctxt "If you like this theme, rate it"
 msgid "rate it"
 msgstr ""

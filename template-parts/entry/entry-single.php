@@ -3,7 +3,7 @@
  * The template for displaying the full content of a single post
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 ?>
 
@@ -14,6 +14,6 @@
 
 </div><!-- .entry-content -->
 
-<?php do_action( 'codename_after_posts' ); ?>
-<?php codename_entry_tags(); ?>
-<?php do_action( 'codename_author_bio' ); ?>
+<?php do_action( 'harrison_after_posts' ); ?>
+<?php harrison_entry_tags(); ?>
+<?php do_action( 'harrison_author_bio' ); ?>

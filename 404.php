@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @version 1.0
- * @package Codename
+ * @package Harrison
  */
 
 get_header(); ?>
@@ -16,12 +16,12 @@ get_header(); ?>
 
 			<header class="entry-header">
 
-				<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'codename' ); ?></h1>
+				<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'harrison' ); ?></h1>
 
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'codename' ); ?></p>
+				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'harrison' ); ?></p>
 
 				<?php get_search_form(); ?>
 
