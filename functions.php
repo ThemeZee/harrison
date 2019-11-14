@@ -113,7 +113,7 @@ function harrison_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script( 'harrison-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'harrison-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20191114', true );
 		$harrison_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'harrison' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'harrison' ),
