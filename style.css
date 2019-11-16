@@ -2486,6 +2486,21 @@ object {
 	font-weight: normal;
 }
 
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta,
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta span::after,
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:link,
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
+.site-info .widget .tzwb-comments-list .tzwb-comment-date {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
+}
+
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:hover,
+.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:active {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-text-color);
+}
+
 /* Footer Line */
 .site-info .footer-text,
 .site-info .credit-link {

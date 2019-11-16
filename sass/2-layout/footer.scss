@@ -65,6 +65,19 @@
 		@include color(--footer-text-color);
 		font-weight: normal;
 	}
+
+	.tzwb-posts-list .tzwb-entry-meta,
+	.tzwb-posts-list .tzwb-entry-meta span::after,
+	.tzwb-posts-list .tzwb-entry-meta a:link,
+	.tzwb-posts-list .tzwb-entry-meta a:visited,
+	.tzwb-comments-list .tzwb-comment-date {
+		@include color(--footer-link-hover-color);
+	}
+
+	.tzwb-posts-list .tzwb-entry-meta a:hover,
+	.tzwb-posts-list .tzwb-entry-meta a:active {
+		@include color(--footer-text-color);
+	}
 }
 
 /* Footer Line */
