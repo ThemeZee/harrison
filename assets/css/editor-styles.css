@@ -129,6 +129,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 1.0625rem;
 	line-height: 1.75;
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .editor-styles-wrapper p {
@@ -171,7 +172,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--page-border-color);
 }
 
 .editor-styles-wrapper pre {
@@ -179,8 +181,11 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--page-light-bg-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -245,10 +250,13 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-top: 0;
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid rgba(0, 0, 0, 0.9);
+	border-left: 3px solid;
+	border-color: rgba(0, 0, 0, 0.9);
+	border-color: var(--text-color);
 	color: rgba(0, 0, 0, 0.5);
-	font-size: 18px;
-	font-size: 1.125rem;
+	color: var(--light-text-color);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
 }
 
 .editor-styles-wrapper blockquote p {
@@ -258,6 +266,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper blockquote cite {
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -304,8 +313,10 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
-	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 0.4em 0.6em;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
 }
 
 /*--------------------------------------------------------------
@@ -340,6 +351,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 /* Cover Block */
 .wp-block-cover {
 	display: flex;
+	margin-bottom: 1.5em;
 }
 
 .wp-block-cover-text {
@@ -354,11 +366,53 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	width: auto;
 }
 
+/* Image */
+.wp-block-image .alignleft {
+	margin-right: 1.5em;
+}
+
+.wp-block-image .alignright {
+	margin-left: 1.5em;
+}
+
+/* Captions */
+.blocks-gallery-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	font-size: 16px;
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
+	text-align: center;
+}
+
+/* Latest Posts */
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-latest-posts__post-date {
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
+	font-size: 14px;
+	font-size: 0.875rem;
+	margin-bottom: 0.5em;
+}
+
+/* Table */
+.wp-block-table table {
+	table-layout: auto;
+}
+
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 120px;
-	height: 4px;
-	background-color: rgba(0, 0, 0, 0.1);
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.9);
+	background-color: var(--text-color);
 }
 
 /* Video Embed Block */
@@ -367,14 +421,13 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 /* Quote Block */
+.wp-block-quote.is-large,
 .wp-block-quote.is-style-large {
 	border: none;
 	margin: 0 0 1.5em;
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
 }
 
 .wp-block-quote.is-style-large p {
@@ -393,16 +446,18 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-	border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-	border-top: 4px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 3px solid;
+	border-top: 3px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
 }
 
 .wp-block-pullquote blockquote {
 	border: none;
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
@@ -410,6 +465,12 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .wp-block-pullquote p {
 	font-size: inherit;
 	line-height: inherit;
+}
+
+.wp-block-pullquote.alignleft p,
+.wp-block-pullquote.alignright p {
+	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 .wp-block-pullquote blockquote cite {
@@ -465,11 +526,6 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 /* Quote Block */
-.wp-block-quote:not(.is-large):not(.is-style-large) {
-	padding-left: 1.5em;
-	border-left: 4px solid rgba(0, 0, 0, 0.9);
-}
-
 .wp-block-quote cite,
 .wp-block-quote footer,
 .wp-block-quote__citation,
@@ -477,6 +533,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .wp-block-pullquote footer,
 .wp-block-pullquote .wp-block-pullquote__citation {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
@@ -497,19 +554,6 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
 	color: inherit;
-}
-
-/* GT Section Block */
-.gt-background-section .gt-section-content.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc(880px + 30px);
-}
-
-.gt-background-section .gt-section-content.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc(1120px + 30px);
-}
-
-.gt-background-section .gt-section-content.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc(1280px + 30px);
 }
 
 /*--------------------------------------------------------------

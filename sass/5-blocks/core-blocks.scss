@@ -26,6 +26,7 @@
 /* Cover Block */
 .wp-block-cover {
 	display: flex;
+	margin-bottom: 1.5em;
 }
 
 .wp-block-cover-text {
@@ -39,11 +40,48 @@
 	width: auto;
 }
 
+/* Image */
+.wp-block-image .alignleft {
+	margin-right: 1.5em;
+}
+
+.wp-block-image .alignright {
+	margin-left: 1.5em;
+}
+
+/* Captions */
+.blocks-gallery-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	@include font-size(16);
+	@include color(--light-text-color);
+	text-align: center;
+}
+
+/* Latest Posts */
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-latest-posts__post-date {
+	@include color(--light-text-color);
+	@include font-size(14);
+	margin-bottom: 0.5em;
+}
+
+/* Table */
+.wp-block-table table {
+	table-layout: auto;
+}
+
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 120px;
-	height: 4px;
-	background-color: rgba(0, 0, 0, 0.1);
+	height: 3px;
+	@include background(--text-color);
 }
 
 /* Video Embed Block */
@@ -52,13 +90,12 @@
 }
 
 /* Quote Block */
+.wp-block-quote.is-large,
 .wp-block-quote.is-style-large {
 	border: none;
 	margin: 0 0 1.5em;
 	padding: 0;
 	@include font-size(24);
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
 }
 
 .wp-block-quote.is-style-large p {
@@ -76,15 +113,16 @@
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-	border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-	border-top: 4px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 3px solid;
+	border-top: 3px solid;
+	@include border-color(--page-border-color);
 }
 
 .wp-block-pullquote blockquote {
 	border: none;
 	margin: 0;
 	padding: 0;
-	@include font-size(24);
+	@include font-size(28);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
@@ -92,6 +130,11 @@
 .wp-block-pullquote p {
 	font-size: inherit;
 	line-height: inherit;
+}
+
+.wp-block-pullquote.alignleft p,
+.wp-block-pullquote.alignright p {
+	@include font-size(22);
 }
 
 .wp-block-pullquote blockquote cite {

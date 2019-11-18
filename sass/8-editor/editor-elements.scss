@@ -3,7 +3,7 @@
 	@include font-family(--text-font);
 	@include font-size(17);
 	line-height: 1.75;
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .editor-styles-wrapper p {
@@ -45,7 +45,7 @@
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	@include background(--page-border-color);
 }
 
 .editor-styles-wrapper pre {
@@ -53,10 +53,10 @@
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
-	font-size: 15px;
-	font-size: 0.9375rem;
+	border: 1px solid;
+	@include border-color(--page-border-color);
+	@include background(--page-light-bg-color);
+	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.5;
 }
@@ -107,9 +107,11 @@
 	margin-top: 0;
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid $textColor;
-	color: rgba(0, 0, 0, 0.5);
-	@include font-size(18);
+	border-left: 3px solid;
+	@include border-color(--text-color);
+	@include color(--light-text-color);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
 }
 
 .editor-styles-wrapper blockquote p {
@@ -118,7 +120,7 @@
 
 .editor-styles-wrapper blockquote cite {
 	display: block;
-	color: $textColor;
+	@include color(--text-color);
 	@include font-size(16);
 }
 
@@ -164,6 +166,7 @@
 
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
-	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 0.4em 0.6em;
+	border: 1px solid;
+	@include border-color(--page-border-color);
 }
