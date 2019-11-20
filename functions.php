@@ -41,7 +41,7 @@ function harrison_setup() {
 	// Add image size for header image on single posts and pages.
 	add_image_size( 'harrison-featured-header-image', 1440, 600, true );
 
-	// Add image size for header image on single posts and pages.
+	// Add image size for posts with the Horizontal Blog layout enabled.
 	add_image_size( 'harrison-horizontal-list-post', 960, 720, true );
 
 	// Register Navigation Menus.
@@ -69,7 +69,7 @@ function harrison_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'harrison_custom_header_args', array(
 		'header-text' => false,
 		'width'       => 1440,
-		'height'      => 450,
+		'height'      => 600,
 	) ) );
 
 	// Set up the WordPress core custom background feature.
