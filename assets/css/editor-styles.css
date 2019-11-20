@@ -50,6 +50,11 @@
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
+.editor-styles-wrapper {
+	background-color: #fff;
+	background-color: var(--page-background-color);
+}
+
 .editor-styles-wrapper .wp-block {
 	max-width: calc(880px + 30px);
 }
@@ -62,21 +67,10 @@
 	max-width: none;
 }
 
-/* Fullwidth Template */
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	max-width: calc(1280px + 30px);
-}
-
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="wide"] {
-	max-width: calc(1440px + 30px);
-}
-
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="full"] {
-	max-width: none;
-}
-
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	color: #202020;
+	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
@@ -107,14 +101,6 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 		font-size: 48px;
 		font-size: 3rem;
 	}
-}
-
-/* Hidden Page Title */
-body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
-	background-color: #fff;
-	background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd), linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
-	background-size: 20px 20px;
-	background-position: 0 0, 10px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -182,6 +168,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	padding: 1.5em;
 	max-width: 100%;
 	border: 1px solid;
+	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--page-border-color);
 	background-color: rgba(0, 0, 0, 0.05);
@@ -201,6 +189,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
+	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.4;
@@ -475,6 +465,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;

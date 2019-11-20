@@ -1944,6 +1944,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;

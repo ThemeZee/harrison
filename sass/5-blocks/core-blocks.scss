@@ -138,7 +138,7 @@
 }
 
 .wp-block-pullquote blockquote cite {
-	color: $textColor;
+	@include color(--text-color);
 	@include font-family(--text-font);
 	font-style: normal;
 }
