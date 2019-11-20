@@ -2,18 +2,17 @@
 Author URI: https://themezee.com/
 Theme URI: https://themezee.com/themes/harrison/
 Contributors: themezee
-Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
 Tested up to: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Harrison is a modern Business WordPress Theme.
+Harrison is a highly versatile WordPress Theme.
 
 == Description ==
 
-Harrison is a modern Business WordPress Theme created with the new WordPress Block Editor in mind. The theme comes with Customizer options for colors and typography and a widgetized footer area. It is lightweight, GDPR-ready and works best in combination with our free GT Blocks plugin.
-
+Harrison is a highly versatile WordPress Theme and was specially designed for use with the new WordPress Block Editor. The theme supports the latest Gutenberg features and provides different blog layouts and extensive post settings. The clean and elegant design is perfect to create all kinds of websites. You should really try it!
 For more information about Harrison please go to https://themezee.com/themes/harrison/
 
 == Installation ==
@@ -61,3 +60,12 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
+
+6. Barlow Font - https://fonts.google.com/specimen/Barlow
+License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
+Copyright: Jeremy Tribby
+
+7. Modern Art image used in screenshot.jpg is from the great Steve Johnson:
+https://stocksnap.io/photo/OZCMRCGRX9
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: Steve Johnson (https://stocksnap.io/author/stevejohnson)
