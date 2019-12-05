@@ -23,7 +23,10 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 - 2019-12-05 =
+* improved support for wooCommerce
+
+= 1.0 - 2019-11-20 =
 * First Release
 
 == Copyright ==
