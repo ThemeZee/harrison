@@ -70,6 +70,8 @@ function harrison_setup() {
 		'header-text' => false,
 		'width'       => 1440,
 		'height'      => 600,
+		'flex-width'  => true,
+		'flex-height' => true,
 	) ) );
 
 	// Set up the WordPress core custom background feature.

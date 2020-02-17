@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.0.2 - 2020-02-17 =
+* added flexible width and height to custom header image
+
 = 1.0.1 - 2019-12-05 =
 * improved support for wooCommerce
 
