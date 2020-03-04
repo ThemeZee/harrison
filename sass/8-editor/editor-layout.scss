@@ -14,6 +14,19 @@
 	max-width: none;
 }
 
+/* Fullwidth Template */
+.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block {
+	max-width: calc(#{$contentFullwidth} + 30px);
+}
+
+.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: calc(#{$wideBlockFullwidth} + 30px);
+}
+
+.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	@include color(--title-color);
@@ -25,22 +38,29 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 }
 
 @media only screen and (min-width: 640px) {
-
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
 		@include font-size(32);
 	}
 }
 
 @media only screen and (min-width: 960px) {
-
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
 		@include font-size(40);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
 		@include font-size(48);
 	}
+}
+
+/* Hidden Page Title */
+body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
+	background-color: #fff;
+	background-image:
+		linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd),
+		linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
+	background-size: 20px 20px;
+	background-position: 0 0, 10px 10px;
 }

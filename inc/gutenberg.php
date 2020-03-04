@@ -118,6 +118,9 @@ function harrison_block_editor_assets() {
 
 	// Enqueue Editor Styling.
 	wp_enqueue_style( 'harrison-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
+
+	// Enqueue Theme Settings Editor plugin.
+	wp_enqueue_script( 'harrison-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
 }
 add_action( 'enqueue_block_editor_assets', 'harrison_block_editor_assets' );
 
@@ -136,3 +139,35 @@ function harrison_block_editor_settings( $editor_settings ) {
 	return $editor_settings;
 }
 add_filter( 'block_editor_settings', 'harrison_block_editor_settings', 11 );
+
+
+/**
+ * Add body classes in Gutenberg Editor.
+ */
+function harrison_block_editor_body_classes( $classes ) {
+	global $post;
+	$current_screen = get_current_screen();
+
+	// Return early if we are not in the Gutenberg Editor.
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+		return $classes;
+	}
+
+	// Fullwidth Page Template?
+	if ( 'templates/template-fullwidth.php' === get_page_template_slug( $post->ID ) ) {
+		$classes .= ' tz-fullwidth-page-layout ';
+	}
+
+	// No Title Page Template?
+	if ( 'templates/template-no-title.php' === get_page_template_slug( $post->ID ) ) {
+		$classes .= ' tz-page-title-hidden ';
+	}
+
+	// Full-width / No Title Page Template?
+	if ( 'templates/template-fullwidth-no-title.php' === get_page_template_slug( $post->ID ) ) {
+		$classes .= ' tz-fullwidth-page-layout tz-page-title-hidden ';
+	}
+
+	return $classes;
+}
+add_filter( 'admin_body_class', 'harrison_block_editor_body_classes' );
