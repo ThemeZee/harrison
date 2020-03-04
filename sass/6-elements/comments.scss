@@ -32,7 +32,9 @@
 	list-style: none;
 }
 
-.comment {
+.comment,
+.trackback,
+.pingback {
 	margin: 0 0 1.5rem;
 	padding: 1.5rem;
 	@include background(--page-background-color);
@@ -102,6 +104,26 @@
 	margin: 0;
 	padding: 1.5rem 0 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Pingbacks and Trackbacks */
+.trackback,
+.pingback {
+	.comment-meta {
+		float: none;
+
+		.comment-author .says {
+			display: none;
+		}
+
+		.comment-metadata {
+			@include font-size(15);
+		}
+	}
+
+	.comment-content {
+		display: none;
+	}
 }
 
 /* Comment Reply */

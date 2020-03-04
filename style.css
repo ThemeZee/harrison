@@ -2153,7 +2153,9 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	list-style: none;
 }
 
-.comment {
+.comment,
+.trackback,
+.pingback {
 	margin: 0 0 1.5rem;
 	padding: 1.5rem;
 	background-color: #fff;
@@ -2229,6 +2231,28 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	margin: 0;
 	padding: 1.5rem 0 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Pingbacks and Trackbacks */
+.trackback .comment-meta,
+.pingback .comment-meta {
+	float: none;
+}
+
+.trackback .comment-meta .comment-author .says,
+.pingback .comment-meta .comment-author .says {
+	display: none;
+}
+
+.trackback .comment-meta .comment-metadata,
+.pingback .comment-meta .comment-metadata {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.trackback .comment-content,
+.pingback .comment-content {
+	display: none;
 }
 
 /* Comment Reply */
