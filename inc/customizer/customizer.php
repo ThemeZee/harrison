@@ -66,6 +66,6 @@ add_action( 'customize_controls_enqueue_scripts', 'harrison_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function harrison_customizer_controls_css() {
-	wp_enqueue_style( 'harrison-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20191114' );
+	wp_enqueue_style( 'harrison-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20200304' );
 }
 add_action( 'customize_controls_print_styles', 'harrison_customizer_controls_css' );

@@ -49,6 +49,7 @@ function harrison_theme_options() {
 function harrison_default_options() {
 
 	$default_options = array(
+		'retina_logo'         => false,
 		'site_title'          => true,
 		'site_description'    => true,
 		'theme_layout'        => 'centered',
