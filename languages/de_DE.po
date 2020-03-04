@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Harrison\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-11-19 22:02+0100\n"
-"PO-Revision-Date: 2019-11-19 22:09+0100\n"
+"POT-Creation-Date: 2020-03-04 15:22+0100\n"
+"PO-Revision-Date: 2020-03-04 15:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee\n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: 404.php:19
 msgid "404: Page not found"
@@ -36,7 +36,7 @@ msgstr "Ein Kommentar"
 msgid "%s comments"
 msgstr "%s Kommentare"
 
-#: comments.php:61
+#: comments.php:60
 msgid "Comments are closed."
 msgstr "Kommentare sind geschlossen."
 
@@ -44,28 +44,28 @@ msgstr "Kommentare sind geschlossen."
 msgid "Main Navigation"
 msgstr "Hauptnavigation"
 
-#: functions.php:118
+#: functions.php:120
 msgid "Expand child menu"
 msgstr "Untermenü öffnen"
 
-#: functions.php:119
+#: functions.php:121
 msgid "Collapse child menu"
 msgstr "Untermenü schließen"
 
-#: functions.php:154
+#: functions.php:156
 msgid "Footer Copyright"
 msgstr "Footer Copyright"
 
-#: functions.php:156
+#: functions.php:158
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr "Erscheint in der unteren Zeile im Footer."
 
-#: functions.php:171
+#: functions.php:173
 msgid "Harrison Single Post"
 msgstr "Harrison Single Post"
 
-#: functions.php:172
+#: functions.php:174
 msgid "Harrison List Post"
 msgstr "Harrison List Post"
 
@@ -164,7 +164,7 @@ msgstr "Theme Optionen"
 msgid "Background"
 msgstr "Hintergrund"
 
-#: inc/customizer/default-options.php:60
+#: inc/customizer/default-options.php:61
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
@@ -348,11 +348,19 @@ msgstr ""
 "Installiere unsere kostenlosen Magazin Blocks, um mit nur wenigen Klicks "
 "eine Magazin-Homepage im Editor zu erstellen."
 
-#: inc/customizer/sections/website-settings.php:40
+#: inc/customizer/sections/website-settings.php:34
+msgid "Retina Logo"
+msgstr "Retina Logo"
+
+#: inc/customizer/sections/website-settings.php:50
+msgid "Scale down logo image for retina displays"
+msgstr "Logo-Bild für Retina-Displays verkleinern"
+
+#: inc/customizer/sections/website-settings.php:66
 msgid "Display Site Title"
 msgstr "Titel der Website anzeigen"
 
-#: inc/customizer/sections/website-settings.php:56
+#: inc/customizer/sections/website-settings.php:82
 msgid "Display Tagline"
 msgstr "Untertitel anzeigen"
 
