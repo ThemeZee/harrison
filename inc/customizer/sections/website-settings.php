@@ -47,7 +47,7 @@ function harrison_customize_register_website_settings( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'harrison_theme_options[retina_logo]', array(
-		'label'    => esc_html__( 'Scale down logo image to look sharp on high resolution screens', 'harrison' ),
+		'label'    => esc_html__( 'Scale down logo image for retina displays', 'harrison' ),
 		'section'  => 'title_tagline',
 		'settings' => 'harrison_theme_options[retina_logo]',
 		'type'     => 'checkbox',
