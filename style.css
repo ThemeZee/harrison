@@ -2639,6 +2639,7 @@ object {
 }
 
 .page-template-template-fullwidth .themezee-breadcrumbs,
+.page-template-template-fullwidth-no-title .themezee-breadcrumbs,
 .blog-layout-horizontal-list .themezee-breadcrumbs,
 .blog-layout-two-column-grid .themezee-breadcrumbs,
 .blog-layout-three-column-grid .themezee-breadcrumbs {
