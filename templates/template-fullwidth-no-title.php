@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: Full-width Layout
+ * Template Name: Full-width / No Title
  * Template Post Type: page
  *
- * Description: A custom template for displaying a fullwidth layout.
+ * Description: A custom template for displaying a fullwidth layout with no page title.
  *
  * @package Harrison
  */
@@ -17,7 +17,7 @@ while ( have_posts() ) :
 	<main id="main" class="site-main" role="main">
 
 		<?php
-			get_template_part( 'template-parts/page/content', 'page' );
+			get_template_part( 'template-parts/page/content', 'no-title' );
 		?>
 
 	</main><!-- #main -->

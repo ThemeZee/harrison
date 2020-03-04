@@ -1,5 +1,6 @@
 /* Fullwidth Page Template */
-.page-template-template-fullwidth {
+.page-template-template-fullwidth,
+.page-template-template-fullwidth-no-title {
 	.site-main {
 		max-width: $contentFullwidth;
 
@@ -12,7 +13,8 @@
 }
 
 @media only screen and (min-width: 1440px) {
-	.page-template-template-fullwidth {
+	.page-template-template-fullwidth,
+	.page-template-template-fullwidth-no-title {
 		.site-main {
 			.entry-content > .alignwide,
 			.entry-content > .alignfull {
