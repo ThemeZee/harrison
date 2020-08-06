@@ -2,14 +2,14 @@
 /**
  * Main Navigation
  *
- * @version 1.0
+ * @version 1.1
  * @package Harrison
  */
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-	<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+	<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php harrison_amp_menu_toggle(); ?>>
 		<?php
 		echo harrison_get_svg( 'menu' );
 		echo harrison_get_svg( 'close' );
@@ -19,7 +19,7 @@
 
 	<div class="primary-navigation">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'harrison' ); ?>">
+		<nav id="site-navigation" class="main-navigation" <?php harrison_amp_menu_is_toggled(); ?> role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'harrison' ); ?>">
 
 			<?php
 			wp_nav_menu(

@@ -114,7 +114,7 @@ function harrison_scripts() {
 	wp_enqueue_style( 'harrison-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
 	// Register and enqueue navigation.js.
-	if ( has_nav_menu( 'primary' ) ) {
+	if ( has_nav_menu( 'primary' ) && ! harrison_is_amp() ) {
 		wp_enqueue_script( 'harrison-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20191114', true );
 		$harrison_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'harrison' ),
@@ -125,7 +125,9 @@ function harrison_scripts() {
 	}
 
 	// Enqueue svgxuse to support external SVG Sprites in Internet Explorer.
-	wp_enqueue_script( 'svgxuse', get_theme_file_uri( '/assets/js/svgxuse.min.js' ), array(), '1.2.4' );
+	if ( ! harrison_is_amp() ) {
+		wp_enqueue_script( 'svgxuse', get_theme_file_uri( '/assets/js/svgxuse.min.js' ), array(), '1.2.4' );
+	}
 
 	// Register Comment Reply Script for Threaded Comments.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

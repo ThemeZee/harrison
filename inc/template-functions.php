@@ -95,6 +95,11 @@ function harrison_body_classes( $classes ) {
 		$classes[] = 'credit-link-hidden';
 	}
 
+	// Check for AMP pages.
+	if ( harrison_is_amp() ) {
+		$classes[] = 'is-amp-page';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';

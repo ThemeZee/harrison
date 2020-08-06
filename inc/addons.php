@@ -37,6 +37,9 @@ function harrison_theme_addons_setup() {
 
 	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );
+
+	// Add theme support for AMP.
+	add_theme_support( 'amp' );
 }
 add_action( 'after_setup_theme', 'harrison_theme_addons_setup' );
 
@@ -74,3 +77,32 @@ add_action( 'woocommerce_after_main_content', 'harrison_wrapper_end', 10 );
 
 /* Remove sidebar from wooCommerce templates */
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+
+/**
+ * Checks if AMP page is rendered.
+ */
+function harrison_is_amp() {
+	return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
+}
+
+
+/**
+ * Adds amp support for menu toggle.
+ */
+function harrison_amp_menu_toggle() {
+	if ( harrison_is_amp() ) {
+		echo "[aria-expanded]=\"primaryMenuExpanded? 'true' : 'false'\" ";
+		echo 'on="tap:AMP.setState({primaryMenuExpanded: !primaryMenuExpanded})"';
+	}
+}
+
+
+/**
+ * Adds amp support for mobile dropdown navigation menu.
+ */
+function harrison_amp_menu_is_toggled() {
+	if ( harrison_is_amp() ) {
+		echo "[class]=\"'main-navigation' + ( primaryMenuExpanded ? ' toggled-on' : '' )\"";
+	}
+}
