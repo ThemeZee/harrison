@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/harrison/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 5.4
+Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 3. Go to https://themezee.com/en/docs/harrison-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.2 - 2020-08-06 =
+* added support for official AMP WordPress plugin
 
 = 1.1 - 2020-03-04 =
 * added Retina Logo option
