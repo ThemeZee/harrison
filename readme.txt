@@ -23,6 +23,10 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.2.1 - 2020-04-24 =
+* fixed styling of menu items with empty links
+* fixed undefined naviClass variable warning
+
 = 1.2 - 2020-08-06 =
 * added support for official AMP WordPress plugin
 
