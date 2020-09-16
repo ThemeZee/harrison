@@ -2,7 +2,7 @@
 Author URI: https://themezee.com/
 Theme URI: https://themezee.com/themes/harrison/
 Contributors: themezee
-Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
+Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
 Tested up to: 5.5
 License: GPLv2 or later
@@ -23,7 +23,7 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
-= 1.2.1 - 2020-04-24 =
+= 1.2.1 - 2020-08-24 =
 * fixed styling of menu items with empty links
 * fixed undefined naviClass variable warning
 
