@@ -23,6 +23,10 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.2.2 - 2020-10-10 =
+* added AMP dropdown toggles for sub menus
+* added CSS variables for line heights
+
 = 1.2.1 - 2020-08-24 =
 * fixed styling of menu items with empty links
 * fixed undefined naviClass variable warning
