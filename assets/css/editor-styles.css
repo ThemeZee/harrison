@@ -45,6 +45,8 @@
 	--navi-font-weight: normal;
 	--title-text-transform: none;
 	--navi-text-transform: none;
+	--text-line-height: 1.75;
+	--title-line-height: 1.4;
 }
 
 /*--------------------------------------------------------------

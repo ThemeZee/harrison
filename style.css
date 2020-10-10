@@ -85,6 +85,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--navi-font-weight: normal;
 	--title-text-transform: none;
 	--navi-text-transform: none;
+	--text-line-height: 1.75;
+	--title-line-height: 1.4;
 }
 
 /*--------------------------------------------------------------
@@ -277,6 +279,7 @@ textarea {
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
+	line-height: var(--text-line-height);
 }
 
 h1,
@@ -294,6 +297,7 @@ h6 {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 h1 {
@@ -778,6 +782,7 @@ textarea {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 .site-title a:link,
@@ -1085,6 +1090,7 @@ body.site-description-hidden .site-header .site-description {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 .entry-title a:link,
@@ -2108,6 +2114,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 .widget ul li > a,
