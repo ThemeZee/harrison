@@ -85,6 +85,10 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
 
+5. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
+License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
+Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
+
 6. Barlow Font - https://fonts.google.com/specimen/Barlow
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 Copyright: Jeremy Tribby
