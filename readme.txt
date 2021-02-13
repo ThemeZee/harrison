@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.3 - 2021-02-13 =
+* added WPTT Webfont loader to host theme fonts locally
+
 = 1.2.2 - 2020-10-10 =
 * added AMP dropdown toggles for sub menus
 * added CSS variables for line heights
