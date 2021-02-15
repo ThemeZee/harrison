@@ -18,15 +18,15 @@
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
+	--page-background-color: #fff;
+	--page-border-color: rgba(0, 0, 0, 0.1);
+	--page-light-bg-color: rgba(0, 0, 0, 0.05);
 	--link-color: #c9493b;
 	--link-hover-color: #e36355;
 	--button-color: #c9493b;
 	--button-text-color: #fff;
 	--button-hover-color: #e36355;
 	--button-hover-text-color: #fff;
-	--page-background-color: #fff;
-	--page-border-color: rgba(0, 0, 0, 0.1);
-	--page-light-bg-color: rgba(0, 0, 0, 0.05);
 	--header-background-color: #fff;
 	--header-text-color: rgba(0, 0, 0, 0.9);
 	--header-text-hover-color: #e36355;
