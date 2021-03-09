@@ -7,6 +7,10 @@
 	@include color(--secondary-color);
 }
 
+.has-tertiary-color {
+	@include color(--tertiary-color);
+}
+
 .has-accent-color {
 	@include color(--accent-color);
 }
@@ -42,6 +46,10 @@
 
 .has-secondary-background-color {
 	@include background(--secondary-color);
+}
+
+.has-tertiary-background-color {
+	@include background(--tertiary-color);
 }
 
 .has-accent-background-color {

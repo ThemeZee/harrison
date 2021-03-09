@@ -20,6 +20,7 @@ function harrison_gutenberg_support() {
 	$color_palette = apply_filters( 'harrison_color_palette', array(
 		'primary_color'    => '#c9493b',
 		'secondary_color'  => '#e36355',
+		'tertiary_color'   => '#b03022',
 		'accent_color'     => '#078896',
 		'highlight_color'  => '#5bb021',
 		'light_gray_color' => '#e4e4e4',
@@ -38,6 +39,11 @@ function harrison_gutenberg_support() {
 			'name'  => esc_html_x( 'Secondary', 'block color', 'harrison' ),
 			'slug'  => 'secondary',
 			'color' => esc_html( $color_palette['secondary_color'] ),
+		),
+		array(
+			'name'  => esc_html_x( 'Tertiary', 'block color', 'harrison' ),
+			'slug'  => 'tertiary',
+			'color' => esc_html( $color_palette['tertiary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'harrison' ),

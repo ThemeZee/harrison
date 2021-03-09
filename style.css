@@ -50,6 +50,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--primary-color: #c9493b;
 	--secondary-color: #e36355;
+	--tertiary-color: #b03022;
 	--accent-color: #078896;
 	--highlight-color: #5bb021;
 	--light-gray-color: #e4e4e4;
@@ -1992,6 +1993,11 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	color: var(--secondary-color);
 }
 
+.has-tertiary-color {
+	color: #b03022;
+	color: var(--tertiary-color);
+}
+
 .has-accent-color {
 	color: #078896;
 	color: var(--accent-color);
@@ -2034,6 +2040,11 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .has-secondary-background-color {
 	background-color: #e36355;
 	background-color: var(--secondary-color);
+}
+
+.has-tertiary-background-color {
+	background-color: #b03022;
+	background-color: var(--tertiary-color);
 }
 
 .has-accent-background-color {
