@@ -2134,6 +2134,10 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	text-decoration: none;
 }
 
+.widget select {
+	max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 # - Comments
 --------------------------------------------------------------*/
