@@ -125,8 +125,13 @@ function harrison_block_editor_assets() {
 	// Enqueue Editor Styling.
 	wp_enqueue_style( 'harrison-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
 
-	// Enqueue Theme Settings Editor plugin.
-	wp_enqueue_script( 'harrison-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	// Get current screen.
+	$current_screen = get_current_screen();
+
+	// Enqueue Page Template Switcher Editor plugin.
+	if ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) {
+		wp_enqueue_script( 'harrison-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	}
 }
 add_action( 'enqueue_block_editor_assets', 'harrison_block_editor_assets' );
 
@@ -155,7 +160,7 @@ function harrison_block_editor_body_classes( $classes ) {
 	$current_screen = get_current_screen();
 
 	// Return early if we are not in the Gutenberg Editor.
-	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) ) {
 		return $classes;
 	}
 
