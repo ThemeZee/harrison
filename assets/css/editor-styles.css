@@ -571,6 +571,25 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: inherit;
 }
 
+/* Editor Block Styles */
+.editor-styles-wrapper .wp-block-heading.is-style-widget-title {
+	padding: 0;
+	color: #202020;
+	color: var(--title-color);
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
+	line-height: 1.4;
+	line-height: var(--title-line-height);
+}
+
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/

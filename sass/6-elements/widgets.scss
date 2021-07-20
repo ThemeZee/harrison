@@ -2,7 +2,8 @@
 	margin: 0 0 1.5rem;
 	padding: 0;
 
-	.widget-title {
+	.widget-title,
+	.is-style-widget-title {
 		margin: 0 0 1rem;
 		padding: 0;
 		@include color(--title-color);

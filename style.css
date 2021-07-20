@@ -2109,7 +2109,8 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	padding: 0;
 }
 
-.widget .widget-title {
+.widget .widget-title,
+.widget .is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0;
 	color: #202020;
