@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.3.3 - 2021-08-20 =
+* updated Core block styles
+
 = 1.3.2 - 2021-07-20 =
 * added Widget Title block style
 * fixed error messages on new block-based Widgets Editor

@@ -40,7 +40,7 @@ p.has-background {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 6rem;
-	height: 5px;
+	height: 3px;
 }
 
 /* Table Block */
@@ -96,13 +96,12 @@ p.has-background {
 
 .wp-block-button__link {
 	margin: 0;
-	padding: 0.6em 1em;
+	padding: 0.8em 1.4em;
 	border: none;
 	border-radius: 0;
 	color: inherit;
 	font-size: inherit;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 .wp-block-button__link:link,
@@ -114,18 +113,16 @@ p.has-background {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color),
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
-	@include color(--button-color);
+	@include color(--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
-	border: 1px solid;
-	@include border-color(--light-border-color);
-	background: none;
+	@include background(--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
-	@include color(--button-hover-color);
+	@include background(--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -137,7 +134,7 @@ p.has-background {
 
 /* Outline Style */
 .wp-block-button.is-style-outline .wp-block-button__link {
-	padding: calc(0.6em - 2px) calc(1em - 2px);
+	padding: calc(0.8em - 2px) calc(1.4em - 2px);
 	background-color: transparent !important;
 }
 
@@ -167,8 +164,8 @@ p.has-background {
 
 .wp-block-quote.has-text-align-right:not(.is-style-large) {
 	padding-right: 1.5em;
-	border-right: 4px solid;
-	@include border-color(--light-border-color);
+	border-right: 3px solid;
+	@include border-color(--text-color);
 }
 
 .wp-block-quote > p:last-of-type {
@@ -199,9 +196,9 @@ p.has-background {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	padding: 0;
-	border-bottom: 4px solid;
-	border-top: 4px solid;
-	@include border-color(--light-border-color);
+	border-bottom: 3px solid;
+	border-top: 3px solid;
+	@include border-color(--page-border-color);
 }
 
 .wp-block-pullquote blockquote {

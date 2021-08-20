@@ -17,17 +17,16 @@ blockquote {
 	@include border-color(--text-color);
 	@include color(--light-text-color);
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-}
-
-blockquote p {
-	margin-bottom: 0.75em;
+	font-style: normal;
 }
 
 blockquote cite {
 	display: block;
+	margin-top: 1em;
 	@include color(--text-color);
+	@include font-family(--text-font);
 	@include font-size(16);
+	font-style: normal;
 }
 
 blockquote cite::before {
