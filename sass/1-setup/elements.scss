@@ -11,7 +11,7 @@ body {
 }
 
 blockquote {
-	margin: 0 0 1.5em;
+	margin: 1.5em 0;
 	padding-left: 1.5em;
 	border-left: 3px solid;
 	@include border-color(--text-color);
@@ -36,6 +36,7 @@ blockquote cite::before {
 
 hr {
 	box-sizing: content-box;
+	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
@@ -44,7 +45,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em;
+	margin: 1.5em 0;
 	padding: 0 0 0 1.25em;
 }
 
@@ -83,7 +84,7 @@ img {
 }
 
 table {
-	margin: 0 0 1.5em;
+	margin: 1.5em 0;
 	width: 100%;
 	border: none;
 	table-layout: fixed;
@@ -96,6 +97,16 @@ td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
 	@include border-color(--page-border-color);
+}
+
+th {
+	font-weight: normal;
+	text-align: initial;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+tfoot td {
+	background: rgba(0, 0, 0, 0.05);
 }
 
 a {
