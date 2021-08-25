@@ -173,14 +173,14 @@
 	margin-bottom: 1.5em;
 	width: 100%;
 	border: none;
-	table-layout: fixed;
+	table-layout: auto;
 }
 
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
-	@include border-color(--light-border-color);
+	@include border-color(--page-border-color);
 }
 
 .editor-styles-wrapper th {

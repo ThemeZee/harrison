@@ -485,7 +485,7 @@ table {
 	margin: 1.5em 0;
 	width: 100%;
 	border: none;
-	table-layout: fixed;
+	table-layout: auto;
 	border-spacing: 0;
 	border-collapse: collapse;
 }
@@ -2558,7 +2558,10 @@ p.has-background {
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object {
+object,
+figure,
+img,
+picture {
 	max-width: 100%;
 }
 

@@ -337,14 +337,15 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	width: 100%;
 	border: none;
-	table-layout: fixed;
+	table-layout: auto;
 }
 
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
-	border-color: var(--light-border-color);
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--page-border-color);
 }
 
 .editor-styles-wrapper th {
