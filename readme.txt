@@ -23,6 +23,10 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.3.4 - 2021-08-26 =
+* fixed table layout styling
+* fixed responsive images with Classic Editor
+
 = 1.3.3 - 2021-08-20 =
 * updated Core block styles
 
