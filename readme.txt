@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.3.6 - 2022-02-24 =
+* fixed keyboard navigation of dropdown menus
+
 = 1.3.5 - 2021-11-04 =
 * updated navigation.js to use vanilla js instead of jQuery
 
