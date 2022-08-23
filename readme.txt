@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.3.8 - 2022-08-23 =
+* updated footer credit link
+
 = 1.3.7 - 2022-07-12 =
 * added block support for custom spacing and line heights
 * improved styling of columns block
