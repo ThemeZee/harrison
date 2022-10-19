@@ -4,9 +4,9 @@ Theme URI: https://themezee.com/themes/harrison/
 Author: ThemeZee
 Author URI: https://themezee.com/
 Description: Harrison is a highly versatile WordPress Theme and was specially designed for use with the new WordPress Block Editor. The theme supports the latest Gutenberg features and provides different blog layouts and extensive post settings. The clean and elegant design is perfect to create all kinds of websites. You should really try it!
-Version: 1.3.8
+Version: 1.3.9
 Requires at least: 5.2
-Tested up to: 6.0
+Tested up to: 6.1
 Requires PHP: 5.6
 AMP: true
 License: GNU General Public License v2 or later
@@ -612,10 +612,6 @@ textarea {
 
 .search-form label {
 	flex-grow: 1;
-}
-
-.search-form .screen-reader-text {
-	display: none;
 }
 
 .search-form .search-field {
