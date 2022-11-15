@@ -23,6 +23,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 
 == Changelog ==
 
+= 1.4 - 2022-11-15 =
+* fixed mobile top navigation if main navigation is not present
+
 = 1.3.9 - 2022-10-19 =
 * improved accessibility of search form
 

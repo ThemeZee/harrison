@@ -117,7 +117,7 @@ function harrison_scripts() {
 	wp_enqueue_style( 'harrison-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
 	// Register and enqueue navigation.js.
-	if ( has_nav_menu( 'primary' ) && ! harrison_is_amp() ) {
+	if ( ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) && ! harrison_is_amp() ) {
 		wp_enqueue_script( 'harrison-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array(), '20220224', true );
 		$harrison_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'harrison' ),
