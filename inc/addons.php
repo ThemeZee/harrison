@@ -17,23 +17,32 @@ function harrison_theme_addons_setup() {
 	add_theme_support( 'themezee-breadcrumbs' );
 
 	// Add theme support for ThemeZee Widget Bundle plugin.
-	add_theme_support( 'themezee-widget-bundle', array(
-		'thumbnail_size' => array( 150, 150 ),
-		'svg_icons'      => true,
-	) );
+	add_theme_support(
+		'themezee-widget-bundle',
+		array(
+			'thumbnail_size' => array( 150, 150 ),
+			'svg_icons'      => true,
+		)
+	);
 
 	// Add theme support for ThemeZee Related Posts plugin.
-	add_theme_support( 'themezee-related-posts', array(
-		'thumbnail_size' => array( 720, 360 ),
-	) );
+	add_theme_support(
+		'themezee-related-posts',
+		array(
+			'thumbnail_size' => array( 720, 360 ),
+		)
+	);
 
 	// Add theme support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
-		'container'      => 'post-wrapper',
-		'footer_widgets' => 'footer',
-		'wrapper'        => false,
-		'render'         => 'harrison_infinite_scroll_render',
-	) );
+	add_theme_support(
+		'infinite-scroll',
+		array(
+			'container'      => 'post-wrapper',
+			'footer_widgets' => 'footer',
+			'wrapper'        => false,
+			'render'         => 'harrison_infinite_scroll_render',
+		)
+	);
 
 	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );

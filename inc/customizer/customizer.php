@@ -6,21 +6,21 @@
  */
 
 // Load Sanitize Functions.
-require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
+require get_template_directory() . '/inc/customizer/sanitize-functions.php';
 
 // Load Custom Controls.
-require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
-require( get_template_directory() . '/inc/customizer/controls/links-control.php' );
-require( get_template_directory() . '/inc/customizer/controls/plugin-control.php' );
-require( get_template_directory() . '/inc/customizer/controls/upgrade-control.php' );
+require get_template_directory() . '/inc/customizer/controls/headline-control.php';
+require get_template_directory() . '/inc/customizer/controls/links-control.php';
+require get_template_directory() . '/inc/customizer/controls/plugin-control.php';
+require get_template_directory() . '/inc/customizer/controls/upgrade-control.php';
 
 // Load Customizer Sections.
-require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/layout-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/post-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/footer-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/theme-info-settings.php' );
+require get_template_directory() . '/inc/customizer/sections/website-settings.php';
+require get_template_directory() . '/inc/customizer/sections/layout-settings.php';
+require get_template_directory() . '/inc/customizer/sections/blog-settings.php';
+require get_template_directory() . '/inc/customizer/sections/post-settings.php';
+require get_template_directory() . '/inc/customizer/sections/footer-settings.php';
+require get_template_directory() . '/inc/customizer/sections/theme-info-settings.php';
 
 /**
  * Registers Theme Options panel and sets up some WordPress core settings
@@ -30,12 +30,15 @@ require( get_template_directory() . '/inc/customizer/sections/theme-info-setting
 function harrison_customize_register_options( $wp_customize ) {
 
 	// Add Theme Options Panel.
-	$wp_customize->add_panel( 'harrison_options_panel', array(
-		'priority'       => 180,
-		'capability'     => 'edit_theme_options',
-		'theme_supports' => '',
-		'title'          => esc_html__( 'Theme Options', 'harrison' ),
-	) );
+	$wp_customize->add_panel(
+		'harrison_options_panel',
+		array(
+			'priority'       => 180,
+			'capability'     => 'edit_theme_options',
+			'theme_supports' => '',
+			'title'          => esc_html__( 'Theme Options', 'harrison' ),
+		)
+	);
 
 	// Change default background section.
 	$wp_customize->get_control( 'background_color' )->section = 'background_image';

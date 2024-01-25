@@ -45,39 +45,62 @@ function harrison_setup() {
 	add_image_size( 'harrison-horizontal-list-post', 960, 720, true );
 
 	// Register Navigation Menus.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Main Navigation', 'harrison' ),
-	) );
+	register_nav_menus(
+		array(
+			'primary' => esc_html__( 'Main Navigation', 'harrison' ),
+		)
+	);
 
 	// Switch default core markup for galleries and captions to output valid HTML5.
-	add_theme_support( 'html5', array(
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+	add_theme_support(
+		'html5',
+		array(
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		)
+	);
 
 	// Set up the WordPress core custom logo feature.
-	add_theme_support( 'custom-logo', apply_filters( 'harrison_custom_logo_args', array(
-		'height'      => 60,
-		'width'       => 300,
-		'flex-height' => true,
-		'flex-width'  => true,
-	) ) );
+	add_theme_support(
+		'custom-logo',
+		apply_filters(
+			'harrison_custom_logo_args',
+			array(
+				'height'      => 60,
+				'width'       => 300,
+				'flex-height' => true,
+				'flex-width'  => true,
+			)
+		)
+	);
 
 	// Set up the WordPress core custom header feature.
-	add_theme_support( 'custom-header', apply_filters( 'harrison_custom_header_args', array(
-		'header-text' => false,
-		'width'       => 1440,
-		'height'      => 600,
-		'flex-width'  => true,
-		'flex-height' => true,
-	) ) );
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'harrison_custom_header_args',
+			array(
+				'header-text' => false,
+				'width'       => 1440,
+				'height'      => 600,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		)
+	);
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'harrison_custom_background_args', array(
-		'default-color' => '353535',
-	) ) );
+	add_theme_support(
+		'custom-background',
+		apply_filters(
+			'harrison_custom_background_args',
+			array(
+				'default-color' => '353535',
+			)
+		)
+	);
 
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -141,8 +164,8 @@ add_action( 'wp_enqueue_scripts', 'harrison_scripts' );
 
 
 /**
-* Enqueue theme fonts.
-*/
+ * Enqueue theme fonts.
+ */
 function harrison_theme_fonts() {
 	$fonts_url = harrison_get_fonts_url();
 
@@ -181,15 +204,17 @@ function harrison_get_fonts_url() {
  */
 function harrison_widgets_init() {
 	// Register Footer Copyright widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Copyright', 'harrison' ),
-		'id'            => 'footer-copyright',
-		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'harrison' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Copyright', 'harrison' ),
+			'id'            => 'footer-copyright',
+			'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'harrison' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class = "widget-title">',
+			'after_title'   => '</h4>',
+		)
+	);
 }
 add_action( 'widgets_init', 'harrison_widgets_init', 30 );
 
@@ -198,10 +223,13 @@ add_action( 'widgets_init', 'harrison_widgets_init', 30 );
  * Make custom image sizes available in Gutenberg.
  */
 function harrison_add_image_size_names( $sizes ) {
-	return array_merge( $sizes, array(
-		'post-thumbnail'                => esc_html__( 'Harrison Single Post', 'harrison' ),
-		'harrison-horizontal-list-post' => esc_html__( 'Harrison List Post', 'harrison' ),
-	) );
+	return array_merge(
+		$sizes,
+		array(
+			'post-thumbnail'                => esc_html__( 'Harrison Single Post', 'harrison' ),
+			'harrison-horizontal-list-post' => esc_html__( 'Harrison List Post', 'harrison' ),
+		)
+	);
 }
 add_filter( 'image_size_names_choose', 'harrison_add_image_size_names' );
 

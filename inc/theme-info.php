@@ -149,7 +149,8 @@ function harrison_theme_info_page() {
 
 			<p>
 				<?php
-				printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'harrison' ),
+				printf(
+					esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'harrison' ),
 					$theme->display( 'Name' ),
 					'<a target="_blank" href="' . __( 'https://themezee.com/', 'harrison' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=harrison" title="ThemeZee">ThemeZee</a>',
 					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/harrison/reviews/', 'harrison' ) . '" title="' . esc_attr__( 'Rate this theme', 'harrison' ) . '">' . esc_html_x( 'rate it', 'If you like this theme, rate it', 'harrison' ) . '</a>'

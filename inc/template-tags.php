@@ -41,7 +41,7 @@ if ( ! function_exists( 'harrison_site_title' ) ) :
 
 			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -211,7 +211,8 @@ if ( ! function_exists( 'harrison_entry_date' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -231,7 +232,8 @@ if ( ! function_exists( 'harrison_entry_author' ) ) :
 	 */
 	function harrison_entry_author() {
 
-		$author_string = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		$author_string = sprintf(
+			'<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			// translators: post author link.
 			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'harrison' ), get_the_author() ) ),
@@ -345,10 +347,12 @@ if ( ! function_exists( 'harrison_post_navigation' ) ) :
 			<div class="post-navigation-wrap page-footer">
 
 				<?php
-				the_post_navigation( array(
-					'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'harrison' ) . '</span><h3 class="entry-title">%title</h3>',
-					'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'harrison' ) . '</span><h3 class="entry-title">%title</h3>',
-				) );
+				the_post_navigation(
+					array(
+						'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'harrison' ) . '</span><h3 class="entry-title">%title</h3>',
+						'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'harrison' ) . '</span><h3 class="entry-title">%title</h3>',
+					)
+				);
 				?>
 
 			</div>
@@ -364,11 +368,13 @@ if ( ! function_exists( 'harrison_pagination' ) ) :
 	 * Displays pagination on archive pages
 	 */
 	function harrison_pagination() {
-		$pagination = get_the_posts_pagination( array(
-			'mid_size'  => 2,
-			'prev_text' => '&laquo;<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'harrison' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'harrison' ) . '</span>&raquo;',
-		) );
+		$pagination = get_the_posts_pagination(
+			array(
+				'mid_size'  => 2,
+				'prev_text' => '&laquo;<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'harrison' ) . '</span>',
+				'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'harrison' ) . '</span>&raquo;',
+			)
+		);
 
 		if ( $pagination ) :
 			?>
@@ -411,7 +417,8 @@ function harrison_credit_link() {
 		<span class="credit-link">
 			<?php
 			// translators: Theme Name and Link to ThemeZee.
-			printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'harrison' ),
+			printf(
+				esc_html__( 'WordPress Theme: %1$s by %2$s.', 'harrison' ),
 				esc_html__( 'Harrison', 'harrison' ),
 				'ThemeZee'
 			);
@@ -431,10 +438,12 @@ if ( ! function_exists( 'harrison_breadcrumbs' ) ) :
 
 		if ( function_exists( 'themezee_breadcrumbs' ) ) {
 
-			themezee_breadcrumbs( array(
-				'before' => '<div class="breadcrumbs-container">',
-				'after'  => '</div>',
-			) );
+			themezee_breadcrumbs(
+				array(
+					'before' => '<div class="breadcrumbs-container">',
+					'after'  => '</div>',
+				)
+			);
 
 		}
 	}
@@ -449,14 +458,16 @@ if ( ! function_exists( 'harrison_related_posts' ) ) :
 
 		if ( function_exists( 'themezee_related_posts' ) ) {
 
-			themezee_related_posts( array(
-				'before'       => '<div class = "related-posts-wrap page-footer">',
-				'after'        => '</div>',
-				'container'    => 'div',
-				'class'        => 'related-posts',
-				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
-				'after_title'  => '</h2></header>',
-			) );
+			themezee_related_posts(
+				array(
+					'before'       => '<div class = "related-posts-wrap page-footer">',
+					'after'        => '</div>',
+					'container'    => 'div',
+					'class'        => 'related-posts',
+					'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
+					'after_title'  => '</h2></header>',
+				)
+			);
 
 		}
 	}
