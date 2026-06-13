@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/harrison/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 6.5
+Tested up to: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ For more information about Harrison please go to https://themezee.com/themes/har
 3. Go to https://themezee.com/en/docs/harrison-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.4.2 - 2026-06-13 =
+* Fix theme styling in block editor with WordPress 7.0
 
 = 1.4.1 - 2024-01-25 =
 * code cleanup to follow WordPress PHP coding standards
