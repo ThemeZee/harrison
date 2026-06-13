@@ -86,7 +86,8 @@
 }
 
 /* Post and Page Title */
-body.block-editor-page .editor-post-title__block .editor-post-title__input {
+body.block-editor-page .editor-post-title__block .editor-post-title__input,
+.editor-styles-wrapper .editor-post-title__input {
 	color: #202020;
 	color: var(--title-color);
 	font-size: 24px;
@@ -101,21 +102,24 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 }
 
 @media only screen and (min-width: 640px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		font-size: 32px;
 		font-size: 2rem;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		font-size: 40px;
 		font-size: 2.5rem;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		font-size: 48px;
 		font-size: 3rem;
 	}
@@ -142,7 +146,8 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	color: var(--text-color);
 }
 
-.edit-post-visual-editor__content-area .editor-styles-wrapper {
+.edit-post-visual-editor__content-area .editor-styles-wrapper,
+.editor-styles-wrapper {
 	font-family: Barlow, arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 }

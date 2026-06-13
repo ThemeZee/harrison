@@ -176,7 +176,7 @@ function harrison_theme_fonts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'harrison_theme_fonts', 1 );
-add_action( 'enqueue_block_editor_assets', 'harrison_theme_fonts', 1 );
+add_action( 'enqueue_block_assets', 'harrison_theme_fonts', 1 );
 
 
 /**

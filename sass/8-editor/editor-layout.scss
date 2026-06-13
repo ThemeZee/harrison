@@ -28,7 +28,8 @@
 }
 
 /* Post and Page Title */
-body.block-editor-page .editor-post-title__block .editor-post-title__input {
+body.block-editor-page .editor-post-title__block .editor-post-title__input,
+.editor-styles-wrapper .editor-post-title__input {
 	@include color(--title-color);
 	@include font-size(24);
 	@include font-family(--title-font);
@@ -38,19 +39,22 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 }
 
 @media only screen and (min-width: 640px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		@include font-size(32);
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		@include font-size(40);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	body.block-editor-page .editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .editor-post-title__input {
 		@include font-size(48);
 	}
 }

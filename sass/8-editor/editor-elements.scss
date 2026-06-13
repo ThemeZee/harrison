@@ -5,7 +5,8 @@
 	@include color(--text-color);
 }
 
-.edit-post-visual-editor__content-area .editor-styles-wrapper {
+.edit-post-visual-editor__content-area .editor-styles-wrapper,
+.editor-styles-wrapper {
 	@include font-family(--text-font);
 }
 
